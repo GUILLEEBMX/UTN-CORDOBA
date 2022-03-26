@@ -1,0 +1,16 @@
+D:\UTN-CORDOBA\Problema 1.2\bin\Debug\net5.0\Problema 1.2.exe
+D:\UTN-CORDOBA\Problema 1.2\bin\Debug\net5.0\Problema 1.2.deps.json
+D:\UTN-CORDOBA\Problema 1.2\bin\Debug\net5.0\Problema 1.2.runtimeconfig.json
+D:\UTN-CORDOBA\Problema 1.2\bin\Debug\net5.0\Problema 1.2.runtimeconfig.dev.json
+D:\UTN-CORDOBA\Problema 1.2\bin\Debug\net5.0\Problema 1.2.dll
+D:\UTN-CORDOBA\Problema 1.2\bin\Debug\net5.0\ref\Problema 1.2.dll
+D:\UTN-CORDOBA\Problema 1.2\bin\Debug\net5.0\Problema 1.2.pdb
+D:\UTN-CORDOBA\Problema 1.2\obj\Debug\net5.0\Problema 1.2.csproj.AssemblyReference.cache
+D:\UTN-CORDOBA\Problema 1.2\obj\Debug\net5.0\Problema 1.2.GeneratedMSBuildEditorConfig.editorconfig
+D:\UTN-CORDOBA\Problema 1.2\obj\Debug\net5.0\Problema 1.2.AssemblyInfoInputs.cache
+D:\UTN-CORDOBA\Problema 1.2\obj\Debug\net5.0\Problema 1.2.AssemblyInfo.cs
+D:\UTN-CORDOBA\Problema 1.2\obj\Debug\net5.0\Problema 1.2.csproj.CoreCompileInputs.cache
+D:\UTN-CORDOBA\Problema 1.2\obj\Debug\net5.0\Problema 1.2.dll
+D:\UTN-CORDOBA\Problema 1.2\obj\Debug\net5.0\ref\Problema 1.2.dll
+D:\UTN-CORDOBA\Problema 1.2\obj\Debug\net5.0\Problema 1.2.pdb
+D:\UTN-CORDOBA\Problema 1.2\obj\Debug\net5.0\Problema 1.2.genruntimeconfig.cache
