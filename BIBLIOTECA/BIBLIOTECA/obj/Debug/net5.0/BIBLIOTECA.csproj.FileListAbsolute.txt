@@ -1,0 +1,16 @@
+C:\Users\K56\Desktop\BIBLIOTECA\BIBLIOTECA\bin\Debug\net5.0\BIBLIOTECA.exe
+C:\Users\K56\Desktop\BIBLIOTECA\BIBLIOTECA\bin\Debug\net5.0\BIBLIOTECA.deps.json
+C:\Users\K56\Desktop\BIBLIOTECA\BIBLIOTECA\bin\Debug\net5.0\BIBLIOTECA.runtimeconfig.json
+C:\Users\K56\Desktop\BIBLIOTECA\BIBLIOTECA\bin\Debug\net5.0\BIBLIOTECA.runtimeconfig.dev.json
+C:\Users\K56\Desktop\BIBLIOTECA\BIBLIOTECA\bin\Debug\net5.0\BIBLIOTECA.dll
+C:\Users\K56\Desktop\BIBLIOTECA\BIBLIOTECA\bin\Debug\net5.0\ref\BIBLIOTECA.dll
+C:\Users\K56\Desktop\BIBLIOTECA\BIBLIOTECA\bin\Debug\net5.0\BIBLIOTECA.pdb
+C:\Users\K56\Desktop\BIBLIOTECA\BIBLIOTECA\obj\Debug\net5.0\BIBLIOTECA.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\K56\Desktop\BIBLIOTECA\BIBLIOTECA\obj\Debug\net5.0\BIBLIOTECA.AssemblyInfoInputs.cache
+C:\Users\K56\Desktop\BIBLIOTECA\BIBLIOTECA\obj\Debug\net5.0\BIBLIOTECA.AssemblyInfo.cs
+C:\Users\K56\Desktop\BIBLIOTECA\BIBLIOTECA\obj\Debug\net5.0\BIBLIOTECA.csproj.CoreCompileInputs.cache
+C:\Users\K56\Desktop\BIBLIOTECA\BIBLIOTECA\obj\Debug\net5.0\BIBLIOTECA.dll
+C:\Users\K56\Desktop\BIBLIOTECA\BIBLIOTECA\obj\Debug\net5.0\ref\BIBLIOTECA.dll
+C:\Users\K56\Desktop\BIBLIOTECA\BIBLIOTECA\obj\Debug\net5.0\BIBLIOTECA.pdb
+C:\Users\K56\Desktop\BIBLIOTECA\BIBLIOTECA\obj\Debug\net5.0\BIBLIOTECA.genruntimeconfig.cache
+C:\Users\K56\Desktop\BIBLIOTECA\BIBLIOTECA\obj\Debug\net5.0\BIBLIOTECA.csproj.AssemblyReference.cache
