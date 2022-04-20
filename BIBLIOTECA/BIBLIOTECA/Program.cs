@@ -10,7 +10,7 @@ namespace BIBLIOTECA
 
             Console.WriteLine("INGRESA LA CANTIDAD DE AUTORES...");
             int cantidadAutores = int.Parse(Console.ReadLine());
-            Autor autor = new Autor(cantidadAutores);
+            Autor autor = new Autor(cantidadAutores, "TEST", 28, true, 180, 80);
             Console.WriteLine("\nINGRESA LOS NOMBRES DE LOS AUTORES");
             for (int i = 0; i < cantidadAutores; i++)
             {
@@ -31,7 +31,7 @@ namespace BIBLIOTECA
 
             Console.WriteLine("\nINGRESA LA CANTIDAD DE LIBROS...");
             int cantidadLibros = int.Parse(Console.ReadLine());
-            Libro libro = new Libro(cantidadLibros,"TEST ISBN","HARRY POTTER",autor);
+            Libro libro = new Libro(cantidadLibros, "TEST ISBN", "HARRY POTTER", autor);
 
             for (int i = 0; i < cantidadLibros; i++)
             {
@@ -64,8 +64,8 @@ namespace BIBLIOTECA
             Biblioteca biblioteca = new Biblioteca(cantidadLibros);
             for (int i = 0; i < cantidadLibros; i++)
             {
-                Libro libro1 = new Libro(cantidadLibros, r.Next(1000, 10000).ToString(),r.Next(10,101).ToString(), autor);
-                biblioteca.AgregarLibro(libro1,i);
+                Libro libro1 = new Libro(cantidadLibros, r.Next(1000, 10000).ToString(), r.Next(10, 101).ToString(), autor);
+                biblioteca.AgregarLibro(libro1, i);
             }
 
             Console.WriteLine("\nESTOS SON LOS ISBN DE LOS LIBROS AÑADIDOS...");
@@ -86,11 +86,11 @@ namespace BIBLIOTECA
             Console.WriteLine("\nLOS LIBROS CUYO ISBN RESTANTES SON:");
             for (int i = 0; i < cantidadLibros; i++)
             {
-                if(biblioteca.MostrarLibros()[i].ISBN != null)
+                if (biblioteca.MostrarLibros()[i].ISBN != null)
                 {
                     Console.WriteLine(biblioteca.MostrarLibros()[i].ISBN);
                 }
-                
+
             }
 
 
@@ -106,7 +106,7 @@ namespace BIBLIOTECA
 
 
             // MOSTRAR LIBROS AÑADIDOS A BIBLIOTECA POR ARRAY STRING ISBN []
-
+            Console.WriteLine("\nLOS LIBROS AÑADIDOS POR ISBN SON:");
             for (int i = 0; i < cantidadLibros; i++)
             {
                 Console.WriteLine(biblioteca.MostrarLibrosISBN()[i]);
@@ -136,8 +136,6 @@ namespace BIBLIOTECA
                 }
 
             }
-
-
 
 
 

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\K56\\Desktop\\BIBLIOTECA\\BIBLIOTECA\\BIBLIOTECA.csproj",
+      "projectUniqueName": "C:\\Users\\K56\\Documents\\GIT UTN-FRC\\UTN-CORDOBA\\BIBLIOTECA\\BIBLIOTECA\\BIBLIOTECA.csproj",
       "projectName": "BIBLIOTECA",
-      "projectPath": "C:\\Users\\K56\\Desktop\\BIBLIOTECA\\BIBLIOTECA\\BIBLIOTECA.csproj",
+      "projectPath": "C:\\Users\\K56\\Documents\\GIT UTN-FRC\\UTN-CORDOBA\\BIBLIOTECA\\BIBLIOTECA\\BIBLIOTECA.csproj",
       "packagesPath": "C:\\Users\\K56\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\K56\\Desktop\\BIBLIOTECA\\BIBLIOTECA\\obj\\",
+      "outputPath": "C:\\Users\\K56\\Documents\\GIT UTN-FRC\\UTN-CORDOBA\\BIBLIOTECA\\BIBLIOTECA\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\K56\\AppData\\Roaming\\NuGet\\NuGet.Config",

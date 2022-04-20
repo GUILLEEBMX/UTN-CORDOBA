@@ -6,51 +6,34 @@ using System.Threading.Tasks;
 
 namespace BIBLIOTECA
 {
-    public class Autor
+    public class Autor :Persona
     {
 
         private int cantidadAutores;
+        private string editorial;
+
         
 
-        public Autor(int cantidadAutores)
+        public Autor(int cantidadAutores, string nombre, int edad, bool sexo, double altura, double peso) : base(nombre,edad,sexo,altura,peso)
         {
             this.cantidadAutores = cantidadAutores;
 
             Autores = new string[cantidadAutores];
         }
 
-        public Autor()
+        public Autor(): base()
         {
 
         }
 
         public string[] Autores { get; set; }
-
-        public string Nombre
+        public string Editorial
         {
-            get { return Nombre; }
-            set { Nombre = value; }
+            get { return editorial; }
+            set { editorial = value; }
         }
 
-        public int Edad
-        {
-            get { return Edad; }
-            set { Edad = value;}
-        }
 
-        public bool Sexo
-        {
-            get { return Sexo; }
-            set { Sexo = value; }
-        }
-
-        public double Altura
-        {
-            get { return Altura; }
-            set { Altura = value; }
-        }
-
-       
         public void AñadirAutores(string nombre,int index)
         {
             if (index > cantidadAutores)
@@ -66,7 +49,14 @@ namespace BIBLIOTECA
             return Autores;
         }
 
-        
+        public override string ToString()
+        {
+            return base.ToString() + "\nEDITORIAL:" + editorial;
+        }
+
+
+
+
 
 
 

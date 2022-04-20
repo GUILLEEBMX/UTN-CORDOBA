@@ -17,7 +17,7 @@ namespace BIBLIOTECA
 
         public Libro(int cantidadLibros, string ISBN,string titulo, Autor autor)
         {
-            autor = new Autor(5);
+            autor = new Autor(5,"TEST",28,true,180,80);
             this.cantidadLibros = cantidadLibros;
             Libros = new string[cantidadLibros];
             this.ISBN = ISBN;
@@ -28,7 +28,7 @@ namespace BIBLIOTECA
 
         public Libro()
         {
-            autor = new Autor(5);
+            autor = new Autor(5,"TEST", 28, true, 180, 80);
             
             
         }
