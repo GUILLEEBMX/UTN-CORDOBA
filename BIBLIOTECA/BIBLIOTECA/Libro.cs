@@ -30,7 +30,6 @@ namespace BIBLIOTECA
         {
             autor = new Autor(5,"TEST", 28, true, 180, 80);
             
-            
         }
 
         public string[] Libros {get;set;}
@@ -59,9 +58,8 @@ namespace BIBLIOTECA
             {
                 throw new Exception("ERROR OUT OF INDEX...");
             }
-            Libros[index] = nombreLibro + " " + autores; 
-            
-           
+            Libros[index] = nombreLibro + " " + autores;
+
         }
 
         public string [] MostrarLibros()

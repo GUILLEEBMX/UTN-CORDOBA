@@ -1,0 +1,91 @@
+USE BIBLIOTECA;
+
+CREATE TABLE GENEROS
+(
+    id_genero int IDENTITY (1,1),
+    genero varchar (30),
+
+    CONSTRAINT PK_GENERO PRIMARY KEY (id_genero)
+
+);
+
+CREATE TABLE PAISES
+(
+    id_pais int IDENTITY (1,1),
+    pais varchar (30),
+
+    CONSTRAINT PK_PAIS PRIMARY KEY (id_pais)
+
+);
+
+CREATE TABLE AUTORES
+(
+    id_autor int IDENTITY (1,1),
+    nombre_autor varchar (20),
+    id_pais int,
+    anio_nac datetime,
+    anio_def datetime,
+
+    CONSTRAINT PK_AUTOR PRIMARY KEY (id_autor),
+
+    CONSTRAINT FK_PAISES_AUTORES FOREIGN KEY (id_pais)
+    REFERENCES PAISES (id_pais)
+
+);
+
+ALTER TABLE LIBROS ADD fecha datetime;
+
+ALTER TABLE AUTORES ALTER COLUMN id_pais int NOT NULL;
+
+ALTER TABLE AUTORES ADD fecha_nac int , fecha_def int ;
+
+ALTER TABLE GENEROS ALTER COLUMN genero int;
+
+ALTER TABLE AUTORES ALTER COLUMN nombre_autor varchar (80);
+
+ALTER TABLE LIBROS ADD precio money;
+
+ALTER TABLE LIBROS ALTER COLUMN precio DECIMAL (10,2);
+
+DROP TABLE GENEROS;
+
+ALTER TABLE LIBROS DROP COLUMN genero;
+
+CREATE TABLE GENEROS
+(
+    id_genero int,
+    genero varchar (50)
+
+);
+
+ALTER TABLE GENEROS ALTER COLUMN id_genero int NOT NULL;
+
+ALTER TABLE GENEROS ADD CONSTRAINT PK_GENERO PRIMARY KEY (id_genero);
+
+
+ALTER TABLE AUTORES DROP CONSTRAINT FK_PAISES_AUTORES;
+
+ALTER TABLE AUTORES DROP COLUMN id_pais;
+
+
+DROP TABLE PAISES;
+
+CREATE TABLE PAISES
+(
+    id_pais int,
+    pais varchar (50)
+
+);
+
+ALTER TABLE PAISES ALTER COLUMN id_pais int NOT NULL;
+
+ALTER TABLE PAISES ADD CONSTRAINT PK_PAISES PRIMARY KEY (id_pais);
+
+ALTER TABLE LIBROS ADD genero int;
+
+ALTER TABLE LIBROS DROP COLUMN genero;
+
+ALTER TABLE LIBROS add id_genero int;
+
+ALTER TABLE LIBROS ADD CONSTRAINT FK_GENEROS_LIBROS FOREIGN KEY (id_genero)
+REFERENCES GENEROS (id_genero);
