@@ -1,0 +1,15 @@
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\LigaFutbol(LIF)\LigaFutbol(LIF)\bin\Debug\net5.0\LigaFutbol(LIF).exe
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\LigaFutbol(LIF)\LigaFutbol(LIF)\bin\Debug\net5.0\LigaFutbol(LIF).deps.json
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\LigaFutbol(LIF)\LigaFutbol(LIF)\bin\Debug\net5.0\LigaFutbol(LIF).runtimeconfig.json
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\LigaFutbol(LIF)\LigaFutbol(LIF)\bin\Debug\net5.0\LigaFutbol(LIF).runtimeconfig.dev.json
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\LigaFutbol(LIF)\LigaFutbol(LIF)\bin\Debug\net5.0\LigaFutbol(LIF).dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\LigaFutbol(LIF)\LigaFutbol(LIF)\bin\Debug\net5.0\ref\LigaFutbol(LIF).dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\LigaFutbol(LIF)\LigaFutbol(LIF)\bin\Debug\net5.0\LigaFutbol(LIF).pdb
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\LigaFutbol(LIF)\LigaFutbol(LIF)\obj\Debug\net5.0\LigaFutbol(LIF).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\LigaFutbol(LIF)\LigaFutbol(LIF)\obj\Debug\net5.0\LigaFutbol(LIF).AssemblyInfoInputs.cache
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\LigaFutbol(LIF)\LigaFutbol(LIF)\obj\Debug\net5.0\LigaFutbol(LIF).AssemblyInfo.cs
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\LigaFutbol(LIF)\LigaFutbol(LIF)\obj\Debug\net5.0\LigaFutbol(LIF).csproj.CoreCompileInputs.cache
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\LigaFutbol(LIF)\LigaFutbol(LIF)\obj\Debug\net5.0\LigaFutbol(LIF).dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\LigaFutbol(LIF)\LigaFutbol(LIF)\obj\Debug\net5.0\ref\LigaFutbol(LIF).dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\LigaFutbol(LIF)\LigaFutbol(LIF)\obj\Debug\net5.0\LigaFutbol(LIF).pdb
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\LigaFutbol(LIF)\LigaFutbol(LIF)\obj\Debug\net5.0\LigaFutbol(LIF).genruntimeconfig.cache
