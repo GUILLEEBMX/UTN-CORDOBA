@@ -10,8 +10,7 @@ namespace LigaFutbol_LIF_
     {
         private int cantidadJugadores;
         private Jugador [] jugadores;
-        private Jugador jugador;
-
+        
         public Equipo(int cantidadJugadores)
         {
             this.cantidadJugadores = cantidadJugadores;
@@ -34,14 +33,20 @@ namespace LigaFutbol_LIF_
 
         }   
 
-        public int ListadoSuspendidos(int index, int faltas)
+        public int ListadoSuspendidos()
         {
             int contadorSuspendidos = 0;
-          
-            if (jugadores[index].EstaSuspendido(faltas) == true)
+
+            for (int i = 0; i < jugadores.Length; i++)
             {
-               contadorSuspendidos++;
+                if (jugadores[i].EstaSuspendido() == true)
+                {
+                    contadorSuspendidos++;
+                }
+
             }
+
+            
 
             return contadorSuspendidos;
         }

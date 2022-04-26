@@ -55,7 +55,7 @@ namespace LigaFutbol_LIF_
             }
         }
 
-        public bool EstaSuspendido(int faltas)
+        public bool EstaSuspendido()
         {
             if (faltas > 3)
             {
