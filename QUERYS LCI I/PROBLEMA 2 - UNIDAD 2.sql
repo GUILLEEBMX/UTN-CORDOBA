@@ -139,27 +139,3 @@ INSERT INTO CLIENTES (ape_cliente,nom_cliente,calle,altura,email,fecha_nac,cod_b
 INSERT INTO CLIENTES (ape_cliente,nom_cliente,calle,altura,email,fecha_nac,cod_barrio) VALUES 
 ('Elizabeth','Blumen','Av. Chacabuco',36,'elibblumen@gmail.com','09/02/1962',2);
 
-
-SELECT *
-FROM ARTICULOS;
-
-UPDATE ARTICULOS
-SET descripcion = 'Conjunto Geométrico de Plastico'
-where descripcion = 'Conjunto Geométrico Maped'
-
-
-
-
-UPDATE ARTICULOS
-SET observaciones = 'Caja con motivos de Disney', stock_minimo = 100,pre_unitario = 17.20
-where descripcion = 'Lápices Color largos * 12 u. Bic '
-
-
-
--- Para el artículo cuya descripción es “Lápices Color largos * 12 u” Bic; cambie
---el stock mínimo por 100, las observaciones por “Caja con motivos de Disney”
---y al precio por 17.20
-
-b. Para el artículo cuya descripción es “Repuesto Rivadavia”, cambie la
-descripción por “Repuesto Rivadavia cuadriculado” y las observaciones por
-“48 hojas”.

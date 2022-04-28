@@ -43,7 +43,7 @@ namespace LigaFutbol_LIF_
             set { faltas = value; }
         }
 
-        public int Valoracion (bool lesionado, int faltas)
+        public int Valoracion ()
         {
             if (lesionado == false && faltas == 0)
             {

@@ -17,8 +17,7 @@ namespace LigaFutbol_LIF_
 
             for (int i = 0; i < cantidadJugadores; i++)
             {
-                int x = r.Next(1, 10);
-                x.ToString();
+              
                 Jugador player = new Jugador("Leonel", "Messi", "22/10/1993","A+","Delantero",false,r.Next(1,10));
                 team.AgregarJugador(player, i);
             }
