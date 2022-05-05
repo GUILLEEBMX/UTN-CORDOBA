@@ -1,0 +1,16 @@
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\AgenciaViajes\AgenciaViajes\bin\Debug\net5.0\AgenciaViajes.exe
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\AgenciaViajes\AgenciaViajes\bin\Debug\net5.0\AgenciaViajes.deps.json
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\AgenciaViajes\AgenciaViajes\bin\Debug\net5.0\AgenciaViajes.runtimeconfig.json
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\AgenciaViajes\AgenciaViajes\bin\Debug\net5.0\AgenciaViajes.runtimeconfig.dev.json
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\AgenciaViajes\AgenciaViajes\bin\Debug\net5.0\AgenciaViajes.dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\AgenciaViajes\AgenciaViajes\bin\Debug\net5.0\ref\AgenciaViajes.dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\AgenciaViajes\AgenciaViajes\bin\Debug\net5.0\AgenciaViajes.pdb
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\AgenciaViajes\AgenciaViajes\obj\Debug\net5.0\AgenciaViajes.csproj.AssemblyReference.cache
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\AgenciaViajes\AgenciaViajes\obj\Debug\net5.0\AgenciaViajes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\AgenciaViajes\AgenciaViajes\obj\Debug\net5.0\AgenciaViajes.AssemblyInfoInputs.cache
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\AgenciaViajes\AgenciaViajes\obj\Debug\net5.0\AgenciaViajes.AssemblyInfo.cs
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\AgenciaViajes\AgenciaViajes\obj\Debug\net5.0\AgenciaViajes.csproj.CoreCompileInputs.cache
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\AgenciaViajes\AgenciaViajes\obj\Debug\net5.0\AgenciaViajes.dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\AgenciaViajes\AgenciaViajes\obj\Debug\net5.0\ref\AgenciaViajes.dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\AgenciaViajes\AgenciaViajes\obj\Debug\net5.0\AgenciaViajes.pdb
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\AgenciaViajes\AgenciaViajes\obj\Debug\net5.0\AgenciaViajes.genruntimeconfig.cache

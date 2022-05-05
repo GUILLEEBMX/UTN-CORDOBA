@@ -6,7 +6,23 @@ namespace AgenciaViajes
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Agencia agencia = new Agencia(5);
+
+            Crucero cruise = new Crucero();
+
+
+       
+
+            for (int i = 0; i < 5; i++)
+            {
+                agencia.RegistrarCrucero(i, cruise);
+            }
+
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine(agencia.MostrarCruceros()[i]);
+            }
+
         }
     }
 }

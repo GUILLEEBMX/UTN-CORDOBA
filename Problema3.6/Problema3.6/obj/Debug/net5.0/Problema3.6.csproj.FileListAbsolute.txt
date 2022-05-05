@@ -1,0 +1,16 @@
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Problema3.6\Problema3.6\bin\Debug\net5.0\Problema3.6.exe
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Problema3.6\Problema3.6\bin\Debug\net5.0\Problema3.6.deps.json
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Problema3.6\Problema3.6\bin\Debug\net5.0\Problema3.6.runtimeconfig.json
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Problema3.6\Problema3.6\bin\Debug\net5.0\Problema3.6.runtimeconfig.dev.json
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Problema3.6\Problema3.6\bin\Debug\net5.0\Problema3.6.dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Problema3.6\Problema3.6\bin\Debug\net5.0\ref\Problema3.6.dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Problema3.6\Problema3.6\bin\Debug\net5.0\Problema3.6.pdb
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Problema3.6\Problema3.6\obj\Debug\net5.0\Problema3.6.csproj.AssemblyReference.cache
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Problema3.6\Problema3.6\obj\Debug\net5.0\Problema3.6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Problema3.6\Problema3.6\obj\Debug\net5.0\Problema3.6.AssemblyInfoInputs.cache
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Problema3.6\Problema3.6\obj\Debug\net5.0\Problema3.6.AssemblyInfo.cs
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Problema3.6\Problema3.6\obj\Debug\net5.0\Problema3.6.csproj.CoreCompileInputs.cache
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Problema3.6\Problema3.6\obj\Debug\net5.0\Problema3.6.dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Problema3.6\Problema3.6\obj\Debug\net5.0\ref\Problema3.6.dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Problema3.6\Problema3.6\obj\Debug\net5.0\Problema3.6.pdb
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Problema3.6\Problema3.6\obj\Debug\net5.0\Problema3.6.genruntimeconfig.cache
