@@ -1,0 +1,16 @@
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\GastosPrimerParcial\GastosPrimerParcial\bin\Debug\net5.0\GastosPrimerParcial.exe
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\GastosPrimerParcial\GastosPrimerParcial\bin\Debug\net5.0\GastosPrimerParcial.deps.json
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\GastosPrimerParcial\GastosPrimerParcial\bin\Debug\net5.0\GastosPrimerParcial.runtimeconfig.json
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\GastosPrimerParcial\GastosPrimerParcial\bin\Debug\net5.0\GastosPrimerParcial.runtimeconfig.dev.json
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\GastosPrimerParcial\GastosPrimerParcial\bin\Debug\net5.0\GastosPrimerParcial.dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\GastosPrimerParcial\GastosPrimerParcial\bin\Debug\net5.0\ref\GastosPrimerParcial.dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\GastosPrimerParcial\GastosPrimerParcial\bin\Debug\net5.0\GastosPrimerParcial.pdb
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\GastosPrimerParcial\GastosPrimerParcial\obj\Debug\net5.0\GastosPrimerParcial.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\GastosPrimerParcial\GastosPrimerParcial\obj\Debug\net5.0\GastosPrimerParcial.AssemblyInfoInputs.cache
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\GastosPrimerParcial\GastosPrimerParcial\obj\Debug\net5.0\GastosPrimerParcial.AssemblyInfo.cs
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\GastosPrimerParcial\GastosPrimerParcial\obj\Debug\net5.0\GastosPrimerParcial.csproj.CoreCompileInputs.cache
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\GastosPrimerParcial\GastosPrimerParcial\obj\Debug\net5.0\GastosPrimerParcial.dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\GastosPrimerParcial\GastosPrimerParcial\obj\Debug\net5.0\ref\GastosPrimerParcial.dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\GastosPrimerParcial\GastosPrimerParcial\obj\Debug\net5.0\GastosPrimerParcial.pdb
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\GastosPrimerParcial\GastosPrimerParcial\obj\Debug\net5.0\GastosPrimerParcial.genruntimeconfig.cache
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\GastosPrimerParcial\GastosPrimerParcial\obj\Debug\net5.0\GastosPrimerParcial.csproj.AssemblyReference.cache
