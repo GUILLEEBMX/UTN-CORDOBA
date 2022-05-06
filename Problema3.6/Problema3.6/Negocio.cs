@@ -28,21 +28,12 @@ namespace Problema3._6
             productos[index] = producto;
         }
 
-        //public void AñadirProductosSueltos(int index, Producto suelto)
-        //{
-        //    if (index > cantidadProductos)
-        //    {
-        //        throw new ArgumentException("ERROR");
-        //    }
-        //    productos[index] = suelto;
-        //}
-
-        public int CantidadProductosTipoSueltos()
+        public int CantidadProductosTipoSueltos(Suelto suelto)
         {
             int cantidadProductosSueltos = 0;
             for (int i = 0; i < productos.Length; i++)
             {
-                if (productos[i].Tipo == "suelto")
+                if (productos[i] == suelto)
                 {
                     cantidadProductosSueltos++;
                 }
@@ -65,12 +56,12 @@ namespace Problema3._6
             return cantidadProductosSueltos;
         }
 
-        public int CantidadProductosPack()
+        public int CantidadProductosPack(Pack pack)
         {
             int cantidadProductosPack = 0;
             for (int i = 0; i < productos.Length; i++)
             {
-                if (productos[i].Tipo == "pack")
+                if (productos[i] == pack)
                 {
                     cantidadProductosPack++;
                 }
@@ -79,10 +70,13 @@ namespace Problema3._6
             return cantidadProductosPack;
         }
 
-        public double PorcentajePack()
-        {
-           return  CantidadProductosPack() * 100 / CantidadProductos;
-        }
+        //public double PorcentajePack()
+        //{
+        //    var cantidadProductosPack = CantidadProductosPack(Pack pack)
+
+
+        //   return  CantidadProductosPack(Pack pack) * 100 / CantidadProductos;
+        //}
 
         public Producto MarcaPackMasCostoso()
         {
@@ -112,6 +106,11 @@ namespace Problema3._6
             }
 
             return precioTotal;
+        }
+
+        public Producto [] MostrarProductos ()
+        {
+            return productos;
         }
 
     

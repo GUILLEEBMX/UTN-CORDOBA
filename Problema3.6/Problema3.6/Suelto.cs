@@ -12,14 +12,18 @@ namespace Problema3._6
         {
 
         }
+
+        public Suelto (string marca, int codigo, double precioUnitario, string tipo, int medida)
+                      : base(marca, codigo, precioUnitario, tipo)
+        {
+            this.Medida = medida;
+        }
+
         public int Medida { get; set; }
 
         public override double GetPrecio()
         {
-            PrecioUnitario = 1;
-            Medida = 2;
-
-
+     
             return PrecioUnitario * Medida;
         }
 

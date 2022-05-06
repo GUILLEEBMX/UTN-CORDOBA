@@ -13,15 +13,16 @@ namespace Problema3._6
 
         }
 
+        public Pack(string marca,int codigo,double precioUnitario,string tipo, int cantidad) 
+                   :base(marca,codigo,precioUnitario,tipo)
+        {
+            this.Cantidad = cantidad;
+        }
+
         public int Cantidad { get; set; }
 
         public override double GetPrecio()
         {
-            Random r = new Random();
-
-            PrecioUnitario = 1;
-            Cantidad = 1;
-
             return PrecioUnitario * Cantidad;
         }
 
