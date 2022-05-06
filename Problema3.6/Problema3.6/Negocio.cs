@@ -21,19 +21,26 @@ namespace Problema3._6
 
         public void AñadirProductos(int index, Producto producto )
         {
-            if (index > cantidadProductos)
+            if (index > productos.Length)
             {
                 throw new ArgumentException("ERROR");
             }
-            productos[index] = producto;
+
+            if (productos[index] == null)
+            {
+                productos[index] = producto;
+            }
+
+        
         }
 
-        public int CantidadProductosTipoSueltos(Suelto suelto)
+        public int CantidadProductosSueltos()
         {
+            
             int cantidadProductosSueltos = 0;
             for (int i = 0; i < productos.Length; i++)
             {
-                if (productos[i] == suelto)
+                if (productos[i].Tipo == "SUELTO" )
                 {
                     cantidadProductosSueltos++;
                 }
@@ -42,26 +49,13 @@ namespace Problema3._6
             return cantidadProductosSueltos;
         }
 
-        public int CantidadProductosSueltos(Suelto suelto)
-        {
-            int cantidadProductosSueltos = 0;
-            for (int i = 0; i < productos.Length; i++)
-            {
-                if (productos[i] == suelto)
-                {
-                    cantidadProductosSueltos++;
-                }
-            }
-
-            return cantidadProductosSueltos;
-        }
-
-        public int CantidadProductosPack(Pack pack)
+      
+        public int CantidadProductosPack()
         {
             int cantidadProductosPack = 0;
             for (int i = 0; i < productos.Length; i++)
             {
-                if (productos[i] == pack)
+                if (productos[i].Tipo == "PACK")
                 {
                     cantidadProductosPack++;
                 }
@@ -70,21 +64,18 @@ namespace Problema3._6
             return cantidadProductosPack;
         }
 
-        //public double PorcentajePack()
-        //{
-        //    var cantidadProductosPack = CantidadProductosPack(Pack pack)
-
-
-        //   return  CantidadProductosPack(Pack pack) * 100 / CantidadProductos;
-        //}
+        public double PorcentajePack()
+        {
+           return CantidadProductosPack() * 100 / cantidadProductos;
+        }
 
         public Producto MarcaPackMasCostoso()
         {
             var masCostoso = productos[0];
             
-            for (int i = 0; i < CantidadProductos; i++)
+            for (int i = 0; i < productos.Length; i++)
             {
-                if (productos[i].Tipo == "pack" && productos[i].PrecioUnitario > masCostoso.PrecioUnitario)
+                if (productos[i].Tipo == "PACK" && productos[i].PrecioUnitario > masCostoso.PrecioUnitario)
                 {
                     masCostoso = productos[i];
                 }
