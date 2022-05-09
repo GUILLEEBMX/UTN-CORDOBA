@@ -211,4 +211,22 @@ CONSTRAINT FK_CONSULTAS_DETALLES_CONSULTAS FOREIGN KEY (id_consulta)
 REFERENCES CONSULTAS (id_consulta)
 );
 
+CREATE TABLE PACIENTES_MEDICOS
+(
+    id_paciente_medico INT IDENTITY (1,1),
+    id_paciente INT,
+    id_medico INT,
+
+    CONSTRAINT PK_PACIENTE_MEDICO PRIMARY KEY (id_paciente_medico),
+
+    CONSTRAINT FK_PACIENTE FOREIGN KEY (id_paciente)
+    REFERENCES PACIENTES (id_paciente),
+
+    CONSTRAINT FK_MEDICO FOREIGN KEY (id_medico)
+    REFERENCES MEDICOS (id_medico)
+
+    
+);
+
+
 
