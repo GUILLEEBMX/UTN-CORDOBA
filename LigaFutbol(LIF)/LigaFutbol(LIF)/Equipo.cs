@@ -33,22 +33,76 @@ namespace LigaFutbol_LIF_
 
         }   
 
-        public int ListadoSuspendidos()
+        public Jugador [] ListarJugadores()
         {
-            int contadorSuspendidos = 0;
+            return jugadores;
+        }
 
+        public Jugador[] ListadoSuspendidos()
+        {
+            Jugador[] listadoSuspendidos = new Jugador[cantidadJugadores];
 
             for (int i = 0; i < jugadores.Length; i++)
             {
-                if (jugadores[i].EstaSuspendido() == true)
+
+                if (jugadores[i] != null && jugadores[i].EstaSuspendido() == true)
                 {
-                    jugadores[i] = null;
+                    listadoSuspendidos[i] = jugadores[i];
+
                 }
 
             }
 
-            return contadorSuspendidos;
+            return listadoSuspendidos;
+
+
         }
+
+        public Jugador MostrarMejorDelantero()
+        {
+            Jugador bestPlayer = null;
+            
+
+            for (int i = 0; i < jugadores.Length; i++)
+            {
+                if (jugadores[i].Posicion == "Delantero" && bestPlayer == null)
+                {
+                    bestPlayer = jugadores[i];
+                }
+
+                if (jugadores[i].Posicion == "Delantero" && jugadores[i].Valoracion() > bestPlayer.Valoracion())
+                {
+                    bestPlayer = jugadores[i];
+                }
+
+              
+            }
+
+            return bestPlayer;
+            
+
+            
+
+        }
+
+
+        public int MostrarMejorMedioCampista ()
+        {
+            int posicion = 0;
+            for (int i = 0; i < jugadores.Length; i++)
+            {
+                if (jugadores[i] != null && jugadores[i].Posicion == "MEDIO CAMPISTA" && jugadores[i].Valoracion() == 10 && jugadores[i].Lesionado == false)
+                {
+                    posicion = i;
+                } 
+               
+            }
+
+            return posicion;
+                 
+        }
+
+
 
         public bool ExisteJugador()
         {
@@ -87,19 +141,7 @@ namespace LigaFutbol_LIF_
 
         }   
 
-        public int MostrarMejorDelantero(int index, int valoracion)
-        {
-            int contadorMejoresValorados = 0;
-
-                if (jugadores[index].Valoracion() == valoracion)
-                {
-                contadorMejoresValorados++;
-                }
-
-            return contadorMejoresValorados;
-        }
-
-
+       
 
 
 

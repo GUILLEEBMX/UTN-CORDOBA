@@ -13,3 +13,4 @@ C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\LigaFutbol(LIF)\LigaFutbol(LIF)\o
 C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\LigaFutbol(LIF)\LigaFutbol(LIF)\obj\Debug\net5.0\ref\LigaFutbol(LIF).dll
 C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\LigaFutbol(LIF)\LigaFutbol(LIF)\obj\Debug\net5.0\LigaFutbol(LIF).pdb
 C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\LigaFutbol(LIF)\LigaFutbol(LIF)\obj\Debug\net5.0\LigaFutbol(LIF).genruntimeconfig.cache
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\LigaFutbol(LIF)\LigaFutbol(LIF)\obj\Debug\net5.0\LigaFutbol(LIF).csproj.AssemblyReference.cache

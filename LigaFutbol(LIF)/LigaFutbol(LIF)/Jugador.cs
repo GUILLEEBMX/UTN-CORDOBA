@@ -47,11 +47,11 @@ namespace LigaFutbol_LIF_
         {
             if (lesionado == false && faltas == 0)
             {
-                return 5;
+                return 10;
             }
             else
             {
-                return 10;
+                return 5;
             }
         }
 
