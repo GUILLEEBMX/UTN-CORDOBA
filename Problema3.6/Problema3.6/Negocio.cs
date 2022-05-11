@@ -40,7 +40,7 @@ namespace Problema3._6
             int cantidadProductosSueltos = 0;
             for (int i = 0; i < productos.Length; i++)
             {
-                if (productos[i].Tipo == "SUELTO" )
+                if (productos[i] is Suelto )
                 {
                     cantidadProductosSueltos++;
                 }
@@ -55,7 +55,7 @@ namespace Problema3._6
             int cantidadProductosPack = 0;
             for (int i = 0; i < productos.Length; i++)
             {
-                if (productos[i].Tipo == "PACK")
+                if (productos[i] is Pack)
                 {
                     cantidadProductosPack++;
                 }

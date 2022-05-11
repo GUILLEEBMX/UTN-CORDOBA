@@ -12,6 +12,8 @@ namespace Problema3._6
 
             Random random = new Random();
 
+     
+
             for (int i = 0; i < cantidadProductos; i++)
             {
                 Pack pack = new Pack("HONDA", random.Next(1, 30), random.Next(1,954), "PACK", random.Next(1, 100));
