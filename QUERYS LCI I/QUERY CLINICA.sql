@@ -3,6 +3,8 @@ CREATE DATABASE CLINICA;
 
 USE CLINICA;
 
+
+
 CREATE TABLE CIUDADES
 (
 id_ciudad INT identity (1,1) ,
@@ -36,6 +38,8 @@ id_obra_social INT identity (1,1),
 nro_afiliado VARCHAR (20),
 nombre VARCHAR (30),
 cuit VARCHAR (50),
+categoria VARCHAR (20),
+
 CONSTRAINT PK_OBRAS_SOCIALES PRIMARY KEY (id_obra_social)
 );
 
@@ -47,62 +51,7 @@ CREATE TABLE GENEROS
 );
 
 
-CREATE TABLE ESPECIALIDADES
-(
-id_especialidad INT, 
-especialidad VARCHAR (30), 
-CONSTRAINT PK_ESPECIALIDADES PRIMARY KEY (id_especialidad)
-);
 
-
-
-CREATE TABLE FORMAS_PAGO
-(
-    id_forma_pago INT IDENTITY(1,1),
-    descripcion VARCHAR (50),
-
-    CONSTRAINT PK_FORMA_PAGO PRIMARY KEY (id_forma_pago)
-);
-
-CREATE TABLE DETALLES_PAGOS
-(
-    id_detalle_pago INT IDENTITY (1,1),
-    descripcion VARCHAR (20),
-    monto DECIMAL ,
-
-    CONSTRAINT PK_DETALLE_PAGO PRIMARY KEY (id_detalle_pago)
-
-);
-
-CREATE TABLE PAGOS 
-(
-    id_pago INT IDENTITY (1,1),
-    id_detalle_pago INT,
-    id_paciente INT,
-    id_forma_pago INT,
-    fecha DATE,
-
-    CONSTRAINT PK_PAGOS PRIMARY KEY (id_pago),
-
-    CONSTRAINT FK_DETALLES_PAGOS FOREIGN KEY (id_detalle_pago)
-    REFERENCES DETALLES_PAGOS (id_detalle_pago),
-
-    CONSTRAINT FK_FORMAS_PAGOS_PAGOS FOREIGN KEY (id_forma_pago) 
-    REFERENCES FORMAS_PAGO (id_forma_pago),
-
-    CONSTRAINT FK_PACIENTES_PAGOS FOREIGN KEY (id_paciente)
-    REFERENCES PACIENTES (id_paciente)
-
-);
-
-
-CREATE TABLE TIPOS_TELEFONOS
-(
-    id_tipo_tel INT IDENTITY (1,1),
-    descripcion VARCHAR (20),
-
-    CONSTRAINT PK_TIPO_TEL PRIMARY KEY (id_tipo_tel)
-);
 
 CREATE TABLE TIPOS_DOC
 (
@@ -114,6 +63,20 @@ CREATE TABLE TIPOS_DOC
 
 );
 
+CREATE TABLE ESPECIALIDADES
+(
+id_especialidad INT, 
+especialidad VARCHAR (30), 
+CONSTRAINT PK_ESPECIALIDADES PRIMARY KEY (id_especialidad)
+);
+
+CREATE TABLE TIPOS_TELEFONOS
+(
+    id_tipo_tel INT IDENTITY (1,1),
+    descripcion VARCHAR (20),
+
+    CONSTRAINT PK_TIPO_TEL PRIMARY KEY (id_tipo_tel)
+);
 
 CREATE TABLE PERSONAS
 (
@@ -186,19 +149,65 @@ REFERENCES PERSONAS (id_persona)
 
 );
 
+
+
+CREATE TABLE FORMAS_PAGO
+(
+    id_forma_pago INT IDENTITY(1,1),
+    descripcion VARCHAR (50),
+
+    CONSTRAINT PK_FORMA_PAGO PRIMARY KEY (id_forma_pago)
+);
+
+CREATE TABLE DETALLES_PAGOS
+(
+    id_detalle_pago INT IDENTITY (1,1),
+    descripcion VARCHAR (20),
+    monto DECIMAL ,
+
+    CONSTRAINT PK_DETALLE_PAGO PRIMARY KEY (id_detalle_pago)
+
+);
+
+CREATE TABLE PAGOS 
+(
+    id_pago INT IDENTITY (1,1),
+    id_detalle_pago INT,
+    id_paciente INT,
+    id_forma_pago INT,
+    fecha DATE,
+
+    CONSTRAINT PK_PAGOS PRIMARY KEY (id_pago),
+
+    CONSTRAINT FK_DETALLES_PAGOS FOREIGN KEY (id_detalle_pago)
+    REFERENCES DETALLES_PAGOS (id_detalle_pago),
+
+    CONSTRAINT FK_FORMAS_PAGOS_PAGOS FOREIGN KEY (id_forma_pago) 
+    REFERENCES FORMAS_PAGO (id_forma_pago),
+
+    CONSTRAINT FK_PACIENTES_PAGOS FOREIGN KEY (id_paciente)
+    REFERENCES PACIENTES (id_paciente)
+
+);
+
+
 CREATE TABLE CONSULTAS
 (
     id_consulta INT IDENTITY (1,1),
     id_medico INT, 
     id_paciente INT ,
     fecha_hora datetime,
+
     CONSTRAINT PK_CONSULTAS PRIMARY KEY (id_consulta),
+
     CONSTRAINT FK_MEDICOS_CONSULTAS FOREIGN KEY (id_medico)
     REFERENCES MEDICOS (id_medico),
-    CONSTRAINT FK_PACIENTES_CONSULTAS foreign key (id_paciente) 
+
+    CONSTRAINT FK_PACIENTES_CONSULTAS FOREIGN KEY (id_paciente) 
     REFERENCES PACIENTES (id_paciente)
 
 );
+
 
 CREATE TABLE DETALLES_CONSULTAS
 (
@@ -211,22 +220,15 @@ CONSTRAINT FK_CONSULTAS_DETALLES_CONSULTAS FOREIGN KEY (id_consulta)
 REFERENCES CONSULTAS (id_consulta)
 );
 
-CREATE TABLE PACIENTES_MEDICOS
-(
-    id_paciente_medico INT IDENTITY (1,1),
-    id_paciente INT,
-    id_medico INT,
 
-    CONSTRAINT PK_PACIENTE_MEDICO PRIMARY KEY (id_paciente_medico),
 
-    CONSTRAINT FK_PACIENTE FOREIGN KEY (id_paciente)
-    REFERENCES PACIENTES (id_paciente),
 
-    CONSTRAINT FK_MEDICO FOREIGN KEY (id_medico)
-    REFERENCES MEDICOS (id_medico)
 
-    
-);
+
+
+
+
+
 
 
 
