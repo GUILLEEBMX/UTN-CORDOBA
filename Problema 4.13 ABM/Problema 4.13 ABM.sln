@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problema 4.13 ABM", "Problema 4.13 ABM\Problema 4.13 ABM.csproj", "{6033F54F-405C-455B-975C-2F31DDFE4891}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6033F54F-405C-455B-975C-2F31DDFE4891}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6033F54F-405C-455B-975C-2F31DDFE4891}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6033F54F-405C-455B-975C-2F31DDFE4891}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6033F54F-405C-455B-975C-2F31DDFE4891}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0933C2EF-3153-4BF2-B98D-99A3D781D671}
+	EndGlobalSection
+EndGlobal

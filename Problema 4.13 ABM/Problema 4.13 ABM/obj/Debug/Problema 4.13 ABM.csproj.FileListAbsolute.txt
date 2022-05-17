@@ -1,0 +1,10 @@
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Problema 4.13 ABM\Problema 4.13 ABM\bin\Debug\Problema 4.13 ABM.exe.config
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Problema 4.13 ABM\Problema 4.13 ABM\bin\Debug\Problema 4.13 ABM.exe
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Problema 4.13 ABM\Problema 4.13 ABM\bin\Debug\Problema 4.13 ABM.pdb
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Problema 4.13 ABM\Problema 4.13 ABM\obj\Debug\Problema_4._13_ABM.Form1.resources
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Problema 4.13 ABM\Problema 4.13 ABM\obj\Debug\Problema_4._13_ABM.Properties.Resources.resources
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Problema 4.13 ABM\Problema 4.13 ABM\obj\Debug\Problema 4.13 ABM.csproj.GenerateResource.cache
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Problema 4.13 ABM\Problema 4.13 ABM\obj\Debug\Problema 4.13 ABM.csproj.CoreCompileInputs.cache
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Problema 4.13 ABM\Problema 4.13 ABM\obj\Debug\Problema 4.13 ABM.exe
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Problema 4.13 ABM\Problema 4.13 ABM\obj\Debug\Problema 4.13 ABM.pdb
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Problema 4.13 ABM\Problema 4.13 ABM\obj\Debug\Problema 4.13 ABM.csproj.AssemblyReference.cache
