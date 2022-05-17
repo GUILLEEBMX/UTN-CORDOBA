@@ -24,8 +24,18 @@ namespace Problema_4._13_ABM
 
 
 
-
+        public override string ToString()
+        {
+            return "Nombre:" + Nombres + 
+                   "\nApellido:" + Apellido + 
+                   "\nTipo DNI:" + TipoDNI + 
+                   "\nDocumento" + Documento + 
+                   "\nEstado Civil:" + EstadoCivil+ 
+                   "\nSexo:" + Sexo;
+        }
 
 
     }
+
+    
 }

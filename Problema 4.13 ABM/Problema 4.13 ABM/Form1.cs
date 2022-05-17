@@ -157,6 +157,10 @@ namespace Problema_4._13_ABM
 
         private void btnRECORD_Click(object sender, EventArgs e)
         {
+
+
+
+
             Persona person = new Persona();
             person.Apellido = TXTApellido.Text;
             person.Nombres = TXTNombres.Text;
@@ -185,7 +189,7 @@ namespace Problema_4._13_ABM
                 if (people[i] == null)
                 {
                     people[i] = person;
-                    lstDATOS.Items.Insert(i, person);
+                    lstDATOS.Items.Insert(i, person.ToString());
                     break;
                 }
 
