@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,14 +14,27 @@ namespace Problema_4._13_ABM
     public partial class Form1 : Form
     {
         private Persona [] people;
+        static string connectionString = @"Data Source = .\SQLEXPRESS; Initial Catalog = PEOPLE; Integrated Security = True";
+        SqlConnection context = new SqlConnection(connectionString);
+        SqlCommand cmd = new SqlCommand();
+
+
+
+
         public Form1()
         {
             InitializeComponent();
             people = new Persona [52];
+          
+          
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
+            Persona person = new Persona();
+
+
+
 
         }
 
@@ -35,6 +49,8 @@ namespace Problema_4._13_ABM
 
         private void TXT_APELLIDO_TextChanged(object sender, EventArgs e)
         {
+
+         
            
         }
 
@@ -52,9 +68,9 @@ namespace Problema_4._13_ABM
             lstDATOS.Focus();
 
             //COMBO BOX TIPO DOCUMENTOS
-            cboTIPODOCUMENTO.Items.Add("DNI");
-            cboTIPODOCUMENTO.Items.Add("CEDULA");
-            cboTIPODOCUMENTO.Items.Add("LIBRETA");
+            cboTIPODOCUMENTO.Items.Add(1);
+            cboTIPODOCUMENTO.Items.Add(2);
+            cboTIPODOCUMENTO.Items.Add(3);
 
             //COMBO BOX TIPOS ESTADOS CIVILES
             cboESTADOCIVIL.Items.Add("SOLTERO");
@@ -62,6 +78,8 @@ namespace Problema_4._13_ABM
             cboESTADOCIVIL.Items.Add("VIUDO");
             cboESTADOCIVIL.Items.Add("SEPARADO");
             cboESTADOCIVIL.Items.Add("DIVORCIADO");
+
+           
 
         }
 
@@ -157,6 +175,45 @@ namespace Problema_4._13_ABM
 
         private void btnRECORD_Click(object sender, EventArgs e)
         {
+            int rdbtn = 0;
+
+            if (!rdnFEMENINO.Checked)
+            {
+                rdbtn = 1; 
+            }
+
+            int fallecido = 0;
+            
+            if (!ChecxBoxFallecido.Checked)
+            {
+                fallecido = 1;
+            }
+
+
+            //cmd.CommandText = "INSERT [dbo].[personas] ([apellido], [nombres], [tipo_documento], [documento], [estado_civil], [sexo], [fallecio]) VALUES('" +
+            //        TXTApellido.Text + "','" + TXTNombres.Text + "'," +
+            //        cboTIPODOCUMENTO.Text + "," +
+            //        cboTIPODOCUMENTO.SelectedIndex + "," +
+            //        cboESTADOCIVIL.SelectedIndex +
+            //        "," +
+            //        rdbtn + ",'" +
+            //        fallecido + "')";
+
+            //cmd.CommandText = "INSERT [dbo].[personas] ([apellido], [nombres], [tipo_documento], [documento], [estado_civil], [sexo], [fallecio])" +
+            //    " VALUES('" + TXTApellido.Text + "','" + TXTNombres.Text + "'," +
+            //       cboTIPODOCUMENTO.Text + "," +
+            //       cboTIPODOCUMENTO.SelectedIndex + "," +
+            //       cboESTADOCIVIL.SelectedIndex +
+            //       "," +
+            //       rdbtn + ",'" +
+            //       fallecido + "')";
+
+            //context.Open();
+
+            //cmd.Connection = context;
+            //cmd.ExecuteNonQuery();
+
+            //context.Close();
 
 
 
@@ -164,24 +221,13 @@ namespace Problema_4._13_ABM
             Persona person = new Persona();
             person.Apellido = TXTApellido.Text;
             person.Nombres = TXTNombres.Text;
-            person.Documento = TXTDocumento.Text;
-            person.TipoDNI = cboTIPODOCUMENTO.Text;
-            person.EstadoCivil = cboESTADOCIVIL.Text;
+            person.Documento = int.Parse(TXTDocumento.Text);
+            person.TipoDNI = cboTIPODOCUMENTO.SelectedIndex;
+            person.EstadoCivil = cboESTADOCIVIL.SelectedIndex;
+            person.Sexo = rdbtn;
+            person.Fallecido = fallecido;
 
-            if (rdnFEMENINO.Checked == true)
-            {
-                person.Sexo = "F";
-            }
-
-            if (rdnMASCULINO.Checked == true)
-            {
-                person.Sexo = "M";
-            }
-
-            if (ChecxBoxFallecido.Checked == true)
-            {
-                person.Fallecido = "Fallecido";
-            }
+           
 
             
             for (int i = 0; i < people.Length ; i++)
@@ -189,7 +235,7 @@ namespace Problema_4._13_ABM
                 if (people[i] == null)
                 {
                     people[i] = person;
-                    lstDATOS.Items.Insert(i, person.ToString());
+                    lstDATOS.Items.Insert(i, person);
                     break;
                 }
 
@@ -278,6 +324,124 @@ namespace Problema_4._13_ABM
             rdnMASCULINO.Enabled = true;
             ChecxBoxFallecido.Enabled = true;
 
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            lstDATOS.Items.Clear();
+
+            context.Open();
+
+            cmd.CommandText = "SELECT * FROM PERSONAS";
+
+            cmd.Connection = context;
+
+            SqlDataReader reader = cmd.ExecuteReader();
+
+            DataTable table = new DataTable ();
+
+            table.Load(reader);
+
+          
+                for (int j = 0; j < table.Rows.Count ; j++)
+                {
+                    
+                    lstDATOS.Items.Insert(j, table.Rows[j].ItemArray[0] + " " + table.Rows[j].ItemArray[1]);
+                }
+
+            context.Close();
+
+        }
+
+
+        private void InsertCleaner(string tableName)
+        {
+            int rdbt = 0;
+
+            if (!rdnFEMENINO.Checked)
+            {
+                rdbt = 1;
+            }
+
+            int fallecido = 0;
+
+            if (!ChecxBoxFallecido.Checked)
+            {
+                fallecido = 1;
+            }
+
+
+
+            cmd.CommandText = "SELECT * FROM " + tableName;
+
+            context.Open();
+
+            cmd.Connection = context;
+
+            SqlDataReader reader = cmd.ExecuteReader();
+
+            DataTable table = new DataTable();
+
+            table.Load(reader);
+
+
+            string[] columNames = new string[table.Columns.Count];
+
+            string _columNames = " ";
+
+
+            for (int i = 0; i < table.Columns.Count; i++)
+            {
+                columNames[i] = table.Columns[i].ToString();
+
+                _columNames +=columNames[i] + ",";
+
+            }
+
+            context.Close();
+
+            
+            var cortarComa =  _columNames.Length - 1;
+
+           _columNames = _columNames.Substring(0,cortarComa);
+        
+            textBox1.Text = _columNames;
+
+
+           //textBox1.Text =  cmd.CommandText = "INSERT INTO " + tableName + "(" + _columNames + ")" + 
+           //     "VALUES" + "(" + "'" + TXTApellido.Text + "'" + "," + "'" + TXTNombres.Text + "'" + ","
+           //      + 1 + "," + 45698745 + "," + 1 + "," + 2 + "," + 0 +  ")";
+
+               cmd.CommandText = "INSERT INTO " + tableName + "(" + _columNames + ")" +
+               "VALUES" + "(" + "'" + TXTApellido.Text + "'" + "," + "'" + TXTNombres.Text + "'" + ","
+                + 1 + "," + int.Parse(TXTDocumento.Text) + "," + 1 + "," + rdbt + "," + fallecido + ")";
+
+            context.Open();
+
+           cmd.ExecuteNonQuery();
+
+            context.Close();
+
+
+
+
+
+           
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            InsertCleaner("personas");
+        }
+
+        private void CleanLst_Click(object sender, EventArgs e)
+        {
+            lstDATOS.Items.Clear();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

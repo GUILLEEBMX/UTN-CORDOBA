@@ -8,31 +8,40 @@ namespace Problema_4._13_ABM
 {
     class Persona
     {
+      
+
+        public Persona()
+        {
+
+        }
+
         public string Apellido {get;set;}
         public string Nombres { get; set; }
 
-        public string TipoDNI { get; set; }
+        public int TipoDNI { get; set; }
 
-        public string Documento { get; set; }
+        public int Documento { get; set; }
 
-        public string EstadoCivil { get; set; }
+        public int EstadoCivil { get; set; }
 
-        public string Sexo { get; set; }
+        public int Sexo { get; set; }
 
-        public string Fallecido { get; set; }
+        public int Fallecido { get; set; }
 
 
 
 
         public override string ToString()
         {
-            return "Nombre:" + Nombres + 
-                   "\nApellido:" + Apellido + 
-                   "\nTipo DNI:" + TipoDNI + 
+            return  Nombres + " " + Apellido;
+                  /* "\nTipo DNI:" + TipoDNI + 
                    "\nDocumento" + Documento + 
                    "\nEstado Civil:" + EstadoCivil+ 
-                   "\nSexo:" + Sexo;
+                   "\nSexo:" + Sexo;*/
+
+            
         }
+
 
 
     }
