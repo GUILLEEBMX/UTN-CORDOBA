@@ -279,7 +279,7 @@ namespace Problema_4._13_ABM
             // 
             // GET
             // 
-            this.GET.Location = new System.Drawing.Point(198, 370);
+            this.GET.Location = new System.Drawing.Point(128, 360);
             this.GET.Name = "GET";
             this.GET.Size = new System.Drawing.Size(75, 23);
             this.GET.TabIndex = 30;
@@ -289,7 +289,7 @@ namespace Problema_4._13_ABM
             // 
             // CleanerInsert
             // 
-            this.CleanerInsert.Location = new System.Drawing.Point(360, 370);
+            this.CleanerInsert.Location = new System.Drawing.Point(219, 360);
             this.CleanerInsert.Name = "CleanerInsert";
             this.CleanerInsert.Size = new System.Drawing.Size(75, 23);
             this.CleanerInsert.TabIndex = 31;

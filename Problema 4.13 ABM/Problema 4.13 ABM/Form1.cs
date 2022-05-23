@@ -189,6 +189,11 @@ namespace Problema_4._13_ABM
                 fallecido = 1;
             }
 
+            InsertCleaner("ventas");
+
+            cmd.ExecuteNonQuery();
+
+            context.Close();
 
             //cmd.CommandText = "INSERT [dbo].[personas] ([apellido], [nombres], [tipo_documento], [documento], [estado_civil], [sexo], [fallecio]) VALUES('" +
             //        TXTApellido.Text + "','" + TXTNombres.Text + "'," +
@@ -331,7 +336,7 @@ namespace Problema_4._13_ABM
         {
             lstDATOS.Items.Clear();
 
-            context.Open();
+            context.Open(); //cnn
 
             cmd.CommandText = "SELECT * FROM PERSONAS";
 
@@ -346,7 +351,6 @@ namespace Problema_4._13_ABM
           
                 for (int j = 0; j < table.Rows.Count ; j++)
                 {
-                    
                     lstDATOS.Items.Insert(j, table.Rows[j].ItemArray[0] + " " + table.Rows[j].ItemArray[1]);
                 }
 
@@ -355,7 +359,7 @@ namespace Problema_4._13_ABM
         }
 
 
-        private void InsertCleaner(string tableName)
+        private string  InsertCleaner(string tableName)
         {
             int rdbt = 0;
 
@@ -370,8 +374,6 @@ namespace Problema_4._13_ABM
             {
                 fallecido = 1;
             }
-
-
 
             cmd.CommandText = "SELECT * FROM " + tableName;
 
@@ -391,12 +393,14 @@ namespace Problema_4._13_ABM
             string _columNames = " ";
 
 
+
             for (int i = 0; i < table.Columns.Count; i++)
             {
                 columNames[i] = table.Columns[i].ToString();
 
                 _columNames +=columNames[i] + ",";
 
+       
             }
 
             context.Close();
@@ -405,29 +409,25 @@ namespace Problema_4._13_ABM
             var cortarComa =  _columNames.Length - 1;
 
            _columNames = _columNames.Substring(0,cortarComa);
-        
+
             textBox1.Text = _columNames;
 
 
-           //textBox1.Text =  cmd.CommandText = "INSERT INTO " + tableName + "(" + _columNames + ")" + 
-           //     "VALUES" + "(" + "'" + TXTApellido.Text + "'" + "," + "'" + TXTNombres.Text + "'" + ","
-           //      + 1 + "," + 45698745 + "," + 1 + "," + 2 + "," + 0 +  ")";
+            //textBox1.Text = cmd.CommandText = "INSERT INTO " + tableName + "(" + _columNames + ")" +
+            //     "VALUES" + "(" + "'" + TXTApellido.Text + "'" + "," + "'" + TXTNombres.Text + "'" + ","
+            //      + 1 + "," + 45698745 + "," + 1 + "," + 2 + "," + 0 + ")";
 
-               cmd.CommandText = "INSERT INTO " + tableName + "(" + _columNames + ")" +
-               "VALUES" + "(" + "'" + TXTApellido.Text + "'" + "," + "'" + TXTNombres.Text + "'" + ","
-                + 1 + "," + int.Parse(TXTDocumento.Text) + "," + 1 + "," + rdbt + "," + fallecido + ")";
+            return  cmd.CommandText = "INSERT INTO " + tableName + "(" + _columNames + ")" +
+            "VALUES" + "(" + "'" + TXTApellido.Text + "'" + "," + "'" + TXTNombres.Text + "'" + ","
+             + 1 + "," + int.Parse(TXTDocumento.Text) + "," + 1 + "," + rdbt + "," + fallecido + ")";
 
-            context.Open();
+            //context.Open();
 
-           cmd.ExecuteNonQuery();
+            //cmd.ExecuteNonQuery();
 
-            context.Close();
-
-
+            //context.Close();
 
 
-
-           
         }
 
         private void button1_Click_1(object sender, EventArgs e)

@@ -3,39 +3,40 @@ CREATE DATABASE CLINICA;
 
 USE CLINICA;
 
-
+CREATE TABLE DEPARTAMENTOS
+(
+id_departamento INT identity (1,1), 
+departamento VARCHAR (50), 
+CONSTRAINT PK_DEPARTAMENTO PRIMARY KEY (id_departamento)
+); 
 
 CREATE TABLE CIUDADES
 (
 id_ciudad INT identity (1,1) ,
-ciudad VARCHAR (30),
-constraint PK_CIUDAD PRIMARY KEY (id_ciudad)
+ciudad VARCHAR (50),
+id_departamento INT,
+
+CONSTRAINT PK_CIUDAD PRIMARY KEY (id_ciudad),
+
+CONSTRAINT FK_DEPARTAMENTOS_CIUDADES FOREIGN KEY (id_departamento)
+REFERENCES DEPARTAMENTOS (id_departamento)
 );
 
-CREATE TABLE LOCALIDADES
-(
-id_localidad INT identity (1,1), 
-localidad VARCHAR(30), 
-id_ciudad INT, 
-CONSTRAINT PK_LOCALIDADES PRIMARY KEY (id_localidad),
-CONSTRAINT FK_LOCALIDADES_CIUDADES FOREIGN KEY (id_ciudad)
-REFERENCES CIUDADES (id_ciudad) 
-); 
 
 CREATE TABLE BARRIOS 
 (
 id_barrio INT identity (1,1), 
-barrio VARCHAR (30), 
-id_localidad INT,
+barrio VARCHAR (50), 
+id_ciudad INT,
 CONSTRAINT PK_BARRIOS PRIMARY KEY (id_barrio),
-CONSTRAINT FK_CIUDADES_BARRIOS FOREIGN KEY (id_localidad) 
-REFERENCES LOCALIDADES (id_localidad)
+
+CONSTRAINT FK_CIUDADES_BARRIOS FOREIGN KEY (id_ciudad) 
+REFERENCES CIUDADES (id_ciudad)
 ); 
 
 CREATE TABLE OBRAS_SOCIALES
 (
 id_obra_social INT identity (1,1),
-nro_afiliado VARCHAR (20),
 nombre VARCHAR (30),
 cuit VARCHAR (50),
 categoria VARCHAR (20),
@@ -57,8 +58,6 @@ CREATE TABLE TIPOS_DOC
 (
     id_tipo_doc INT IDENTITY(1,1),
     tipo_doc VARCHAR (10),
-    descripcion VARCHAR (20),
-
     CONSTRAINT PK_TIPO_DOC PRIMARY KEY (id_tipo_doc)
 
 );
@@ -66,7 +65,7 @@ CREATE TABLE TIPOS_DOC
 CREATE TABLE ESPECIALIDADES
 (
 id_especialidad INT, 
-especialidad VARCHAR (30), 
+especialidad VARCHAR (50), 
 CONSTRAINT PK_ESPECIALIDADES PRIMARY KEY (id_especialidad)
 );
 
@@ -81,17 +80,17 @@ CREATE TABLE TIPOS_TELEFONOS
 CREATE TABLE PERSONAS
 (
     id_persona INT IDENTITY (1,1),
-    dni INT,
-    nombre VARCHAR (20),
-    apellido VARCHAR (20),
-    cuil INT,
+    documento VARCHAR (50),
+    nombre VARCHAR (50),
+    apellido VARCHAR (50),
+    cuil VARCHAR (50),
     fecha_nac DATE,
     id_tipo_doc INT,
     id_genero INT,
     id_barrio INT,
     id_tipo_tel INT,
-    num_tel VARCHAR (30),
-    email VARCHAR (20)
+    num_tel VARCHAR (50),
+    email VARCHAR (50)
 
     CONSTRAINT PK_PERSONA PRIMARY KEY (id_persona),
 
@@ -146,47 +145,6 @@ REFERENCES ESPECIALIDADES (id_especialidad),
 CONSTRAINT FK_PERSONAS_MEDICOS FOREIGN KEY (id_persona) 
 REFERENCES PERSONAS (id_persona)
 
-
-);
-
-
-
-CREATE TABLE FORMAS_PAGO
-(
-    id_forma_pago INT IDENTITY(1,1),
-    descripcion VARCHAR (50),
-
-    CONSTRAINT PK_FORMA_PAGO PRIMARY KEY (id_forma_pago)
-);
-
-CREATE TABLE DETALLES_PAGOS
-(
-    id_detalle_pago INT IDENTITY (1,1),
-    descripcion VARCHAR (20),
-    monto DECIMAL ,
-
-    CONSTRAINT PK_DETALLE_PAGO PRIMARY KEY (id_detalle_pago)
-
-);
-
-CREATE TABLE PAGOS 
-(
-    id_pago INT IDENTITY (1,1),
-    id_detalle_pago INT,
-    id_paciente INT,
-    id_forma_pago INT,
-    fecha DATE,
-
-    CONSTRAINT PK_PAGOS PRIMARY KEY (id_pago),
-
-    CONSTRAINT FK_DETALLES_PAGOS FOREIGN KEY (id_detalle_pago)
-    REFERENCES DETALLES_PAGOS (id_detalle_pago),
-
-    CONSTRAINT FK_FORMAS_PAGOS_PAGOS FOREIGN KEY (id_forma_pago) 
-    REFERENCES FORMAS_PAGO (id_forma_pago),
-
-    CONSTRAINT FK_PACIENTES_PAGOS FOREIGN KEY (id_paciente)
-    REFERENCES PACIENTES (id_paciente)
 
 );
 
