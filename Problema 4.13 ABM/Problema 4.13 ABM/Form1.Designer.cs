@@ -53,9 +53,7 @@ namespace Problema_4._13_ABM
             this.cboESTADOCIVIL = new System.Windows.Forms.ComboBox();
             this.lblPeople = new System.Windows.Forms.Label();
             this.GET = new System.Windows.Forms.Button();
-            this.CleanerInsert = new System.Windows.Forms.Button();
             this.CleanLst = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lblApellido
@@ -206,6 +204,7 @@ namespace Problema_4._13_ABM
             this.TXTDocumento.Name = "TXTDocumento";
             this.TXTDocumento.Size = new System.Drawing.Size(225, 20);
             this.TXTDocumento.TabIndex = 4;
+            this.TXTDocumento.TextChanged += new System.EventHandler(this.TXTDocumento_TextChanged);
             // 
             // lstDATOS
             // 
@@ -251,6 +250,7 @@ namespace Problema_4._13_ABM
             // 
             // cboTIPODOCUMENTO
             // 
+            this.cboTIPODOCUMENTO.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
             this.cboTIPODOCUMENTO.FormattingEnabled = true;
             this.cboTIPODOCUMENTO.Location = new System.Drawing.Point(128, 117);
             this.cboTIPODOCUMENTO.Name = "cboTIPODOCUMENTO";
@@ -287,16 +287,6 @@ namespace Problema_4._13_ABM
             this.GET.UseVisualStyleBackColor = true;
             this.GET.Click += new System.EventHandler(this.button1_Click);
             // 
-            // CleanerInsert
-            // 
-            this.CleanerInsert.Location = new System.Drawing.Point(219, 360);
-            this.CleanerInsert.Name = "CleanerInsert";
-            this.CleanerInsert.Size = new System.Drawing.Size(75, 23);
-            this.CleanerInsert.TabIndex = 31;
-            this.CleanerInsert.Text = "CleanerInsert";
-            this.CleanerInsert.UseVisualStyleBackColor = true;
-            this.CleanerInsert.Click += new System.EventHandler(this.button1_Click_1);
-            // 
             // CleanLst
             // 
             this.CleanLst.Location = new System.Drawing.Point(36, 360);
@@ -307,23 +297,12 @@ namespace Problema_4._13_ABM
             this.CleanLst.UseVisualStyleBackColor = true;
             this.CleanLst.Click += new System.EventHandler(this.CleanLst_Click);
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(12, 301);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(767, 53);
-            this.textBox1.TabIndex = 33;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.CleanLst);
-            this.Controls.Add(this.CleanerInsert);
             this.Controls.Add(this.GET);
             this.Controls.Add(this.lblPeople);
             this.Controls.Add(this.cboESTADOCIVIL);
@@ -382,9 +361,7 @@ namespace Problema_4._13_ABM
         private System.Windows.Forms.ComboBox cboESTADOCIVIL;
         private System.Windows.Forms.Label lblPeople;
         private System.Windows.Forms.Button GET;
-        private System.Windows.Forms.Button CleanerInsert;
         private System.Windows.Forms.Button CleanLst;
-        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
