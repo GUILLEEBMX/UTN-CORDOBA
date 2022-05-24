@@ -52,7 +52,7 @@ namespace Problema_4._13_ABM
             this.cboTIPODOCUMENTO = new System.Windows.Forms.ComboBox();
             this.cboESTADOCIVIL = new System.Windows.Forms.ComboBox();
             this.lblPeople = new System.Windows.Forms.Label();
-            this.GET = new System.Windows.Forms.Button();
+            this.GETAllPeople = new System.Windows.Forms.Button();
             this.CleanLst = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -205,6 +205,7 @@ namespace Problema_4._13_ABM
             this.TXTDocumento.Size = new System.Drawing.Size(225, 20);
             this.TXTDocumento.TabIndex = 4;
             this.TXTDocumento.TextChanged += new System.EventHandler(this.TXTDocumento_TextChanged);
+            this.TXTDocumento.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TXTDocumento_KeyPress);
             // 
             // lstDATOS
             // 
@@ -277,15 +278,15 @@ namespace Problema_4._13_ABM
             this.lblPeople.Text = "People:";
             this.lblPeople.Click += new System.EventHandler(this.lblPeople_Click);
             // 
-            // GET
+            // GETAllPeople
             // 
-            this.GET.Location = new System.Drawing.Point(128, 360);
-            this.GET.Name = "GET";
-            this.GET.Size = new System.Drawing.Size(75, 23);
-            this.GET.TabIndex = 30;
-            this.GET.Text = "GET ALL PEOPLE";
-            this.GET.UseVisualStyleBackColor = true;
-            this.GET.Click += new System.EventHandler(this.button1_Click);
+            this.GETAllPeople.Location = new System.Drawing.Point(128, 360);
+            this.GETAllPeople.Name = "GETAllPeople";
+            this.GETAllPeople.Size = new System.Drawing.Size(75, 23);
+            this.GETAllPeople.TabIndex = 30;
+            this.GETAllPeople.Text = "GET ALL PEOPLE";
+            this.GETAllPeople.UseVisualStyleBackColor = true;
+            this.GETAllPeople.Click += new System.EventHandler(this.button1_Click);
             // 
             // CleanLst
             // 
@@ -303,7 +304,7 @@ namespace Problema_4._13_ABM
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.CleanLst);
-            this.Controls.Add(this.GET);
+            this.Controls.Add(this.GETAllPeople);
             this.Controls.Add(this.lblPeople);
             this.Controls.Add(this.cboESTADOCIVIL);
             this.Controls.Add(this.cboTIPODOCUMENTO);
@@ -360,7 +361,7 @@ namespace Problema_4._13_ABM
         private System.Windows.Forms.ComboBox cboTIPODOCUMENTO;
         private System.Windows.Forms.ComboBox cboESTADOCIVIL;
         private System.Windows.Forms.Label lblPeople;
-        private System.Windows.Forms.Button GET;
+        private System.Windows.Forms.Button GETAllPeople;
         private System.Windows.Forms.Button CleanLst;
     }
 }

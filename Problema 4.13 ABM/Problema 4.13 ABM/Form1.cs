@@ -13,28 +13,21 @@ namespace Problema_4._13_ABM
 {
     public partial class Form1 : Form
     {
-        private Persona [] people;
+
         static string connectionString = @"Data Source = .\SQLEXPRESS; Initial Catalog = PEOPLE; Integrated Security = True";
         SqlConnection context = new SqlConnection(connectionString);
         SqlCommand cmd = new SqlCommand();
 
 
-
         public Form1()
         {
             InitializeComponent();
-            people = new Persona [52];
-          
-          
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
-            Persona person = new Persona();
-
-
-
-
+      
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -60,35 +53,17 @@ namespace Problema_4._13_ABM
 
         private void Form1_Load(object sender, EventArgs e)
         {
-           
             FalseAllCommands();
-            
-            //LISTBOX
             lstDATOS.Focus();
-
-            //COMBO BOX TIPO DOCUMENTOS
-            //cboTIPODOCUMENTO.Items.Add(1);
-            //cboTIPODOCUMENTO.Items.Add(2);
-            //cboTIPODOCUMENTO.Items.Add(3);
-
-            //COMBO BOX TIPOS ESTADOS CIVILES
-            //cboESTADOCIVIL.Items.Add("SOLTERO");
-            //cboESTADOCIVIL.Items.Add("CASADO");
-            //cboESTADOCIVIL.Items.Add("VIUDO");
-            //cboESTADOCIVIL.Items.Add("SEPARADO");
-            //cboESTADOCIVIL.Items.Add("DIVORCIADO");
-
             LoadCombos("tipo_documento");
             LoadCombos("estado_civil");
            
-
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
 
             EmptyAllCommands();
-
             EnabledAllCommandsLoadDates();
            
             btnCANCEL.Enabled = true;
@@ -152,48 +127,69 @@ namespace Problema_4._13_ABM
         }
 
         private void btnDELETE_Click(object sender, EventArgs e)
-        {
-            var result =  MessageBox.Show("¿DESEA ELIMINAR REALMENTE ?","ABM", MessageBoxButtons.YesNo);
+        {   
+            if (lstDATOS.SelectedIndex == -1)
+            {
+                MessageBox.Show("DEBE SELECCIONAR UNA PERSONA");
+            }
 
+            else
+            {
+
+            var result =  MessageBox.Show("¿DESEA ELIMINAR REALMENTE ?","ABM", MessageBoxButtons.YesNo);
+     
             if (result == DialogResult.Yes)
             {
-                for (int i = 0; i < people.Length; i++)
+                
+                var DNI = lstDATOS.SelectedItem.ToString();
+                int index = lstDATOS.SelectedIndex;
+                
+                for (int i = 0; i < PrimaryKeyValues().Length; i++)
                 {
-                    people[i] = null;
+                   if(DNI.Contains(PrimaryKeyValues()[i].ToString()))
+                    {
+                        cmd.CommandText = "DELETE FROM PERSONAS WHERE DOCUMENTO = " + PrimaryKeyValues()[i];
+                        context.Open();
+                        cmd.ExecuteNonQuery();
+                        context.Close();
+
+                    }
+
+                }
+
+                if (index != -1)
+                {
+                    lstDATOS.Items.RemoveAt(index);
                     
                 }
+
             }
 
-            int index = lstDATOS.SelectedIndex;
+            
 
-            if (index != -1 )
-            {
-                lstDATOS.Items.RemoveAt(index);
             }
 
-
+            
         }
 
         private void btnRECORD_Click(object sender, EventArgs e)
         {
-           
-            cmd.CommandText = InsertCleaner("personas");
-            
             cmd.Connection = context;
-            
+
+            cmd.CommandText = InsertCleaner("personas");
+
             context.Open();
 
             cmd.ExecuteNonQuery();
 
             context.Close();
 
-            var results = MessageBox.Show("THE PERSON HAS RECORDED SUCCESSFULLY","ABM",MessageBoxButtons.OK);
+            var results = MessageBox.Show("THE PERSON HAS RECORDED SUCCESSFULLY", "ABM", MessageBoxButtons.OK);
 
             if (results == DialogResult.OK)
             {
                 EmptyAllCommands();
             }
-
 
         }
 
@@ -291,7 +287,8 @@ namespace Problema_4._13_ABM
           
                 for (int j = 0; j < table.Rows.Count ; j++)
                 {
-                    lstDATOS.Items.Insert(j, table.Rows[j].ItemArray[0] + " " + table.Rows[j].ItemArray[1]);
+                    lstDATOS.Items.Insert(j, table.Rows[j].ItemArray[0] + " " + table.Rows[j].ItemArray[1]
+                                                + " "  + "DNI: "+ table.Rows[j].ItemArray[3]);
                 }
 
             context.Close();
@@ -322,15 +319,15 @@ namespace Problema_4._13_ABM
                 tipoDocumento = 1;
 
             }
+
+            int estadoCivil = 0;
+
+            if(cboESTADOCIVIL.Text == "Soltero")
+            {
+                estadoCivil = 1;
+            }
            
-            //if (tipoDocumento != -1)
-            //{
-            //    lstDATOS.Items.RemoveAt(index);
-            //}
-
-        
-
-            int estadoCivil = 1;
+       
 
             int documento = int.Parse(TXTDocumento.Text);
 
@@ -379,12 +376,12 @@ namespace Problema_4._13_ABM
 
            _columNames = _columNames.Insert(0, "(").Insert(_columNames.Length+1, ")");
 
+            string finalQueryInsert = "INSERT INTO " + tableName + _columNames +
+                                      "VALUES" + TXTApellido.Text + TXTNombres.Text
+                                      + tipoDocumento + "," + documento + "," + estadoCivil + "," + rdbt + "," + fallecido + ")";
 
-            return "INSERT INTO " + tableName + _columNames +
-            "VALUES" + TXTApellido.Text + TXTNombres.Text
-            + tipoDocumento + "," + documento + "," + estadoCivil + "," + rdbt + "," + fallecido + ")";
+            return finalQueryInsert;
 
-            
         }
 
         private void CleanLst_Click(object sender, EventArgs e)
@@ -399,6 +396,21 @@ namespace Problema_4._13_ABM
 
         private void TXTDocumento_TextChanged(object sender, EventArgs e)
         {
+            var response = 0;
+            for (int i = 0; i < PrimaryKeyValues().Length; i++)
+            {
+                if (TXTDocumento.Text.Contains(PrimaryKeyValues()[i].ToString()))
+                {
+                    response = 1;                     
+                }
+            }
+
+            if (response == 1)
+            {
+                MessageBox.Show("ESTE DNI YA EXISTE EN NUESTRA DB ELIGE OTRO...");
+                TXTDocumento.Clear();
+            }
+
 
         }
 
@@ -416,11 +428,78 @@ namespace Problema_4._13_ABM
 
             table.Load(reader);
 
-            cboTIPODOCUMENTO.DataSource = table;
+            if (tableName != "estado_civil")
+            {
+                cboTIPODOCUMENTO.Items.Add(table.Rows[0].ItemArray[1].ToString());
+            }
 
-            //cboTIPODOCUMENTO.Items.Add(table.Rows[0].ItemArray[1].ToString());
+          
+            if (tableName != "tipo_documento")
+            {
+                cboESTADOCIVIL.Items.Add(table.Rows[0].ItemArray[1].ToString());
+            }
+           
 
             context.Close();
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+           
+        }
+
+        private int [] PrimaryKeyValues()
+        {
+            
+            context.Open();
+
+            cmd.CommandText = "SELECT * FROM PERSONAS";
+            
+            cmd.Connection = context;
+
+            SqlDataReader reader = cmd.ExecuteReader();
+
+            DataTable table = new DataTable();
+
+            table.Load(reader);
+
+            context.Close();
+
+            int[] documentos = new int[table.Rows.Count];
+
+            for (int i = 0; i < table.Rows.Count; i++)
+            {
+               documentos[i] = (int)table.Rows[i].ItemArray[3];
+            }
+
+            return documentos;
+
+        }
+
+        private void UpdatePerson(string tableName,string columName)
+        {
+            
+            cmd.CommandText = "UPDATE" + tableName + "SET" + columName + "WHERE DOCUMENTO = " +  5;
+            cmd.Connection = context;
+            context.Open();
+            
+        }
+
+        
+        private void textBox1_TextChanged_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TXTDocumento_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar < 48 || e.KeyChar > 57)
+            {
+                if (MessageBox.Show("SOLO SE PERMITEN NUMEROS") == DialogResult.Yes)
+                {
+                    TXTDocumento.Clear();
+                }
+            }
         }
     }
 }
