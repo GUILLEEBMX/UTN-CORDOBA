@@ -57,6 +57,7 @@ namespace Problema_4._13_ABM
             lstDATOS.Focus();
             LoadCombos("tipo_documento");
             LoadCombos("estado_civil");
+            UpdatePerson("personas", "nombres");
            
         }
 
@@ -113,7 +114,6 @@ namespace Problema_4._13_ABM
 
         private void btnEDIT_Click(object sender, EventArgs e)
         {
-         
             EnabledAllCommandsLoadDates();
             btnCANCEL.Enabled = true;
             btnRECORD.Enabled = true;
@@ -122,6 +122,13 @@ namespace Problema_4._13_ABM
             btnDELETE.Enabled = false;
             lstDATOS.Enabled = false;
             TXTApellido.Focus();
+
+            //cmd.Connection = context;
+            //cmd.CommandText = InsertCleaner("personas");
+            
+
+
+
 
 
         }
@@ -279,6 +286,20 @@ namespace Problema_4._13_ABM
             cmd.Connection = context;
 
             SqlDataReader reader = cmd.ExecuteReader();
+
+
+
+      
+            int index = 0;
+            while (reader.Read())
+            {
+                var x = reader[index];
+                index++;
+                   
+
+            }
+
+          
 
             DataTable table = new DataTable ();
 
@@ -478,10 +499,37 @@ namespace Problema_4._13_ABM
 
         private void UpdatePerson(string tableName,string columName)
         {
-            
-            cmd.CommandText = "UPDATE" + tableName + "SET" + columName + "WHERE DOCUMENTO = " +  5;
             cmd.Connection = context;
+            cmd.CommandText = "SELECT * FROM " + tableName;
             context.Open();
+            SqlDataReader reader = cmd.ExecuteReader();
+            DataTable table = new DataTable();
+            table.Load(reader);
+
+            for (int i = 0; i < table.Columns.Count; i++)
+            {
+
+                lstDATOS.Items.Add(table.Columns[i].ColumnName + " " + table.Columns[i].DataType);
+
+                if(columName == table.Columns[i].ColumnName)
+                {
+
+                }
+                
+            }
+
+            context.Close();
+
+
+
+
+          
+           
+
+            
+            //cmd.CommandText = "UPDATE" + tableName + "SET" + columName + "="   + "WHERE DOCUMENTO = " +  5;
+            //cmd.Connection = context;
+            //context.Open();
             
         }
 
