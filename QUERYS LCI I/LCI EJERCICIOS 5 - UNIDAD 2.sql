@@ -267,3 +267,13 @@ incluido el importe) emitidas a los clientes cuyos apellidos comiencen con letra
 
 
 
+/*26. Realizar un reporte de los artículos que se vendieron en lo que va del año.
+(Muestre los datos que sean significativos para el usuario del sistema usando
+rótulos para que sea más legible y que los artículos no se muestren repetidos).*/
+
+
+SELECT F.nro_factura , FORMAT(CONVERT(DATE,F.fecha),'dd/MM/yyyy') AS 'FECHA', DF.cod_articulo
+FROM FACTURAS F 
+JOIN detalle_facturas DF ON F.nro_factura = DF.nro_factura
+JOIN ARTICULOS A ON A.cod_articulo = DF.cod_articulo
+WHERE YEAR(F.fecha) = YEAR(GETDATE())
