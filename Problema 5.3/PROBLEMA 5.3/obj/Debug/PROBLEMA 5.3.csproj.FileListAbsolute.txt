@@ -11,3 +11,16 @@ C:\Users\K56\Desktop\PROBLEMA 5.3\PROBLEMA 5.3\bin\Debug\System.Data.SqlClient.d
 C:\Users\K56\Desktop\PROBLEMA 5.3\PROBLEMA 5.3\bin\Debug\System.Data.SqlClient.xml
 C:\Users\K56\Desktop\PROBLEMA 5.3\PROBLEMA 5.3\obj\Debug\PROBLEMA 5.3.csproj.CopyComplete
 C:\Users\K56\Desktop\PROBLEMA 5.3\PROBLEMA 5.3\obj\Debug\PROBLEMA_5._3.Products.resources
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Problema 5.3\PROBLEMA 5.3\bin\Debug\PROBLEMA 5.3.exe.config
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Problema 5.3\PROBLEMA 5.3\bin\Debug\PROBLEMA 5.3.exe
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Problema 5.3\PROBLEMA 5.3\bin\Debug\PROBLEMA 5.3.pdb
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Problema 5.3\PROBLEMA 5.3\bin\Debug\System.Data.SqlClient.dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Problema 5.3\PROBLEMA 5.3\bin\Debug\System.Data.SqlClient.xml
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Problema 5.3\PROBLEMA 5.3\obj\Debug\PROBLEMA 5.3.csproj.AssemblyReference.cache
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Problema 5.3\PROBLEMA 5.3\obj\Debug\PROBLEMA_5._3.Products.resources
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Problema 5.3\PROBLEMA 5.3\obj\Debug\PROBLEMA_5._3.Properties.Resources.resources
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Problema 5.3\PROBLEMA 5.3\obj\Debug\PROBLEMA 5.3.csproj.GenerateResource.cache
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Problema 5.3\PROBLEMA 5.3\obj\Debug\PROBLEMA 5.3.csproj.CoreCompileInputs.cache
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Problema 5.3\PROBLEMA 5.3\obj\Debug\PROBLEMA 5.3.csproj.CopyComplete
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Problema 5.3\PROBLEMA 5.3\obj\Debug\PROBLEMA 5.3.exe
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Problema 5.3\PROBLEMA 5.3\obj\Debug\PROBLEMA 5.3.pdb

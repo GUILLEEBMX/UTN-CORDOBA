@@ -7,56 +7,48 @@ utilice una función de conversión) de todos los clientes cuyo nombre comience
 con “C” y cuyo apellido termine con “Z”. Rotule como CÓDIGO DE CLIENTE,
 NOMBRE, DIRECCIÓN.*/
 
-SELECT C.cod_cliente AS 'CODIGO DE CLIENTE', C.nom_cliente + ',' +  UPPER(C.ape_cliente) AS 'NOMBRE', C.CALLE + ' ' +  CONVERT(varchar(20),C.altura) AS 'DIRECCION' 
+SELECT C.cod_cliente AS 'CODIGO DE CLIENTE', C.nom_cliente + ',' +  UPPER(C.ape_cliente) AS 'NOMBRE', C.CALLE + ' ' +  
+CONVERT(varchar(20),C.altura) AS 'DIRECCION' 
 FROM CLIENTES C
-WHERE C.nom_cliente LIKE 'C%' AND  C.ape_cliente LIKE '%Z';
+WHERE C.nom_cliente LIKE 'C%' AND  C.ape_cliente LIKE '%Z'; --BIEN
 
 
 /*11.Ídem al anterior pero el apellido comience con letras que van de la “D” a la “L”
 y cuyo nombre no comience con letras que van de la “A” a la “G”. */
 
 
-SELECT C.cod_cliente AS 'CODIGO DE CLIENTE', C.nom_cliente + ',' +  UPPER(C.ape_cliente) AS 'NOMBRE', C.CALLE + ' ' +  CONVERT(varchar(20),C.altura) AS 'DIRECCION' 
+SELECT C.cod_cliente AS 'CODIGO DE CLIENTE', C.nom_cliente + ',' +  UPPER(C.ape_cliente) AS 'NOMBRE', C.CALLE + ' ' + 
+ CONVERT(varchar(20),C.altura) AS 'DIRECCION' 
 FROM CLIENTES C
-WHERE C.ape_cliente LIKE '[D-L]%' AND C.nom_cliente NOT LIKE '[A-G]%';
+WHERE C.ape_cliente LIKE '[D-L]%' AND C.nom_cliente NOT LIKE '[A-G]%'; --BIEN
 
 /*12.Muestre los datos de los vendedores (apellido todo en mayúsculas y en la
 misma columna que el nombre) cuyo nombre no contenga “Z”, haya nacido en
 la década del 70 y que haya realizado ventas el mes pasado.*/
- 
-SELECT UPPER(V.nom_vendedor + ' ' +  V.ape_vendedor ) AS 'VENDEDORES', V.fec_nac
-FROM facturas F
-RIGHT JOIN VENDEDORES V ON V.cod_vendedor = F.cod_vendedor
-AND V.nom_vendedor NOT LIKE '[Z]' 
-AND YEAR (V.fec_nac) BETWEEN 1970 AND 1979
-AND MONTH(F.fecha) = ((MONTH(F.fecha)) - 1 );
 
-SELECT UPPER(V.nom_vendedor + ' ' +  V.ape_vendedor ) AS 'VENDEDORES', V.fec_nac
-FROM vendedores V
-LEFT JOIN facturas F ON V.cod_vendedor = F.cod_vendedor
-AND V.nom_vendedor NOT LIKE '%Z%' 
-AND (YEAR (V.fec_nac) >= 1970 AND YEAR(V.fec_nac) <= 1979)
-AND MONTH(F.fecha) = ((MONTH(F.fecha)) - 1 );
 
-SELECT fec_nac, nom_vendedor
-FROM 
-VENDEDORES 
-WHERE YEAR(fec_nac) >= 1970 AND YEAR(fec_nac) <= 1979;
+SELECT UPPER(V.nom_vendedor + ' ' + V.ape_vendedor) AS 'VENDEDORES', FORMAT(CONVERT(DATE,F.fecha),'dd/MM/yyyy') AS 'FECHA VENTA'
+FROM facturas F 
+JOIN VENDEDORES V ON F.cod_vendedor = V.cod_vendedor 
+WHERE V.nom_vendedor NOT LIKE '%Z%'
+AND YEAR(V.fec_nac) BETWEEN 1970 AND 1979
+--AND MONTH(F.fecha) = MONTH(GETDATE()) - 1; -- MAL
+AND DATEDIFF(MONTH, f.fecha , GETDATE()) = 1 -- OK PROFE 
 
 /*13.Mostrar las facturas realizadas entre el 1/1/2007 y el 1/5/2009 y cuyos códigos
 de vendedor sean 1, 3 y 4 o bien entre el 1/1/2010 y el 1/5/2011 y cuyos
 códigos de vendedor sean 2 y 4. Mostrar la fecha en formato Dia, Mes, y Año
 (en ese orden y sin la hora)*/
 
-SET DATEFORMAT DMY;
 
 SELECT v.cod_vendedor, FORMAT(CONVERT(DATE,f.fecha),'dd-MM-yyyy') AS 'FECHA FACTURA'
 FROM facturas F
 JOIN vendedores V ON F.cod_vendedor = V.cod_vendedor
-AND F.fecha >= '1/1/2007' AND F.fecha <= '1/5/2009'
+AND F.fecha >= '1/1/2007' AND F.fecha <= '1/5/2009' --WHERE 
 AND V.cod_vendedor in (1,3,4) 
 OR (F.fecha >= '1/1/2010' AND F.fecha <= '1/5/2011')
-AND V.cod_vendedor IN (2,4)
+AND V.cod_vendedor IN (2,4) -- PARENTESIS FINAL HASTA ACA
+-- (F.fecha >= '1/1/2010' AND F.fecha <= '1/5/2011' AND V.cod_vendedor IN (2,4))
 ORDER BY FECHA DESC;
 
 /*14.Se quiere saber el subtotal de todos los artículos vendidos, para ello liste el
@@ -64,6 +56,14 @@ artículo y multiplique la cantidad por el precio unitario de venta; mostrar el
 subtotal redondeado a dos decimales (o buscar la forma de dale formato
 apropiado). Ordene por alfabéticamente por artículo y cuyo subtotal mayor
 aparezca primero. No muestre datos duplicados.*/
+
+SELECT A.cod_articulo, A.descripcion,  A.pre_unitario * DF.cantidad AS 'FINAL PRICE'
+FROM detalle_facturas DF 
+JOIN ARTICULOS A ON A.cod_articulo = DF.cod_articulo 
+ORDER BY A.cod_articulo, [FINAL PRICE] ASC ; -- OK
+
+
+
 
 
 SELECT A.cod_articulo, A.descripcion, DF.cantidad * A.pre_unitario AS 'PRECIO FINAL' 
@@ -103,6 +103,18 @@ AND A.pre_unitario >= 50 OR (A.cod_articulo NOT IN (2,5,6,8,10))
 AND (A.pre_unitario * DF.cantidad) BETWEEN 10 AND 100
 ORDER BY A.pre_unitario DESC;
 
+SELECT  a.cod_articulo,A.pre_unitario, A.pre_unitario * df.cantidad AS 'PRECIO VENDIDO'
+FROM detalle_facturas DF 
+JOIN articulos A ON DF.cod_articulo = A.cod_articulo
+AND A.pre_unitario >= 50 
+AND A.cod_articulo NOT IN (2,5,6,8,10)
+OR A.pre_unitario  BETWEEN 10 AND 100
+ORDER BY A.pre_unitario DESC;
+
+--REHACER
+
+
+
 
 /*16.Listar todos los datos de los artículos cuyo stock mínimo sea superior a 10 o
 cuyo precio sea inferior a 20. En ambos casos su descripción no debe
@@ -119,7 +131,7 @@ septiembre.*/
 
 SELECT V.nom_vendedor + ' ' +  V.ape_vendedor AS 'VENDEDORES' , FORMAT(CONVERT(DATE,V.fec_nac),'dd/MM/yyyy') AS 'FECHA NACIMIENTO'
 FROM VENDEDORES V
-WHERE MONTH(V.fec_nac) IN (2,4,5,9);
+WHERE MONTH(V.fec_nac) IN (2,4,5,9); -- OK
 
 /*18.Liste número de factura, fecha de venta y vendedor (apellido y nombre), para
 los casos en que los códigos del cliente van del 2 al 6. Ordene por vendedor
@@ -170,7 +182,7 @@ LEFT JOIN detalle_facturas DF ON A.cod_articulo = DF.cod_articulo
 AND A.pre_unitario NOT BETWEEN 10 AND 50
 
 
---REVISAR
+--REHACER
 
 /*22.Liste todos los datos de la factura (vendedor, cliente, artículo, incluidos los
 datos de la venta: cantidad, precio y subtotal); emitidas a clientes con teléfonos
@@ -206,7 +218,7 @@ JOIN CLIENTES C ON C.cod_cliente = F.cod_cliente
 JOIN vendedores V ON V.cod_vendedor = F.cod_vendedor
 WHERE F.nro_factura IN (12,18,1,3,35,26,29)
 AND V.cod_barrio = C.cod_barrio
-ORDER BY F.nro_factura DESC;
+ORDER BY F.nro_factura DESC; --OK
 
 --SIN IGUALAR CODIGO BARRIO CLIENTE CON COD BARRIO VENDEDOR
 SELECT F.nro_factura AS 'NRO FACTURA',C.nom_cliente, C.cod_barrio , V.cod_barrio
@@ -273,7 +285,110 @@ rótulos para que sea más legible y que los artículos no se muestren repetidos
 
 
 SELECT F.nro_factura , FORMAT(CONVERT(DATE,F.fecha),'dd/MM/yyyy') AS 'FECHA', DF.cod_articulo
+--TODA LA CONSULTA ESTA OK, SOLO DEBERIA HACER:
+--SELECT DISTINCT A.DESCRIPCION PARA QUE NO ME TRAIGA ARTICULOS REPETIDOS....
 FROM FACTURAS F 
 JOIN detalle_facturas DF ON F.nro_factura = DF.nro_factura
 JOIN ARTICULOS A ON A.cod_articulo = DF.cod_articulo
 WHERE YEAR(F.fecha) = YEAR(GETDATE())
+
+
+
+/*27. Se quiere saber a qué clientes se les vendió el año pasado, qué vendedor le
+realizó la venta, y qué artículos compró, siempre que el vendedor que les
+vendió sea menor de 35 años. */
+
+USE LIBRERIA_LCI2022;
+
+SELECT C.nom_cliente AS 'CLIENTES',V.nom_vendedor AS 'VENDEDORES', A.descripcion
+FROM FACTURAS F
+JOIN CLIENTES C ON F.cod_cliente = C.cod_cliente
+JOIN VENDEDORES V ON F.cod_vendedor = V.cod_vendedor
+JOIN detalle_facturas DF ON F.nro_factura = DF.nro_factura
+JOIN ARTICULOS A ON DF.cod_articulo = A.cod_articulo
+WHERE (YEAR(GETDATE()) - YEAR(V.fec_nac)) < 35; -- OK
+
+
+/*28. El usuario de este sistema necesita ver el listado de facturas, de aquellos
+artículos cuyos precios unitarios a los que fueron vendidos estén entre 50 y
+100 y de aquellos vendedores cuyo apellido no comience con letras que van
+de la “l” a la “m”. Ordenado por vendedor, fecha e importe*/
+
+SELECT F.nro_factura,FORMAT(CONVERT(DATE, F.fecha),'dd/MM/yyyy') AS 'FECHA FACTURA', 
+A.descripcion, A.pre_unitario * DF.cantidad AS 'FINAL PRICE', V.ape_vendedor
+FROM FACTURAS F 
+JOIN detalle_facturas DF  ON F.nro_factura = DF.nro_factura
+JOIN vendedores V ON F.cod_vendedor = V.cod_vendedor
+JOIN ARTICULOS A ON DF.cod_articulo = A.cod_articulo
+WHERE A.pre_unitario BETWEEN 50 AND 100
+AND V.ape_vendedor NOT LIKE '[L-M]%'
+ORDER BY V.cod_vendedor, F.fecha, [FINAL PRICE]
+
+--REVISAR 
+
+/*29.Se desea emitir un listado de clientes que compraron en enero, además saber
+qué compraron cuánto gastaron (mostrar los datos en forma conveniente)*/
+
+
+SELECT FORMAT(CONVERT(DATE,F.fecha),'dd/MM/yyyy') AS 'FECHA FACTURAS' , C.nom_cliente AS 'CLIENTES',
+A.descripcion AS 'ARTICLES', A.pre_unitario * DF.cantidad AS 'FINAL PRICE' 
+FROM FACTURAS F 
+JOIN detalle_facturas DF ON DF.nro_factura = F.nro_factura
+JOIN ARTICULOS A ON A.cod_articulo = DF.cod_articulo
+JOIN CLIENTES C ON C.cod_cliente = F.cod_cliente
+WHERE MONTH(F.fecha) = 1;
+
+--REVISAR
+
+/*30.Emitir un reporte de artículos vendidos en el 2010 a qué precios se vendieron
+y qué precio tienen hoy. Mostrar el porcentaje de incremento*/
+
+SELECT FORMAT(CONVERT(DATE,F.fecha),'dd/MM/yyyy') AS 'FECHA FACTURA' , A.descripcion AS 'ARTICULOS'
+FROM FACTURAS F
+JOIN detalle_facturas DF  ON F.nro_factura = DF.nro_factura
+JOIN ARTICULOS A ON A.cod_articulo = DF.cod_articulo
+WHERE YEAR(F.fecha) = 2010 ;
+
+--REVISART/TERMINAR
+
+/*31.Listar los vendedores que hace 10 años les vendieron a clientes cuyos
+nombres o apellidos comienzan con "C".*/
+
+
+USE LIBRERIA_LCI2022;
+
+SELECT FORMAT(CONVERT(DATE,F.FECHA),'dd/MM/yyyy') AS 'FECHA FACTURAS',V.nom_vendedor AS 'VENDEDORES',
+C.nom_cliente + ' ' + C.ape_cliente AS 'CLIENTES'
+FROM FACTURAS F 
+JOIN VENDEDORES V ON F.cod_vendedor = V.cod_vendedor
+JOIN CLIENTES C ON F.cod_cliente = C.cod_cliente
+WHERE YEAR(F.fecha) = (YEAR(GETDATE()) - 10)
+AND  (C.nom_cliente LIKE 'C%' OR C.ape_cliente LIKE 'C%'); --OK
+
+
+
+/*32.El encargado de la librería necesita tener información sobre los artículos que
+se vendían a menos de $ 20 antes del 2015. Mostrar los datos que se
+consideren relevantes para el encargado, formatear, rotular y ordenar.*/
+
+
+SELECT F.nro_factura AS 'NRO FACTURA', YEAR(F.fecha) AS 'AÑO DE LA VENTA'
+FROM FACTURAS F 
+JOIN detalle_facturas DF ON F.nro_factura = DF.nro_factura
+JOIN ARTICULOS A ON DF.cod_articulo = A.cod_articulo
+WHERE (A.pre_unitario * DF.cantidad) < 20
+AND YEAR(F.fecha) < 2015
+ORDER BY F.fecha;
+
+
+
+
+
+
+
+
+
+
+
+
+

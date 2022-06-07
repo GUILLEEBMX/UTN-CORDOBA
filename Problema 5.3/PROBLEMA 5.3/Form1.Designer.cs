@@ -48,6 +48,7 @@ namespace PROBLEMA_5._3
             this.LstProducts = new System.Windows.Forms.ListBox();
             this.cboMarca = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.BTN_DELETE = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -111,6 +112,7 @@ namespace PROBLEMA_5._3
             this.TXT_CODIGO.Size = new System.Drawing.Size(224, 20);
             this.TXT_CODIGO.TabIndex = 6;
             this.TXT_CODIGO.TextChanged += new System.EventHandler(this.TXT_CODIGO_TextChanged);
+            this.TXT_CODIGO.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TXT_CODIGO_KeyPress);
             // 
             // TXT_DETALLE
             // 
@@ -125,6 +127,7 @@ namespace PROBLEMA_5._3
             this.TXT_PRECIO.Name = "TXT_PRECIO";
             this.TXT_PRECIO.Size = new System.Drawing.Size(224, 20);
             this.TXT_PRECIO.TabIndex = 8;
+            this.TXT_PRECIO.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TXT_PRECIO_KeyPress);
             // 
             // DATE_PICKER
             // 
@@ -157,7 +160,7 @@ namespace PROBLEMA_5._3
             // 
             // BTN_NEW
             // 
-            this.BTN_NEW.Location = new System.Drawing.Point(14, 332);
+            this.BTN_NEW.Location = new System.Drawing.Point(2, 332);
             this.BTN_NEW.Name = "BTN_NEW";
             this.BTN_NEW.Size = new System.Drawing.Size(75, 23);
             this.BTN_NEW.TabIndex = 13;
@@ -167,16 +170,17 @@ namespace PROBLEMA_5._3
             // 
             // BTN_CANCEL
             // 
-            this.BTN_CANCEL.Location = new System.Drawing.Point(95, 332);
+            this.BTN_CANCEL.Location = new System.Drawing.Point(245, 332);
             this.BTN_CANCEL.Name = "BTN_CANCEL";
             this.BTN_CANCEL.Size = new System.Drawing.Size(75, 23);
             this.BTN_CANCEL.TabIndex = 14;
             this.BTN_CANCEL.Text = "CANCEL";
             this.BTN_CANCEL.UseVisualStyleBackColor = true;
+            this.BTN_CANCEL.Click += new System.EventHandler(this.BTN_CANCEL_Click);
             // 
             // BTN_RECORD
             // 
-            this.BTN_RECORD.Location = new System.Drawing.Point(176, 332);
+            this.BTN_RECORD.Location = new System.Drawing.Point(83, 332);
             this.BTN_RECORD.Name = "BTN_RECORD";
             this.BTN_RECORD.Size = new System.Drawing.Size(75, 23);
             this.BTN_RECORD.TabIndex = 15;
@@ -186,7 +190,7 @@ namespace PROBLEMA_5._3
             // 
             // BTN_EXIT
             // 
-            this.BTN_EXIT.Location = new System.Drawing.Point(257, 332);
+            this.BTN_EXIT.Location = new System.Drawing.Point(326, 332);
             this.BTN_EXIT.Name = "BTN_EXIT";
             this.BTN_EXIT.Size = new System.Drawing.Size(75, 23);
             this.BTN_EXIT.TabIndex = 16;
@@ -211,10 +215,11 @@ namespace PROBLEMA_5._3
             this.cboMarca.Name = "cboMarca";
             this.cboMarca.Size = new System.Drawing.Size(224, 21);
             this.cboMarca.TabIndex = 18;
+            this.cboMarca.SelectedIndexChanged += new System.EventHandler(this.cboMarca_SelectedIndexChanged);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(338, 332);
+            this.button1.Location = new System.Drawing.Point(407, 332);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 19;
@@ -222,11 +227,22 @@ namespace PROBLEMA_5._3
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // BTN_DELETE
+            // 
+            this.BTN_DELETE.Location = new System.Drawing.Point(164, 332);
+            this.BTN_DELETE.Name = "BTN_DELETE";
+            this.BTN_DELETE.Size = new System.Drawing.Size(75, 23);
+            this.BTN_DELETE.TabIndex = 20;
+            this.BTN_DELETE.Text = "DELETE";
+            this.BTN_DELETE.UseVisualStyleBackColor = true;
+            this.BTN_DELETE.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Products
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.BTN_DELETE);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.cboMarca);
             this.Controls.Add(this.LstProducts);
@@ -275,6 +291,7 @@ namespace PROBLEMA_5._3
         private System.Windows.Forms.ListBox LstProducts;
         private System.Windows.Forms.ComboBox cboMarca;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BTN_DELETE;
     }
 }
 

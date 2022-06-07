@@ -33,42 +33,56 @@ namespace PROBLEMA_5._3
             return table;
         }
 
-        public int  PostToSQL(string query,Parametro values)
+        public int  PostToSQL(string query, List<Parametro> valuesToInsert)
         {
             int rowAffecteds = 0;
 
-     
-
-        
             context.Open();
             cmd.CommandText = query;
             cmd.Connection = context;
 
-            for (int i = 0; i < values.param.Length; i++)
+            foreach (Parametro values in valuesToInsert)
             {
-               var x =  values.param[i];
-
-
-
-
-                
+                cmd.Parameters.AddWithValue(values.Nombre, values.Valor);
             }
 
             rowAffecteds = cmd.ExecuteNonQuery();
 
+            context.Close();
+
             return rowAffecteds;
          
+        }
+
+        public int DeleteFromDB(int id,string tableName)
+        {
+            int rowAffecteds = 0;
+
+            context.Open();
+            cmd.CommandText = "DELETE FROM " + tableName + " " + "WHERE codigo = " + id;
+            cmd.Connection = context;
+      
+            rowAffecteds =  cmd.ExecuteNonQuery();
+
+            context.Close();
+
+            return rowAffecteds;
             
-         
-            
+        }
 
+        public int[] PrimaryKeyValues()
+        {
+            table = GetFromSQL("SELECT * FROM Productos");
 
+            int[] primaryKeys = new int[table.Rows.Count];
 
+            for (int i = 0; i < primaryKeys.Length; i++)
+            {
+                primaryKeys[i] = (int)table.Rows[i].ItemArray[0];
 
+            }
 
-
-
-
+            return primaryKeys;
 
         }
 

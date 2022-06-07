@@ -17,8 +17,6 @@ namespace PROBLEMA_5._3
 
         Context context = new Context();
         DataTable table = new DataTable();
-        //static string connectionString;
-       // connectionString = @"Data Source = .\SQLEXPRESS; Initial Catalog = PRODUCTOS_PROBLEMA_5_3; Integrated Security = True";
         public Products()
         {
             InitializeComponent();
@@ -30,29 +28,16 @@ namespace PROBLEMA_5._3
             EnableOrNotAllCommands(x);
             LstProducts.Focus();
             LoadCBO();
-            PrimaryKeyValues();
-            
-            
            
         }
 
         private void TXT_CODIGO_TextChanged(object sender, EventArgs e)
         {
-            for (int i = 0; i < PrimaryKeyValues().Length; i++)
-            {
-                if (TXT_CODIGO.Text.Contains(PrimaryKeyValues()[i].ToString()))
-                {
-                    if(MessageBox.Show("ESTE CODIGO YA EXISTE EN NUESTRA BD, INGRESA OTRO...") == DialogResult.OK)
-                    {
-                        TXT_CODIGO.Clear();
-                    }
-                    
-                }
-            }
-         
+            
+
         }
 
-       private void EnableOrNotAllCommands(bool x)
+        private void EnableOrNotAllCommands(bool x)
         {
             TXT_CODIGO.Enabled = !x;
             TXT_DETALLE.Enabled = !x;
@@ -70,6 +55,9 @@ namespace PROBLEMA_5._3
 
         private void Products_SelectedIndexChanged(object sender, EventArgs e)
         {
+         
+
+
 
         }
 
@@ -91,7 +79,19 @@ namespace PROBLEMA_5._3
 
         private void BTN_EXIT_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            if(MessageBox.Show("¿ESTA SEGURO QUE DESEA CERRAR LA APLICACION?","CLOSE", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            {
+
+                Application.Exit();
+
+            }
+            else
+            {
+                return;
+            }
+
+
+
 
         }
 
@@ -100,8 +100,6 @@ namespace PROBLEMA_5._3
             LstProducts.Items.Clear();
 
             table = context.GetFromSQL("SELECT * FROM PRODUCTOS ");
-
-
 
             foreach (DataRow row in table.Rows)
             {
@@ -119,26 +117,27 @@ namespace PROBLEMA_5._3
 
         }
 
-        private int [] PrimaryKeyValues()
-        {
-            int[] primaryKeys = new int [table.Rows.Count];
-
-            table = context.GetFromSQL("SELECT * FROM Productos");
-
-            for (int i = 0; i < primaryKeys.Length; i++)
-            {
-                primaryKeys[i] = (int)table.Rows[i].ItemArray[0];
-
-            }
-
-            return primaryKeys;
-
-
-
-        }
+       
 
         private void BTN_RECORD_Click(object sender, EventArgs e)
         {
+            int codigo = int.Parse(TXT_CODIGO.Text);
+
+
+            for (int i = 0; i < context.PrimaryKeyValues().Length; i++)
+            {
+                if (codigo == context.PrimaryKeyValues()[i])
+                {
+                    if (MessageBox.Show("ESE CODIGO YA EXISTE EN NUESTRA BD... ELIGE OTRO...") == DialogResult.OK)
+                    {
+                        TXT_CODIGO.Clear();
+                        return;
+                    }
+
+                }
+
+            }
+
             int tipo = 0;
 
             int rowAffecteds = 0;
@@ -148,49 +147,43 @@ namespace PROBLEMA_5._3
                 tipo = 1;
             }
 
-
             Productos product = new Productos();
+
             product.Codigo = int.Parse(TXT_CODIGO.Text);
             product.Detalle = TXT_DETALLE.Text;
-            product.Marca = 1;
+            product.Marca = (int)cboMarca.SelectedValue;
             product.Tipo = tipo;
             product.Precio = double.Parse(TXT_PRECIO.Text);
             product.Fecha = DATE_PICKER.Value;
 
-          
 
             string query = "INSERT INTO PRODUCTOS Values(@codigo,@detalle,@tipo,@marca, @precio,@fecha)";
 
 
-            Parametro values = new Parametro();
-            
-            values.param = new object[6];
+            List<Parametro> valuesToInsert = new List<Parametro>();
 
 
-            values.param[0] = ("@codigo", product.Codigo);
+            valuesToInsert.Add(new Parametro("@codigo", product.Codigo));
 
-            values.param[1] = ("@detalle", product.Detalle);
+            valuesToInsert.Add(new Parametro("@detalle", product.Detalle));
 
-            values.param[2] = ("@marca", product.Marca);
+            valuesToInsert.Add(new Parametro("@marca", product.Marca));
 
-            values.param[3] = ("@tipo", product.Tipo);
+            valuesToInsert.Add(new Parametro("@tipo", product.Tipo));
 
-            values.param[4] = ("@precio", product.Precio);
+            valuesToInsert.Add(new Parametro ("@precio", product.Precio));
 
-            values.param [5] = ("@fecha", product.Fecha);
+            valuesToInsert.Add(new Parametro("@fecha", product.Fecha));
 
-            rowAffecteds = context.PostToSQL(query, values);
-
-
+            rowAffecteds = context.PostToSQL(query, valuesToInsert);
 
             if (rowAffecteds != 0)
             {
-                if (MessageBox.Show("LA INSERCION SE REALIZO CORRECTAMENTE CULEAUUUU") == DialogResult.OK)
+                if (MessageBox.Show("LA INSERCION SE REALIZO CORRECTAMENTE...") == DialogResult.OK)
                 {
 
                     EmptyAllCommands();
                 }
-
 
             }
 
@@ -207,6 +200,103 @@ namespace PROBLEMA_5._3
             TXT_PRECIO.Clear();
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (LstProducts.SelectedIndex == -1)
+            {
+                MessageBox.Show("DEBE SELECCIONAR AL MENOS UN PRODUCTO...");
+                
+            }
 
+            else
+            {
+                int rowAffecteds = 0;
+                if (LstProducts.SelectedIndex != -1)
+                {
+                    if (MessageBox.Show("¿ESTA SEGURO QUE DESEA ELIMINAR?","ELIMINAR",MessageBoxButtons.OKCancel) == DialogResult.OK)
+                    {
+                        var producto = (Productos)LstProducts.SelectedItem;
+
+                        rowAffecteds = context.DeleteFromDB(producto.Codigo, "Productos");
+                    }
+                    else
+                    {
+                        return;
+                    }
+                }
+
+                if (rowAffecteds > 0)
+                {
+                    if (MessageBox.Show("SE HA ELIMINADO CORRECTAMENTE...") == DialogResult.OK)
+                    {
+                        LstProducts.Items.Clear();
+                    }
+                }
+
+                LoadList();
+
+            }
+        }
+
+        private void TXT_CODIGO_KeyPress(object sender, KeyPressEventArgs e)
+        {
+           if(char.IsLetter(e.KeyChar))
+            {
+                MessageBox.Show("ONLY NUMBERS...");
+                e.Handled = true;
+            }    
+        }
+
+        private void BTN_CANCEL_Click(object sender, EventArgs e)
+        {
+            EmptyAllCommands();
+        }
+
+        private void TXT_PRECIO_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(char.IsLetter(e.KeyChar))
+            {
+                MessageBox.Show("ONLY NUMBERS...");
+                e.Handled = true;
+            }
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void LoadList()
+        {
+            
+            table = context.GetFromSQL("SELECT * FROM PRODUCTOS");
+
+            foreach (DataRow row in table.Rows)
+            {
+                Productos product = new Productos();
+                product.Codigo = (int)row["codigo"];
+                product.Detalle = row["detalle"].ToString();
+                product.Tipo = (int)row["tipo"];
+                product.Marca = (int)row["marca"];
+                product.Precio = (double)row["precio"];
+                product.Fecha = (DateTime)row["fecha"];
+
+                LstProducts.Items.Add(product);
+
+            }
+
+
+        }
+
+        private void cboMarca_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
+
+
+
+
+
+
 }

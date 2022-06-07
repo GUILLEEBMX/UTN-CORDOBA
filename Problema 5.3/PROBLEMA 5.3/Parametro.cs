@@ -9,7 +9,17 @@ namespace PROBLEMA_5._3
     class Parametro
     {
 
-        public object [] param  {get;set;}
+
+        public Parametro(string nombre, object valor )
+        {
+            this.Nombre = nombre;
+            this.Valor = valor;
+                
+        }
+
+        public string Nombre { get; set; }
+
+        public object Valor  {get;set;}
 
 
     }
