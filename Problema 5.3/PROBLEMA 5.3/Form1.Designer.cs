@@ -184,7 +184,7 @@ namespace PROBLEMA_5._3
             this.BTN_RECORD.Name = "BTN_RECORD";
             this.BTN_RECORD.Size = new System.Drawing.Size(75, 23);
             this.BTN_RECORD.TabIndex = 15;
-            this.BTN_RECORD.Text = "RECORD";
+            this.BTN_RECORD.Text = "R/R-W";
             this.BTN_RECORD.UseVisualStyleBackColor = true;
             this.BTN_RECORD.Click += new System.EventHandler(this.BTN_RECORD_Click);
             // 

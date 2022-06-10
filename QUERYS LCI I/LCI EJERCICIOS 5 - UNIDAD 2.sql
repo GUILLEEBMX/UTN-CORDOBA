@@ -212,13 +212,28 @@ vendió con los siguientes nros. de factura: 12, 18, 1, 3, 35, 26 y 29.¿El barr
 del cliente es el mismo que el barrio del vendedor que les vendío?*/
 
 --IGUALANDO CODIGO BARRIO CLIENTE CON COD BARRIO VENDEDOR
-SELECT F.nro_factura AS 'NRO FACTURA',C.nom_cliente, C.cod_barrio , V.cod_barrio
+SELECT F.nro_factura AS 'NRO FACTURA',C.nom_cliente, C.cod_barrio , V.cod_barrio,
+FORMAT(CONVERT(DATE,F.fecha),'dd/MM/yyyy') AS 'FECHA'
 FROM FACTURAS F 
 JOIN CLIENTES C ON C.cod_cliente = F.cod_cliente
 JOIN vendedores V ON V.cod_vendedor = F.cod_vendedor
 WHERE F.nro_factura IN (12,18,1,3,35,26,29)
 AND V.cod_barrio = C.cod_barrio
 ORDER BY F.nro_factura DESC; --OK
+
+
+--PROFE 
+
+SELECT c.ape_cliente, c.nom_cliente, b.barrio , 
+	   v.ape_vendedor , v.nom_vendedor, b1.barrio, 
+	   f.fecha
+  FROM barrios b
+  JOIN clientes c ON c.cod_barrio = b.cod_barrio
+  JOIN facturas f ON f.cod_cliente = c.cod_cliente
+  JOIN vendedores v ON v.cod_vendedor = f.cod_vendedor
+  JOIN barrios b1 ON b1.cod_barrio = v.cod_barrio
+WHERE f.nro_factura IN (12, 18, 1, 3, 35, 26, 29)
+  AND c.cod_barrio = v.cod_barrio
 
 --SIN IGUALAR CODIGO BARRIO CLIENTE CON COD BARRIO VENDEDOR
 SELECT F.nro_factura AS 'NRO FACTURA',C.nom_cliente, C.cod_barrio , V.cod_barrio
@@ -383,10 +398,9 @@ ORDER BY F.fecha;
 
 
 
+SELECT DATEDIFF(YEAR,'22/10/1993',YEAR(GETDATE())) AS 'FECHA NACIMIENTO';
 
-
-
-
+SELECT(DATEDIFF(MONTH,'01/01/2022','09/06/2022')) AS 'FECHA NACIMIENTO';
 
 
 

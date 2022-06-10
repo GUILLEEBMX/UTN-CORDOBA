@@ -55,7 +55,22 @@ namespace PROBLEMA_5._3
 
         private void Products_SelectedIndexChanged(object sender, EventArgs e)
         {
-         
+            int tipo = 0;
+            TXT_CODIGO.Enabled = false;
+
+            if (LstProducts.SelectedIndex != -1)
+            {
+                Productos product = (Productos)LstProducts.SelectedItem;
+                TXT_CODIGO.Text = product.Codigo.ToString();
+                TXT_DETALLE.Text = product.Detalle;
+                cboMarca.SelectedValue = product.Marca;
+                tipo = product.Tipo;
+                TXT_PRECIO.Text = product.Precio.ToString();
+                DATE_PICKER.Value = product.Fecha;
+               
+              
+
+            }
 
 
 
@@ -121,6 +136,68 @@ namespace PROBLEMA_5._3
 
         private void BTN_RECORD_Click(object sender, EventArgs e)
         {
+            int tipo = 0;
+
+            int rowAffecteds = 0;
+
+            if (!RDBT_NETBOOK.Checked)
+            {
+                tipo = 1;
+            }
+
+            
+
+            if (LstProducts.SelectedIndex != -1)
+            {
+                TXT_CODIGO.Enabled = false;
+
+                Productos product = (Productos)LstProducts.SelectedItem;
+                product.Codigo = int.Parse(TXT_CODIGO.Text);
+                product.Detalle = TXT_DETALLE.Text;
+                product.Marca = (int)cboMarca.SelectedValue;
+                product.Tipo = tipo;
+                product.Precio = int.Parse(TXT_PRECIO.Text);
+                product.Fecha = DATE_PICKER.Value;
+
+                string updateQuery = "UPDATE Productos SET detalle=@detalle,tipo = @tipo,marca = @marca,precio = @precio,fecha = @fecha WHERE codigo = @codigo";
+
+
+                List<Parametro> valuesToInsert = new List<Parametro>();
+
+
+                valuesToInsert.Add(new Parametro("@codigo", product.Codigo));
+
+                valuesToInsert.Add(new Parametro("@detalle", product.Detalle));
+
+                valuesToInsert.Add(new Parametro("@marca", product.Marca));
+
+                valuesToInsert.Add(new Parametro("@tipo", product.Tipo));
+
+                valuesToInsert.Add(new Parametro("@precio", product.Precio));
+
+                valuesToInsert.Add(new Parametro("@fecha", product.Fecha));
+
+                rowAffecteds = context.PostToSQL(updateQuery, valuesToInsert);
+
+                if (rowAffecteds != 0)
+                {
+                    if (MessageBox.Show("LA INSERCION SE REALIZO CORRECTAMENTE...") == DialogResult.OK)
+                    {
+
+                        EmptyAllCommands();
+                        LstProducts.Items.Clear();
+                        LoadList();
+                        
+                    }
+
+                }
+
+
+            }
+
+            else
+            {
+
             int codigo = int.Parse(TXT_CODIGO.Text);
 
 
@@ -138,16 +215,8 @@ namespace PROBLEMA_5._3
 
             }
 
-            int tipo = 0;
-
-            int rowAffecteds = 0;
-          
-            if (!RDBT_NETBOOK.Checked)
-            {
-                tipo = 1;
-            }
-
-            Productos product = new Productos();
+           
+           Productos product = new Productos();
 
             product.Codigo = int.Parse(TXT_CODIGO.Text);
             product.Detalle = TXT_DETALLE.Text;
@@ -183,8 +252,12 @@ namespace PROBLEMA_5._3
                 {
 
                     EmptyAllCommands();
+                    LstProducts.Items.Clear();
+                    LoadList();
                 }
 
+            }
+            
             }
 
 
