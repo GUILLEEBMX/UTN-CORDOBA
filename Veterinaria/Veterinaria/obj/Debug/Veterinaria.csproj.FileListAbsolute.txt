@@ -1,0 +1,10 @@
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Veterinaria\Veterinaria\bin\Debug\Veterinaria.exe.config
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Veterinaria\Veterinaria\bin\Debug\Veterinaria.exe
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Veterinaria\Veterinaria\bin\Debug\Veterinaria.pdb
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Form1.resources
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Properties.Resources.resources
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Veterinaria\Veterinaria\obj\Debug\Veterinaria.csproj.GenerateResource.cache
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Veterinaria\Veterinaria\obj\Debug\Veterinaria.csproj.CoreCompileInputs.cache
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Veterinaria\Veterinaria\obj\Debug\Veterinaria.exe
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Veterinaria\Veterinaria\obj\Debug\Veterinaria.pdb
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Veterinaria\Veterinaria\obj\Debug\Veterinaria.csproj.AssemblyReference.cache
