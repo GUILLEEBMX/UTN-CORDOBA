@@ -160,6 +160,8 @@ namespace PROBLEMA_5._3
                 product.Fecha = DATE_PICKER.Value;
 
                 string updateQuery = "UPDATE Productos SET detalle=@detalle,tipo = @tipo,marca = @marca,precio = @precio,fecha = @fecha WHERE codigo = @codigo";
+                //string updateQuery = "UPDATE Productos SET @detalle=detalle,@tipo = tipo,@marca = marca,@precio = precio,@fecha = fecha WHERE @codigo = codigo";
+                //EL @ debe estar del lado derecho de la asignacion...
 
 
                 List<Parametro> valuesToInsert = new List<Parametro>();
@@ -181,7 +183,7 @@ namespace PROBLEMA_5._3
 
                 if (rowAffecteds != 0)
                 {
-                    if (MessageBox.Show("LA INSERCION SE REALIZO CORRECTAMENTE...") == DialogResult.OK)
+                    if (MessageBox.Show("LA ACTUALIZACION SE REALIZO CORRECTAMENTE...") == DialogResult.OK)
                     {
 
                         EmptyAllCommands();

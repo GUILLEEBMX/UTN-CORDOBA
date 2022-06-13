@@ -13,20 +13,21 @@ namespace PROBLEMA_5._3
         private string connectionString;
         SqlConnection context;
         SqlCommand cmd;
-        DataTable table;
+        //DataTable table;
 
         public Context ()
         {
             connectionString = @"Data Source = .\SQLEXPRESS; Initial Catalog = PRODUCTOS_PROBLEMA_5_3; Integrated Security = True";
             context  = new SqlConnection(connectionString);
+            cmd = new SqlCommand();
         }
 
         public DataTable GetFromSQL(string query)
         {
             context.Open();
-            cmd = new SqlCommand();
             cmd.CommandText = query;
             cmd.Connection = context;
+            DataTable table;
             table = new DataTable();
             table.Load(cmd.ExecuteReader());
             context.Close();
@@ -72,6 +73,7 @@ namespace PROBLEMA_5._3
 
         public int[] PrimaryKeyValues()
         {
+            DataTable table = new DataTable();
             table = GetFromSQL("SELECT * FROM Productos");
 
             int[] primaryKeys = new int[table.Rows.Count];
