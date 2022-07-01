@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TUP_PI_Parcial2_1w3A", "TUP_PI_Parcial2_1w3A.csproj", "{B5844980-5DC9-4C3F-BC98-6CC307657857}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5844980-5DC9-4C3F-BC98-6CC307657857}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5844980-5DC9-4C3F-BC98-6CC307657857}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5844980-5DC9-4C3F-BC98-6CC307657857}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5844980-5DC9-4C3F-BC98-6CC307657857}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {39736015-A0EB-462E-9965-E19619C6F874}
+	EndGlobalSection
+EndGlobal

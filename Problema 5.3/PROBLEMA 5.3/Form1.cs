@@ -85,10 +85,24 @@ namespace PROBLEMA_5._3
 
         private void LoadCBO()
         {
+
+
             DataTable table = context.GetFromSQL("Select * from Marcas");
-            cboMarca.DataSource = table;
-            cboMarca.ValueMember = "idMarca";
-            cboMarca.DisplayMember = "nombreMarca";
+
+
+            string[] marcas = new string[table.Rows.Count];
+
+            for (int i = 0; i < marcas.Length; i++)
+            {
+
+                marcas[i] = table.Rows[i].ItemArray[1].ToString();
+
+            }
+
+
+            cboMarca.DataSource = marcas;
+            //cboMarca.ValueMember = "idMarca";
+            //cboMarca.DisplayMember = "nombreMarca";
 
         }
 
