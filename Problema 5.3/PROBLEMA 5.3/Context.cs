@@ -17,10 +17,30 @@ namespace PROBLEMA_5._3
 
         public Context ()
         {
-            connectionString = @"Data Source = .\SQLEXPRESS; Initial Catalog = PRODUCTOS_PROBLEMA_5_3; Integrated Security = True";
+            //connectionString = @"Data Source = .\SQLEXPRESS; Initial Catalog = PRODUCTOS_PROBLEMA_5_3; Integrated Security = True";
+            connectionString = @" Data Source= .\SQLEXPRESS;Integrated Security=True";
             context  = new SqlConnection(connectionString);
             cmd = new SqlCommand();
+          
         }
+
+        public DataTable ConsumirSP() {
+
+            //cmd.CommandType = CommandType.StoredProcedure("SP_CONSULTAR_MODELOS");
+
+            
+
+            context.Open();
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Connection = context;
+            DataTable table = new DataTable();
+            table.Load(cmd.ExecuteReader());
+            context.Close();
+
+            return table;
+
+        }
+
 
         public DataTable GetFromSQL(string query)
         {

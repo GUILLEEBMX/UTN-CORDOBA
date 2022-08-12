@@ -27,7 +27,8 @@ namespace PROBLEMA_5._3
             bool x = true;
             EnableOrNotAllCommands(x);
             LstProducts.Focus();
-            LoadCBO();
+            //LoadCBO();
+            context.ConsumirSP();
            
         }
 
