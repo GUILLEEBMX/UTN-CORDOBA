@@ -1,0 +1,10 @@
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP1_Programacion_II\bin\Debug\TP1_Programacion_II.exe.config
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP1_Programacion_II\bin\Debug\TP1_Programacion_II.exe
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP1_Programacion_II\bin\Debug\TP1_Programacion_II.pdb
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP1_Programacion_II\obj\Debug\TP1_Programacion_II.Form1.resources
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP1_Programacion_II\obj\Debug\TP1_Programacion_II.Properties.Resources.resources
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP1_Programacion_II\obj\Debug\TP1_Programacion_II.csproj.GenerateResource.cache
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP1_Programacion_II\obj\Debug\TP1_Programacion_II.csproj.CoreCompileInputs.cache
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP1_Programacion_II\obj\Debug\TP1_Programacion_II.exe
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP1_Programacion_II\obj\Debug\TP1_Programacion_II.pdb
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP1_Programacion_II\obj\Debug\TP1_Programacion_II.csproj.AssemblyReference.cache
