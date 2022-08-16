@@ -30,7 +30,7 @@ namespace TP2_Programacion_II
         {
             DataTable table = new DataTable();
 
-            table = context.GetFromDatabase("SELECT * FROM FORMAS_PAGOS");
+            table = context.GetFromDatabase("CboLoader");
             cboFormaPago.DataSource = table;
             cboFormaPago.ValueMember = "idFormaPago";
             cboFormaPago.DisplayMember = "nombre";

@@ -13,25 +13,26 @@ namespace TP2_Programacion_II
         private string connectionString;
         SqlConnection context;
         SqlCommand cmd;
+        DataTable table;
         
         public Context()
         {
             connectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=TPII_PROGRAMACION_II;Integrated Security=True";
             context = new SqlConnection(connectionString);
-            cmd = new SqlCommand();
+            //cmd = new SqlCommand();
            
         }
 
         public DataTable GetFromDatabase(string query)
         {
+            cmd = new SqlCommand(query, context);
+            table = new DataTable();
             context.Open();
-            cmd.CommandText = query;
             cmd.Connection = context;
-            DataTable table = new DataTable();
+            cmd.CommandType = CommandType.StoredProcedure;
             table.Load(cmd.ExecuteReader());
             context.Close();
             return table;
-
         }
 
         public int PostToDatabase(string query, List<Parameter> valuesToInsert)
