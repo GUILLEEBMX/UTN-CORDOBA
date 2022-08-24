@@ -80,3 +80,17 @@ create procedure pa_articulos_sumaypromedio
  declare @s decimal(10,2), @p decimal(8,2)
 execute pa_articulos_sumaypromedio '%lápiz%', @s output, @p output
 select @s as total, @p as promedio;
+
+
+USE LIBRERIA_LCI_II;
+
+CREATE PROCEDURE SP1
+@precio INT,
+@cant INT OUTPUT
+AS
+SELECT @cant = COUNT(cod_articulo) * FROM /*TABLENAME*/
+WHERE pre_unitario = @precio
+DECLARE @cant int 
+
+
+EXEC SP1 @precio, @cant output

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carpinteria", "Carpinteria.csproj", "{7CB012BC-35FD-45FC-8140-DFC15104308E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7CB012BC-35FD-45FC-8140-DFC15104308E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CB012BC-35FD-45FC-8140-DFC15104308E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CB012BC-35FD-45FC-8140-DFC15104308E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CB012BC-35FD-45FC-8140-DFC15104308E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {77F94749-296B-46F4-A107-2AD5F74D8C2C}
+	EndGlobalSection
+EndGlobal
