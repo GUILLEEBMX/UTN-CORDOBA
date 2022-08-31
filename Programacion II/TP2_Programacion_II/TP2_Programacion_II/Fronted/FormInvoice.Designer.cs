@@ -51,12 +51,14 @@ namespace TP2_Programacion_II
             this.label2 = new System.Windows.Forms.Label();
             this.cboArticle = new System.Windows.Forms.ComboBox();
             this.lblArticle = new System.Windows.Forms.Label();
+            this.txtDelete = new System.Windows.Forms.TextBox();
+            this.DeleteButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.detailsDgv)).BeginInit();
             this.SuspendLayout();
             // 
             // dtpDate
             // 
-            this.dtpDate.Location = new System.Drawing.Point(80, 50);
+            this.dtpDate.Location = new System.Drawing.Point(103, 50);
             this.dtpDate.Name = "dtpDate";
             this.dtpDate.Size = new System.Drawing.Size(200, 20);
             this.dtpDate.TabIndex = 0;
@@ -68,7 +70,6 @@ namespace TP2_Programacion_II
             this.cboPaymentMethod.Name = "cboPaymentMethod";
             this.cboPaymentMethod.Size = new System.Drawing.Size(209, 21);
             this.cboPaymentMethod.TabIndex = 2;
-            //this.cboPaymentMethod.SelectedIndexChanged += new System.EventHandler(this.cboFormaPago_SelectedIndexChanged);
             // 
             // lblNºFactura
             // 
@@ -108,7 +109,7 @@ namespace TP2_Programacion_II
             // 
             // txtClient
             // 
-            this.txtClient.Location = new System.Drawing.Point(80, 87);
+            this.txtClient.Location = new System.Drawing.Point(103, 87);
             this.txtClient.Name = "txtClient";
             this.txtClient.Size = new System.Drawing.Size(100, 20);
             this.txtClient.TabIndex = 7;
@@ -129,6 +130,8 @@ namespace TP2_Programacion_II
             this.txtAmount.Name = "txtAmount";
             this.txtAmount.Size = new System.Drawing.Size(217, 20);
             this.txtAmount.TabIndex = 10;
+            this.txtAmount.TextChanged += new System.EventHandler(this.txtAmount_TextChanged);
+            this.txtAmount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtAmount_KeyPress);
             // 
             // detailsDgv
             // 
@@ -229,7 +232,7 @@ namespace TP2_Programacion_II
             // cboArticle
             // 
             this.cboArticle.FormattingEnabled = true;
-            this.cboArticle.Location = new System.Drawing.Point(80, 154);
+            this.cboArticle.Location = new System.Drawing.Point(103, 153);
             this.cboArticle.Name = "cboArticle";
             this.cboArticle.Size = new System.Drawing.Size(336, 21);
             this.cboArticle.TabIndex = 20;
@@ -243,11 +246,32 @@ namespace TP2_Programacion_II
             this.lblArticle.TabIndex = 21;
             this.lblArticle.Text = "Article";
             // 
+            // txtDelete
+            // 
+            this.txtDelete.Location = new System.Drawing.Point(462, 119);
+            this.txtDelete.Name = "txtDelete";
+            this.txtDelete.Size = new System.Drawing.Size(217, 20);
+            this.txtDelete.TabIndex = 22;
+            this.txtDelete.TextChanged += new System.EventHandler(this.txtDelete_TextChanged);
+            this.txtDelete.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDelete_KeyPress);
+            // 
+            // DeleteButton
+            // 
+            this.DeleteButton.Location = new System.Drawing.Point(685, 116);
+            this.DeleteButton.Name = "DeleteButton";
+            this.DeleteButton.Size = new System.Drawing.Size(75, 23);
+            this.DeleteButton.TabIndex = 23;
+            this.DeleteButton.Text = "Delete";
+            this.DeleteButton.UseVisualStyleBackColor = true;
+            this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
+            // 
             // FormInvoice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 458);
+            this.Controls.Add(this.DeleteButton);
+            this.Controls.Add(this.txtDelete);
             this.Controls.Add(this.lblArticle);
             this.Controls.Add(this.cboArticle);
             this.Controls.Add(this.label2);
@@ -299,6 +323,8 @@ namespace TP2_Programacion_II
         private System.Windows.Forms.DataGridViewTextBoxColumn Price;
         private System.Windows.Forms.DataGridViewTextBoxColumn Amount;
         private System.Windows.Forms.DataGridViewTextBoxColumn Actions;
+        private System.Windows.Forms.TextBox txtDelete;
+        private System.Windows.Forms.Button DeleteButton;
     }
 }
 

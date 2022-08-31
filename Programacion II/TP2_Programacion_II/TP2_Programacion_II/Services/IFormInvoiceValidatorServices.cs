@@ -13,5 +13,9 @@ namespace TP2_Programacion_II.Services
         void ButtonCancelClick(object sender, EventArgs e, Application application);
         void ButtonAceptClick(object sender, EventArgs e, TextBox txtClient, TextBox txtAmount, DataGridView detailsDgv, ComboBox cboArticles, ComboBox cboPaymentMethod);
         void SaveInvoice(TextBox txtClient, TextBox txtAmount, ComboBox cboPaymentMethod, ComboBox cboArticles);
+        void ValidatorOnlyNumbers(object sender, KeyPressEventArgs e);
+      
+
+
     }
 }

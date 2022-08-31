@@ -39,9 +39,9 @@ namespace TP2_Programacion_II
                 services.AddTransient<InvoiceModel>();
                 services.AddTransient<Context>();
                 services.AddTransient<DetailInvoice>();
-                services.AddTransient<IContextServices, Context>();
                 services.AddTransient<IFormInvoiceValidatorServices, FormInvoiceValidator>();
-                services.AddTransient<IInvoiceServices,InvoiceRepository>();
+                services.AddTransient<IBudgetRepositoryServices, BudgetRepository>();
+           
 
             });
         }

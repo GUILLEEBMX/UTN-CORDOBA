@@ -13,21 +13,22 @@ namespace TP2_Programacion_II
 {
     public partial class FormInvoice : Form
     {
-        private readonly IContextServices context;
+        private readonly IBudgetRepositoryServices budgetRepository;
         private readonly IFormInvoiceValidatorServices formInvoiceValidator;
 
-        public FormInvoice(IContextServices _context, IFormInvoiceValidatorServices _formInvoiceValidatorServices)
+        public FormInvoice(IBudgetRepositoryServices _budgetRepositoryServices, IFormInvoiceValidatorServices _formInvoiceValidatorServices)
         {
             InitializeComponent();
-            context = _context;
+            budgetRepository = _budgetRepositoryServices;
             formInvoiceValidator = _formInvoiceValidatorServices;
         }
 
         private void FormInvoice_Load(object sender, EventArgs e)
         {
-            context.NextInvoice(lblNºFactura);
-            context.LoaderPaymentMethods(cboPaymentMethod);
-            context.LoaderArticles(cboArticle);
+            budgetRepository.NextInvoice(lblNºFactura);
+            budgetRepository.LoaderPaymentMethods(cboPaymentMethod);
+            budgetRepository.LoaderArticles(cboArticle);
+          
         }
 
 
@@ -40,6 +41,33 @@ namespace TP2_Programacion_II
         private void ButtonAcept_Click(object sender, EventArgs e)
         {
             formInvoiceValidator.ButtonAceptClick(sender, e, txtClient, txtAmount, detailsDgv, cboArticle, cboPaymentMethod);
+        }
+
+        private void txtAmount_TextChanged(object sender, EventArgs e)
+        {
+
+           
+        }
+
+        private void txtAmount_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            formInvoiceValidator.ValidatorOnlyNumbers(sender, e);
+        }
+
+        private void txtDelete_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DeleteButton_Click(object sender, EventArgs e)
+        {
+            budgetRepository.DeleteFromDataBase(txtDelete);
+            
+        }
+
+        private void txtDelete_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            formInvoiceValidator.ValidatorOnlyNumbers(sender, e);
         }
     }
 }

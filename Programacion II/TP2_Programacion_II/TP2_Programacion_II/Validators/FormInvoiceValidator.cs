@@ -12,20 +12,16 @@ namespace TP2_Programacion_II.Validators
 {
     class FormInvoiceValidator : IFormInvoiceValidatorServices
     {
-        private readonly Context context;
+        private readonly IBudgetRepositoryServices budgetRepository;
         private readonly InvoiceModel invoice;
         private readonly DetailInvoice detailInvoice;
-        private readonly IInvoiceServices invoiceServices;
 
-        public FormInvoiceValidator(InvoiceModel _invoiceModel, Context _context, IInvoiceServices _invoiceServices, DetailInvoice _detailInvoice)
+
+        public FormInvoiceValidator(IBudgetRepositoryServices _budgetRepository, InvoiceModel _invoiceModel, DetailInvoice _detailInvoice)
         {
             invoice = _invoiceModel;
-            context = _context;
             detailInvoice = _detailInvoice;
-
-
-            invoiceServices = _invoiceServices;
-
+            budgetRepository = _budgetRepository;
 
         }
 
@@ -61,8 +57,7 @@ namespace TP2_Programacion_II.Validators
         {
             if (txtClient.Text == "")
             {
-                MessageBox.Show("Should select a client", "Control",
-                MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Should select a client", "Control", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
             if (detailsDgv.Rows.Count == 0)
@@ -95,7 +90,7 @@ namespace TP2_Programacion_II.Validators
 
             invoice.AddDetail(detailInvoice);
 
-            if (context.PostToDatabase(invoice))
+            if (budgetRepository.PostToDatabase(invoice))
             {
                 MessageBox.Show("Invoice Registered", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -113,6 +108,18 @@ namespace TP2_Programacion_II.Validators
             }
         }
 
+        public void ValidatorOnlyNumbers(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsLetter(e.KeyChar))
+            {
+                MessageBox.Show("ONLY NUMBERS...");
+                e.Handled = true;
+            }
 
-    }
+        }
+
+
+
+       
+    } 
 }
