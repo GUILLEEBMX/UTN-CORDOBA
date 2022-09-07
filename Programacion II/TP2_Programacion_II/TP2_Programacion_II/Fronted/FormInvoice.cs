@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using TP2_Programacion_II.Services;
+
 
 namespace TP2_Programacion_II
 {
@@ -15,6 +9,8 @@ namespace TP2_Programacion_II
     {
         private readonly IBudgetRepositoryServices budgetRepository;
         private readonly IFormInvoiceValidatorServices formInvoiceValidator;
+
+       
 
         public FormInvoice(IBudgetRepositoryServices _budgetRepositoryServices, IFormInvoiceValidatorServices _formInvoiceValidatorServices)
         {
@@ -28,7 +24,13 @@ namespace TP2_Programacion_II
             budgetRepository.NextInvoice(lblNºFactura);
             budgetRepository.LoaderPaymentMethods(cboPaymentMethod);
             budgetRepository.LoaderArticles(cboArticle);
-          
+
+            //this.reportViewer1.RefreshReport();
+            //this.reportViewer1.RefreshReport();
+            //this.DataSetBudget.Fill(this.TablesBudget.BudgetTables);
+            //DataSetBudget.TablesBudget.Fill,GetData();
+
+           // DataSetBudget.TablesBudgetDataTable.FI
         }
 
 
@@ -69,5 +71,7 @@ namespace TP2_Programacion_II
         {
             formInvoiceValidator.ValidatorOnlyNumbers(sender, e);
         }
+
+      
     }
 }

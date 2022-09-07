@@ -10,26 +10,29 @@ namespace TP2_Programacion_II
     {
         private string connectionString;
         SqlConnection context;
-       
-        public Context()
-        {
-            connectionString = Properties.Resources.connectionString;
-            context = new SqlConnection(connectionString);
-        }
+
+        //public Context()
+        //{
+        //    connectionString = Properties.Resources.connectionString;
+        //    context = new SqlConnection(connectionString);
+        //}
 
         public SqlConnection Connection()
         {
-             return context = new SqlConnection(connectionString);
+            connectionString = Properties.Resources.connectionString;
+            return context = new SqlConnection(connectionString);
         }
 
-        public void Open()
-        {
-            context.Open();
-        }
-        public void Close()
-        {
-            context.Close();
-        }
+        //public void Open()
+        //{
+        //     Connection().Open();
+        //}
+
+
+        //public void Close()
+        //{
+        //    context.Close();
+        //}
 
 
 

@@ -160,3 +160,5 @@ C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programa
 C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\obj\Debug\TP2_Programacion_II.csproj.CopyComplete
 C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\obj\Debug\TP2_Programacion_II.exe
 C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\obj\Debug\TP2_Programacion_II.pdb
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\obj\Debug\RdlCompile.cache
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\obj\Debug\RdlCompile.compiled

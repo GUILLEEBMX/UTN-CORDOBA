@@ -9,14 +9,19 @@ namespace TP2_Programacion_II.Repository
 {
     class BudgetRepository: IBudgetRepositoryServices
     {
-        private readonly Context context;
+        //private readonly Context context;
         SqlTransaction sqlTransaction;
         SqlCommand cmd;
         DataTable table;
+        private string connectionString;
+        SqlConnection context;
 
-        public BudgetRepository(Context _context)
+        public BudgetRepository(/*Context _context*/)
         {
-            context = _context;
+            //context = _context;
+            connectionString = Properties.Resources.connectionString;
+            context = new SqlConnection(connectionString);
+
         }
 
         public void LoaderPaymentMethods(ComboBox cboProducts)
@@ -43,7 +48,7 @@ namespace TP2_Programacion_II.Repository
             {
 
                 context.Open();
-                cmd = new SqlCommand(nameProcedure, context.Connection());
+                cmd = new SqlCommand(nameProcedure, context);
                 cmd.CommandType = CommandType.StoredProcedure;
                 table = new DataTable();
                 table.Load(cmd.ExecuteReader());
@@ -63,11 +68,13 @@ namespace TP2_Programacion_II.Repository
             try
             {
                 context.Open();
-                SqlCommand cmd = new SqlCommand("SP_PROXIMA_FACTURA", context.Connection());
+                //context.Open();
+                SqlCommand cmd = new SqlCommand("SP_PROXIMA_FACTURA", context);
                 cmd.CommandType = CommandType.StoredProcedure;
                 SqlParameter param = new SqlParameter("@next", SqlDbType.Int);
                 param.Direction = ParameterDirection.Output;
                 cmd.Parameters.Add(param);
+               // cmd.Connection = context.Connection();
                 cmd.ExecuteNonQuery();
                 int next = Convert.ToInt32(param.Value);
                 lblnumberInvoice.Text = "Invoice Nº : " + next.ToString();
@@ -89,8 +96,8 @@ namespace TP2_Programacion_II.Repository
             try
             {
                 context.Open();
-                sqlTransaction = context.Connection().BeginTransaction();
-                SqlCommand cmd = new SqlCommand("SP_INSERTAR_FACTURA", context.Connection());
+                sqlTransaction = context.BeginTransaction();
+                SqlCommand cmd = new SqlCommand("SP_INSERTAR_FACTURA", context);
                 cmd.Transaction = sqlTransaction;
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@fecha", invoice.Date);
@@ -104,7 +111,7 @@ namespace TP2_Programacion_II.Repository
 
                 foreach (DetailInvoice detailInvoice in invoice.DetailListInvoice)
                 {
-                    SqlCommand _cmd = new SqlCommand("SP_INSERTAR_DETALLE", context.Connection());
+                    SqlCommand _cmd = new SqlCommand("SP_INSERTAR_DETALLE", context);
                     _cmd.Transaction = sqlTransaction;
                     _cmd.CommandType = CommandType.StoredProcedure;
                     _cmd.Parameters.AddWithValue("@id_factura", invoiceNumber);
@@ -124,7 +131,7 @@ namespace TP2_Programacion_II.Repository
             }
             finally
             {
-                if (context != null && context.Connection().State == ConnectionState.Open)
+                if (context != null && context.State == ConnectionState.Open)
                     context.Close();
             }
             return result;
@@ -183,8 +190,8 @@ namespace TP2_Programacion_II.Repository
                 }
 
                 context.Open();
-                sqlTransaction = context.Connection().BeginTransaction();
-                SqlCommand cmd = new SqlCommand("SP_DELETE_DETAIL_INVOICE", context.Connection());
+                sqlTransaction = context.BeginTransaction();
+                SqlCommand cmd = new SqlCommand("SP_DELETE_DETAIL_INVOICE", context);
                 cmd.Transaction = sqlTransaction;
                 cmd.CommandType = CommandType.StoredProcedure;
                 SqlParameter param = new SqlParameter("@invoice", SqlDbType.Int);
@@ -194,7 +201,7 @@ namespace TP2_Programacion_II.Repository
                 cmd.ExecuteNonQuery();
 
 
-                SqlCommand cmdDeleteInvoice = new SqlCommand("SP_DELETE_INVOICE", context.Connection());
+                SqlCommand cmdDeleteInvoice = new SqlCommand("SP_DELETE_INVOICE");
                 cmdDeleteInvoice.CommandType = CommandType.StoredProcedure;
                 SqlParameter paramInvoice = new SqlParameter("@invoice", SqlDbType.Int);
                 paramInvoice.Direction = ParameterDirection.Input;
@@ -219,7 +226,7 @@ namespace TP2_Programacion_II.Repository
             }
             finally
             {
-                if (context != null && context.Connection().State == ConnectionState.Open)
+                if (context != null && context.State == ConnectionState.Open)
                     context.Close();
             }
 
