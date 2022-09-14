@@ -1,0 +1,322 @@
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\TP2_Programacion_II.exe.config
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\TP2_Programacion_II.exe
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\TP2_Programacion_II.pdb
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\obj\Debug\TP2_Programacion_II.csproj.AssemblyReference.cache
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\obj\Debug\TP2_Programacion_II.Properties.Resources.resources
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\obj\Debug\TP2_Programacion_II.csproj.GenerateResource.cache
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\obj\Debug\TP2_Programacion_II.csproj.CoreCompileInputs.cache
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\obj\Debug\TP2_Programacion_II.exe
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\obj\Debug\TP2_Programacion_II.pdb
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Configuration.CommandLine.dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Configuration.UserSecrets.dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Hosting.dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Logging.Configuration.dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Logging.Console.dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Logging.Debug.dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Logging.EventLog.dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Logging.EventSource.dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\System.Buffers.dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\System.Memory.dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\System.Text.Json.dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\System.ValueTuple.dll
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Configuration.xml
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Configuration.CommandLine.xml
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Configuration.EnvironmentVariables.xml
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.xml
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Configuration.Json.xml
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Configuration.UserSecrets.xml
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.xml
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.FileProviders.Physical.xml
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.xml
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Hosting.xml
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Hosting.Abstractions.xml
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Logging.Configuration.xml
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Logging.Console.xml
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Logging.Debug.xml
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Logging.EventLog.xml
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Logging.EventSource.xml
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Options.ConfigurationExtensions.xml
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\System.Buffers.xml
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\System.Memory.xml
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\System.Text.Json.xml
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\System.ValueTuple.xml
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\obj\Debug\TP2_Programacion_II.FormInvoice.resources
+C:\Users\K56\Documents\GIT UTN-FRC\UTN-CORDOBA\Programacion II\TP2_Programacion_II\TP2_Programacion_II\obj\Debug\TP2_Programacion_II.csproj.CopyComplete
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\TP2_Programacion_II.exe.config
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\TP2_Programacion_II.exe
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\TP2_Programacion_II.pdb
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Configuration.CommandLine.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Configuration.UserSecrets.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Hosting.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Logging.Configuration.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Logging.Console.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Logging.Debug.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Logging.EventLog.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Logging.EventSource.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\System.Buffers.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\System.Memory.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\System.Text.Json.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\System.ValueTuple.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Configuration.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Configuration.CommandLine.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Configuration.EnvironmentVariables.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Configuration.Json.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Configuration.UserSecrets.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.FileProviders.Physical.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Hosting.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Hosting.Abstractions.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Logging.Configuration.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Logging.Console.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Logging.Debug.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Logging.EventLog.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Logging.EventSource.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Options.ConfigurationExtensions.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\System.Buffers.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\System.Memory.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\System.Text.Json.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\bin\Debug\System.ValueTuple.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\obj\Debug\TP2_Programacion_II.csproj.AssemblyReference.cache
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\obj\Debug\TP2_Programacion_II.FormInvoice.resources
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\obj\Debug\TP2_Programacion_II.Properties.Resources.resources
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\obj\Debug\TP2_Programacion_II.csproj.GenerateResource.cache
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\obj\Debug\TP2_Programacion_II.csproj.CoreCompileInputs.cache
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\obj\Debug\TP2_Programacion_II.csproj.CopyComplete
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\obj\Debug\TP2_Programacion_II.exe
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\obj\Debug\TP2_Programacion_II.pdb
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\obj\Debug\RdlCompile.cache
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\obj\Debug\RdlCompile.compiled
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\obj\Debug\TP2_Programacion_II.csproj.AssemblyReference.cache
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\obj\Debug\TP2_Programacion_II.FormInvoice.resources
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\obj\Debug\TP2_Programacion_II.Properties.Resources.resources
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\obj\Debug\TP2_Programacion_II.csproj.GenerateResource.cache
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\obj\Debug\RdlCompile.cache
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\obj\Debug\RdlCompile.compiled
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\obj\Debug\TP2_Programacion_II.csproj.CoreCompileInputs.cache
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\x86\SqlServerSpatial160.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\x64\SqlServerSpatial160.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\TP2_Programacion_II.exe.config
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\TP2_Programacion_II.exe
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\TP2_Programacion_II.pdb
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Configuration.CommandLine.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Configuration.UserSecrets.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Hosting.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Logging.Configuration.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Logging.Console.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Logging.Debug.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Logging.EventLog.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Logging.EventSource.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.ReportViewer.WebForms.DLL
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\System.Buffers.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\System.Memory.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\System.Text.Json.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\System.ValueTuple.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\EnvDTE.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\stdole.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.MSXML.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Configuration.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Configuration.CommandLine.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Configuration.EnvironmentVariables.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Configuration.Json.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Configuration.UserSecrets.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.FileProviders.Physical.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Hosting.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Hosting.Abstractions.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Logging.Configuration.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Logging.Console.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Logging.Debug.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Logging.EventLog.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Logging.EventSource.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Options.ConfigurationExtensions.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\System.Buffers.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\System.Memory.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\System.Text.Json.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\System.ValueTuple.xml
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\zh-HANS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\zh-HANT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\zh-HANS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\zh-HANT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\zh-HANS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\zh-HANT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\zh-HANS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\zh-HANT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\obj\Debug\TP2_Programacion_II.csproj.CopyComplete
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\obj\Debug\TP2_Programacion_II.exe
+C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TPII_ProgramacionII_DAO_Pattern\TP2_Programacion_II\obj\Debug\TP2_Programacion_II.pdb
