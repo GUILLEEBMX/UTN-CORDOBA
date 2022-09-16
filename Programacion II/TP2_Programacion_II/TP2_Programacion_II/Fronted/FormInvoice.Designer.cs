@@ -53,6 +53,7 @@ namespace TP2_Programacion_II
             this.lblArticle = new System.Windows.Forms.Label();
             this.txtDelete = new System.Windows.Forms.TextBox();
             this.DeleteButton = new System.Windows.Forms.Button();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             ((System.ComponentModel.ISupportInitialize)(this.detailsDgv)).BeginInit();
             this.SuspendLayout();
             // 
@@ -265,11 +266,21 @@ namespace TP2_Programacion_II
             this.DeleteButton.UseVisualStyleBackColor = true;
             this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
             // 
+            // reportViewer1
+            // 
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "TP2_Programacion_II.Fronted.Reports.ReportBudget.rdlc";
+            this.reportViewer1.Location = new System.Drawing.Point(283, 50);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.ServerReport.BearerToken = null;
+            this.reportViewer1.Size = new System.Drawing.Size(396, 246);
+            this.reportViewer1.TabIndex = 24;
+            // 
             // FormInvoice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 458);
+            this.Controls.Add(this.reportViewer1);
             this.Controls.Add(this.DeleteButton);
             this.Controls.Add(this.txtDelete);
             this.Controls.Add(this.lblArticle);
@@ -325,6 +336,7 @@ namespace TP2_Programacion_II
         private System.Windows.Forms.DataGridViewTextBoxColumn Actions;
         private System.Windows.Forms.TextBox txtDelete;
         private System.Windows.Forms.Button DeleteButton;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
     }
 }
 

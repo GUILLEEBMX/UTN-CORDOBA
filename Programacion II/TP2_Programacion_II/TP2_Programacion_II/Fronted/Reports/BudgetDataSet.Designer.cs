@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace TP2_Programacion_II.Reports {
+namespace TP2_Programacion_II.Fronted.Reports {
     
     
     /// <summary>
@@ -20,9 +20,9 @@ namespace TP2_Programacion_II.Reports {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("DataSet1")]
+    [global::System.Xml.Serialization.XmlRootAttribute("BudgetDataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class DataSet1 : global::System.Data.DataSet {
+    public partial class BudgetDataSet : global::System.Data.DataSet {
         
         private DataTable1DataTable tableDataTable1;
         
@@ -30,7 +30,7 @@ namespace TP2_Programacion_II.Reports {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public DataSet1() {
+        public BudgetDataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace TP2_Programacion_II.Reports {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        protected DataSet1(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected BudgetDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -127,7 +127,7 @@ namespace TP2_Programacion_II.Reports {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            DataSet1 cln = ((DataSet1)(base.Clone()));
+            BudgetDataSet cln = ((BudgetDataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -199,9 +199,9 @@ namespace TP2_Programacion_II.Reports {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "DataSet1";
+            this.DataSetName = "BudgetDataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/DataSet1.xsd";
+            this.Namespace = "http://tempuri.org/BudgetDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableDataTable1 = new DataTable1DataTable();
@@ -225,7 +225,7 @@ namespace TP2_Programacion_II.Reports {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            DataSet1 ds = new DataSet1();
+            BudgetDataSet ds = new BudgetDataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -279,19 +279,19 @@ namespace TP2_Programacion_II.Reports {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class DataTable1DataTable : global::System.Data.TypedTableBase<DataTable1Row> {
             
-            private global::System.Data.DataColumn columnid_detalle;
-            
             private global::System.Data.DataColumn columnid_articulo;
-            
-            private global::System.Data.DataColumn columnid_factura;
-            
-            private global::System.Data.DataColumn columncantidad;
-            
-            private global::System.Data.DataColumn columnid_articulo1;
             
             private global::System.Data.DataColumn columnnombre;
             
             private global::System.Data.DataColumn columnprecioUnitario;
+            
+            private global::System.Data.DataColumn columnid_detalle;
+            
+            private global::System.Data.DataColumn columnid_articulo1;
+            
+            private global::System.Data.DataColumn columnid_factura;
+            
+            private global::System.Data.DataColumn columncantidad;
             
             private global::System.Data.DataColumn columnid_factura1;
             
@@ -340,41 +340,9 @@ namespace TP2_Programacion_II.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn id_detalleColumn {
-                get {
-                    return this.columnid_detalle;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public global::System.Data.DataColumn id_articuloColumn {
                 get {
                     return this.columnid_articulo;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn id_facturaColumn {
-                get {
-                    return this.columnid_factura;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn cantidadColumn {
-                get {
-                    return this.columncantidad;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn id_articulo1Column {
-                get {
-                    return this.columnid_articulo1;
                 }
             }
             
@@ -391,6 +359,38 @@ namespace TP2_Programacion_II.Reports {
             public global::System.Data.DataColumn precioUnitarioColumn {
                 get {
                     return this.columnprecioUnitario;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn id_detalleColumn {
+                get {
+                    return this.columnid_detalle;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn id_articulo1Column {
+                get {
+                    return this.columnid_articulo1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn id_facturaColumn {
+                get {
+                    return this.columnid_factura;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn cantidadColumn {
+                get {
+                    return this.columncantidad;
                 }
             }
             
@@ -479,16 +479,16 @@ namespace TP2_Programacion_II.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DataTable1Row AddDataTable1Row(int id_articulo, int id_factura, int cantidad, string nombre, decimal precioUnitario, System.DateTime fecha, int idFormaPago, string cliente, string nombre1) {
+            public DataTable1Row AddDataTable1Row(string nombre, decimal precioUnitario, int id_articulo1, int id_factura, int cantidad, System.DateTime fecha, int idFormaPago, string cliente, string nombre1) {
                 DataTable1Row rowDataTable1Row = ((DataTable1Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
-                        id_articulo,
-                        id_factura,
-                        cantidad,
-                        null,
                         nombre,
                         precioUnitario,
+                        null,
+                        id_articulo1,
+                        id_factura,
+                        cantidad,
                         null,
                         fecha,
                         idFormaPago,
@@ -502,10 +502,10 @@ namespace TP2_Programacion_II.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DataTable1Row FindByid_detalleid_articulo1id_factura1idFormaPago1(int id_detalle, int id_articulo1, int id_factura1, int idFormaPago1) {
+            public DataTable1Row FindByid_articuloid_detalleid_factura1idFormaPago1(int id_articulo, int id_detalle, int id_factura1, int idFormaPago1) {
                 return ((DataTable1Row)(this.Rows.Find(new object[] {
+                            id_articulo,
                             id_detalle,
-                            id_articulo1,
                             id_factura1,
                             idFormaPago1})));
             }
@@ -527,13 +527,13 @@ namespace TP2_Programacion_II.Reports {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
-                this.columnid_detalle = base.Columns["id_detalle"];
                 this.columnid_articulo = base.Columns["id_articulo"];
-                this.columnid_factura = base.Columns["id_factura"];
-                this.columncantidad = base.Columns["cantidad"];
-                this.columnid_articulo1 = base.Columns["id_articulo1"];
                 this.columnnombre = base.Columns["nombre"];
                 this.columnprecioUnitario = base.Columns["precioUnitario"];
+                this.columnid_detalle = base.Columns["id_detalle"];
+                this.columnid_articulo1 = base.Columns["id_articulo1"];
+                this.columnid_factura = base.Columns["id_factura"];
+                this.columncantidad = base.Columns["cantidad"];
                 this.columnid_factura1 = base.Columns["id_factura1"];
                 this.columnfecha = base.Columns["fecha"];
                 this.columnidFormaPago = base.Columns["idFormaPago"];
@@ -545,20 +545,20 @@ namespace TP2_Programacion_II.Reports {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columnid_detalle = new global::System.Data.DataColumn("id_detalle", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnid_detalle);
                 this.columnid_articulo = new global::System.Data.DataColumn("id_articulo", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnid_articulo);
-                this.columnid_factura = new global::System.Data.DataColumn("id_factura", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnid_factura);
-                this.columncantidad = new global::System.Data.DataColumn("cantidad", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columncantidad);
-                this.columnid_articulo1 = new global::System.Data.DataColumn("id_articulo1", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnid_articulo1);
                 this.columnnombre = new global::System.Data.DataColumn("nombre", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnnombre);
                 this.columnprecioUnitario = new global::System.Data.DataColumn("precioUnitario", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnprecioUnitario);
+                this.columnid_detalle = new global::System.Data.DataColumn("id_detalle", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnid_detalle);
+                this.columnid_articulo1 = new global::System.Data.DataColumn("id_articulo1", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnid_articulo1);
+                this.columnid_factura = new global::System.Data.DataColumn("id_factura", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnid_factura);
+                this.columncantidad = new global::System.Data.DataColumn("cantidad", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncantidad);
                 this.columnid_factura1 = new global::System.Data.DataColumn("id_factura1", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnid_factura1);
                 this.columnfecha = new global::System.Data.DataColumn("fecha", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
@@ -572,21 +572,21 @@ namespace TP2_Programacion_II.Reports {
                 this.columnnombre1 = new global::System.Data.DataColumn("nombre1", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnnombre1);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnid_articulo,
                                 this.columnid_detalle,
-                                this.columnid_articulo1,
                                 this.columnid_factura1,
                                 this.columnidFormaPago1}, true));
+                this.columnid_articulo.AutoIncrement = true;
+                this.columnid_articulo.AutoIncrementSeed = -1;
+                this.columnid_articulo.AutoIncrementStep = -1;
+                this.columnid_articulo.AllowDBNull = false;
+                this.columnid_articulo.ReadOnly = true;
+                this.columnnombre.MaxLength = 20;
                 this.columnid_detalle.AutoIncrement = true;
                 this.columnid_detalle.AutoIncrementSeed = -1;
                 this.columnid_detalle.AutoIncrementStep = -1;
                 this.columnid_detalle.AllowDBNull = false;
                 this.columnid_detalle.ReadOnly = true;
-                this.columnid_articulo1.AutoIncrement = true;
-                this.columnid_articulo1.AutoIncrementSeed = -1;
-                this.columnid_articulo1.AutoIncrementStep = -1;
-                this.columnid_articulo1.AllowDBNull = false;
-                this.columnid_articulo1.ReadOnly = true;
-                this.columnnombre.MaxLength = 20;
                 this.columnid_factura1.AutoIncrement = true;
                 this.columnid_factura1.AutoIncrementSeed = -1;
                 this.columnid_factura1.AutoIncrementStep = -1;
@@ -666,7 +666,7 @@ namespace TP2_Programacion_II.Reports {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DataSet1 ds = new DataSet1();
+                BudgetDataSet ds = new BudgetDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -741,71 +741,12 @@ namespace TP2_Programacion_II.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int id_detalle {
-                get {
-                    return ((int)(this[this.tableDataTable1.id_detalleColumn]));
-                }
-                set {
-                    this[this.tableDataTable1.id_detalleColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public int id_articulo {
                 get {
-                    try {
-                        return ((int)(this[this.tableDataTable1.id_articuloColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'id_articulo\' de la tabla \'DataTable1\' es DBNull.", e);
-                    }
+                    return ((int)(this[this.tableDataTable1.id_articuloColumn]));
                 }
                 set {
                     this[this.tableDataTable1.id_articuloColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int id_factura {
-                get {
-                    try {
-                        return ((int)(this[this.tableDataTable1.id_facturaColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'id_factura\' de la tabla \'DataTable1\' es DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableDataTable1.id_facturaColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int cantidad {
-                get {
-                    try {
-                        return ((int)(this[this.tableDataTable1.cantidadColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'cantidad\' de la tabla \'DataTable1\' es DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableDataTable1.cantidadColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int id_articulo1 {
-                get {
-                    return ((int)(this[this.tableDataTable1.id_articulo1Column]));
-                }
-                set {
-                    this[this.tableDataTable1.id_articulo1Column] = value;
                 }
             }
             
@@ -838,6 +779,65 @@ namespace TP2_Programacion_II.Reports {
                 }
                 set {
                     this[this.tableDataTable1.precioUnitarioColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int id_detalle {
+                get {
+                    return ((int)(this[this.tableDataTable1.id_detalleColumn]));
+                }
+                set {
+                    this[this.tableDataTable1.id_detalleColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int id_articulo1 {
+                get {
+                    try {
+                        return ((int)(this[this.tableDataTable1.id_articulo1Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'id_articulo1\' de la tabla \'DataTable1\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDataTable1.id_articulo1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int id_factura {
+                get {
+                    try {
+                        return ((int)(this[this.tableDataTable1.id_facturaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'id_factura\' de la tabla \'DataTable1\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDataTable1.id_facturaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int cantidad {
+                get {
+                    try {
+                        return ((int)(this[this.tableDataTable1.cantidadColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'cantidad\' de la tabla \'DataTable1\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDataTable1.cantidadColumn] = value;
                 }
             }
             
@@ -929,14 +929,38 @@ namespace TP2_Programacion_II.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool Isid_articuloNull() {
-                return this.IsNull(this.tableDataTable1.id_articuloColumn);
+            public bool IsnombreNull() {
+                return this.IsNull(this.tableDataTable1.nombreColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void Setid_articuloNull() {
-                this[this.tableDataTable1.id_articuloColumn] = global::System.Convert.DBNull;
+            public void SetnombreNull() {
+                this[this.tableDataTable1.nombreColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsprecioUnitarioNull() {
+                return this.IsNull(this.tableDataTable1.precioUnitarioColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetprecioUnitarioNull() {
+                this[this.tableDataTable1.precioUnitarioColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Isid_articulo1Null() {
+                return this.IsNull(this.tableDataTable1.id_articulo1Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Setid_articulo1Null() {
+                this[this.tableDataTable1.id_articulo1Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -961,30 +985,6 @@ namespace TP2_Programacion_II.Reports {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetcantidadNull() {
                 this[this.tableDataTable1.cantidadColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsnombreNull() {
-                return this.IsNull(this.tableDataTable1.nombreColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetnombreNull() {
-                this[this.tableDataTable1.nombreColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsprecioUnitarioNull() {
-                return this.IsNull(this.tableDataTable1.precioUnitarioColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetprecioUnitarioNull() {
-                this[this.tableDataTable1.precioUnitarioColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1071,7 +1071,7 @@ namespace TP2_Programacion_II.Reports {
         }
     }
 }
-namespace TP2_Programacion_II.Reports.DataSet1TableAdapters {
+namespace TP2_Programacion_II.Fronted.Reports.BudgetDataSetTableAdapters {
     
     
     /// <summary>
@@ -1195,13 +1195,13 @@ namespace TP2_Programacion_II.Reports.DataSet1TableAdapters {
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "DataTable1";
-            tableMapping.ColumnMappings.Add("id_detalle", "id_detalle");
             tableMapping.ColumnMappings.Add("id_articulo", "id_articulo");
-            tableMapping.ColumnMappings.Add("id_factura", "id_factura");
-            tableMapping.ColumnMappings.Add("cantidad", "cantidad");
-            tableMapping.ColumnMappings.Add("id_articulo1", "id_articulo1");
             tableMapping.ColumnMappings.Add("nombre", "nombre");
             tableMapping.ColumnMappings.Add("precioUnitario", "precioUnitario");
+            tableMapping.ColumnMappings.Add("id_detalle", "id_detalle");
+            tableMapping.ColumnMappings.Add("id_articulo1", "id_articulo1");
+            tableMapping.ColumnMappings.Add("id_factura", "id_factura");
+            tableMapping.ColumnMappings.Add("cantidad", "cantidad");
             tableMapping.ColumnMappings.Add("id_factura1", "id_factura1");
             tableMapping.ColumnMappings.Add("fecha", "fecha");
             tableMapping.ColumnMappings.Add("idFormaPago", "idFormaPago");
@@ -1225,7 +1225,7 @@ namespace TP2_Programacion_II.Reports.DataSet1TableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = @"SELECT        DETALLES_FACTURAS.*, ARTICULOS.*, FACTURAS.*, FORMAS_PAGOS.*
+            this._commandCollection[0].CommandText = @"SELECT        ARTICULOS.*, DETALLES_FACTURAS.*, FACTURAS.*, FORMAS_PAGOS.*
 FROM            ARTICULOS INNER JOIN
                          DETALLES_FACTURAS ON ARTICULOS.id_articulo = DETALLES_FACTURAS.id_articulo INNER JOIN
                          FACTURAS ON DETALLES_FACTURAS.id_factura = FACTURAS.id_factura INNER JOIN
@@ -1237,7 +1237,7 @@ FROM            ARTICULOS INNER JOIN
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DataSet1.DataTable1DataTable dataTable) {
+        public virtual int Fill(BudgetDataSet.DataTable1DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1250,9 +1250,9 @@ FROM            ARTICULOS INNER JOIN
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DataSet1.DataTable1DataTable GetData() {
+        public virtual BudgetDataSet.DataTable1DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DataSet1.DataTable1DataTable dataTable = new DataSet1.DataTable1DataTable();
+            BudgetDataSet.DataTable1DataTable dataTable = new BudgetDataSet.DataTable1DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1326,7 +1326,7 @@ FROM            ARTICULOS INNER JOIN
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateUpdatedRows(DataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(BudgetDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -1336,7 +1336,7 @@ FROM            ARTICULOS INNER JOIN
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateInsertedRows(DataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(BudgetDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -1346,7 +1346,7 @@ FROM            ARTICULOS INNER JOIN
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateDeletedRows(DataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(BudgetDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             return result;
         }
@@ -1380,7 +1380,7 @@ FROM            ARTICULOS INNER JOIN
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public virtual int UpdateAll(DataSet1 dataSet) {
+        public virtual int UpdateAll(BudgetDataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

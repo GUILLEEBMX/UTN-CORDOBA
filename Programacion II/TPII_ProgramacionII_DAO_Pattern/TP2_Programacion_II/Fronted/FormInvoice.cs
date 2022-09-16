@@ -8,31 +8,28 @@ namespace TP2_Programacion_II
 {
     public partial class FormInvoice : Form
     {
-        private readonly IBudgetRepositoryServices budgetRepository;
+        private readonly IBudgetRepositoryServices budgetServices;
         private readonly IFormInvoiceValidatorServices formInvoiceValidator;
-        Context context = Context.GetInstance();
-
-       
-
+        
         public FormInvoice(IBudgetRepositoryServices _budgetRepositoryServices, IFormInvoiceValidatorServices _formInvoiceValidatorServices)
         {
             InitializeComponent();
-            budgetRepository = _budgetRepositoryServices;
+            budgetServices = _budgetRepositoryServices;
             formInvoiceValidator = _formInvoiceValidatorServices;
         }
 
         private void FormInvoice_Load(object sender, EventArgs e)
         {
-            budgetRepository.NextInvoice(lblNºFactura);
-            budgetRepository.LoaderPaymentMethods(cboPaymentMethod);
-            budgetRepository.LoaderArticles(cboArticle);
+            budgetServices.NextInvoice(lblNºFactura);
+            budgetServices.LoaderPaymentMethods(cboPaymentMethod);
+            budgetServices.LoaderArticles(cboArticle);
 
-           
-            
+
+
 
             DataTable table = new DataTable();
 
-            this.reportViewer1.LocalReport.DataSources.Add(new Microsoft.Reporting.WinForms.ReportDataSource("BudgetDataSet",table));
+            //this.reportViewer1.LocalReport.DataSources.Add(new Microsoft.Reporting.WinForms.ReportDataSource("BudgetDataSet",table));
 
 
             this.reportViewer1.RefreshReport();
@@ -53,7 +50,7 @@ namespace TP2_Programacion_II
         private void txtAmount_TextChanged(object sender, EventArgs e)
         {
 
-           
+
         }
 
         private void txtAmount_KeyPress(object sender, KeyPressEventArgs e)
@@ -68,8 +65,8 @@ namespace TP2_Programacion_II
 
         private void DeleteButton_Click(object sender, EventArgs e)
         {
-            //budgetRepository.DeleteFromDataBase(txtDelete);
-            
+            budgetServices.DeleteFromDataBase(txtDelete);
+
         }
 
         private void txtDelete_KeyPress(object sender, KeyPressEventArgs e)
@@ -77,6 +74,6 @@ namespace TP2_Programacion_II
             formInvoiceValidator.ValidatorOnlyNumbers(sender, e);
         }
 
-      
+
     }
 }

@@ -12,6 +12,8 @@ namespace TP2_Programacion_II.Repository
         SqlTransaction sqlTransaction;
         SqlCommand cmd;
         DataTable table;
+        Context context = Context.GetInstance();
+
 
         public void LoaderPaymentMethods(ComboBox cboProducts)
         {
@@ -35,7 +37,7 @@ namespace TP2_Programacion_II.Repository
         {
             try
             {
-
+                    
                 Context.Connection().Open();
                 cmd = new SqlCommand(nameProcedure, Context.Connection());
                 cmd.CommandType = CommandType.StoredProcedure;

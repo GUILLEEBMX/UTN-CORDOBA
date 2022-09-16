@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using System.Windows.Forms;
 using TP2_Programacion_II.Services;
 
@@ -30,7 +31,16 @@ namespace TP2_Programacion_II
             //this.DataSetBudget.Fill(this.TablesBudget.BudgetTables);
             //DataSetBudget.TablesBudget.Fill,GetData();
 
-           // DataSetBudget.TablesBudgetDataTable.FI
+            // DataSetBudget.TablesBudgetDataTable.FI
+
+            //this..Fill(this.DataSet1.Bugs);
+
+            DataTable table = new DataTable();
+
+            this.reportViewer1.LocalReport.DataSources.Add(new Microsoft.Reporting.WinForms.ReportDataSource("BudgetDataSet",table));
+
+
+            this.reportViewer1.RefreshReport();
         }
 
 

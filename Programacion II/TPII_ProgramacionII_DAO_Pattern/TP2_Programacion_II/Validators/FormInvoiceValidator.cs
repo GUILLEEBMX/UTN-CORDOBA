@@ -12,16 +12,16 @@ namespace TP2_Programacion_II.Validators
 {
     class FormInvoiceValidator : IFormInvoiceValidatorServices
     {
-        //private readonly IBudgetRepositoryServices budgetRepository;
+        private readonly IBudgetRepositoryServices budgetRepository;
         private readonly InvoiceModel invoice;
         private readonly DetailInvoice detailInvoice;
 
 
-        public FormInvoiceValidator(/*IBudgetRepositoryServices _budgetRepository,*/ InvoiceModel _invoiceModel, DetailInvoice _detailInvoice)
+        public FormInvoiceValidator(IBudgetRepositoryServices _budgetRepository, InvoiceModel _invoiceModel, DetailInvoice _detailInvoice)
         {
             invoice = _invoiceModel;
             detailInvoice = _detailInvoice;
-            //budgetRepository = _budgetRepository;
+            budgetRepository = _budgetRepository;
 
         }
 
@@ -38,16 +38,16 @@ namespace TP2_Programacion_II.Validators
                 MessageBox.Show("Should select an amount valid!", "Control", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
-            //foreach (DataGridViewRow row in detailsDgv.Rows)
-            //{
-            //    if (row.Cells["Products"].Value.ToString().Equals(cboProducts.Text))
-            //    {
-            //        MessageBox.Show("PRODUCTO: " + cboProducts.Text + "ya se encuentra como detalle!", "Control",
+            foreach (DataGridViewRow row in detailsDgv.Rows)
+            {
+                if (row.Cells["Products"].Value.ToString().Equals(cboProducts.Text))
+                {
+                    MessageBox.Show("PRODUCTO: " + cboProducts.Text + "ya se encuentra como detalle!", "Control",
 
-            //        MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            //        return;
-            //    }
-            //}
+                    MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    return;
+                }
+            }
             DataRowView item = (DataRowView)cboProducts.SelectedItem;
             detailsDgv.Rows.Add(new object[] { item.Row.ItemArray[0], item.Row.ItemArray[1], item.Row.ItemArray[2], txtAmount.Text });
 
@@ -90,14 +90,14 @@ namespace TP2_Programacion_II.Validators
 
             invoice.AddDetail(detailInvoice);
 
-            //if (budgetRepository.PostToDatabase(invoice))
-            //{
-            //    MessageBox.Show("Invoice Registered", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //}
-            //else
-            //{
-            //    MessageBox.Show("ERROR. The invoice has not been registered", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
+            if (budgetRepository.PostToDatabase(invoice))
+            {
+                MessageBox.Show("Invoice Registered", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("ERROR. The invoice has not been registered", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         public void ButtonCancelClick(object sender, EventArgs e, Application application)

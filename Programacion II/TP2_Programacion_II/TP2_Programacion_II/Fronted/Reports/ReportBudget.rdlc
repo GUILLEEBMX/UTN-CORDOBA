@@ -28,7 +28,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>id articulo</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -116,21 +116,21 @@
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox2">
+                    <Textbox Name="id_articulo">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Fields!id_articulo.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox2</rd:DefaultName>
+                      <rd:DefaultName>id_articulo</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -225,9 +225,9 @@
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
-        <DataSetName>DataSet1</DataSetName>
-        <Top>0.84349cm</Top>
-        <Left>9.12495cm</Left>
+        <DataSetName>BudgetDataSet</DataSetName>
+        <Top>1.05516cm</Top>
+        <Left>13.43766cm</Left>
         <Height>1.2cm</Height>
         <Width>7.5cm</Width>
         <Style>
@@ -240,7 +240,7 @@
     <Height>2in</Height>
     <Style />
   </Body>
-  <Width>6.54526in</Width>
+  <Width>8.24317in</Width>
   <Page>
     <PageHeader>
       <Height>2.54cm</Height>
@@ -273,39 +273,23 @@
   </Page>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="DataSet1">
+    <DataSource Name="BudgetDataSet">
       <ConnectionProperties>
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>f344b879-3fbe-494c-a2a6-54a0bb24d437</rd:DataSourceID>
+      <rd:DataSourceID>af3bd87d-8ab4-452d-a420-812cd60f38ca</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="DataSet1">
+    <DataSet Name="BudgetDataSet">
       <Query>
-        <DataSourceName>DataSet1</DataSourceName>
+        <DataSourceName>BudgetDataSet</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
-        <Field Name="id_detalle">
-          <DataField>id_detalle</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
         <Field Name="id_articulo">
           <DataField>id_articulo</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="id_factura">
-          <DataField>id_factura</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="cantidad">
-          <DataField>cantidad</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="id_articulo1">
-          <DataField>id_articulo1</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="nombre">
@@ -315,6 +299,22 @@
         <Field Name="precioUnitario">
           <DataField>precioUnitario</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="id_detalle">
+          <DataField>id_detalle</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="id_articulo1">
+          <DataField>id_articulo1</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="id_factura">
+          <DataField>id_factura</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="cantidad">
+          <DataField>cantidad</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="id_factura1">
           <DataField>id_factura1</DataField>
@@ -342,8 +342,8 @@
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>DataSet1</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\Reports\DataSet1.xsd</rd:SchemaPath>
+        <rd:DataSetName>BudgetDataSet</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\K56\Pictures\[UTN-FRC]\Programacion II\TP2_Programacion_II\TP2_Programacion_II\Fronted\Reports\BudgetDataSet.xsd</rd:SchemaPath>
         <rd:TableName>DataTable1</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
@@ -352,5 +352,5 @@
     </DataSet>
   </DataSets>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
-  <rd:ReportID>45d3803a-3540-45b3-9e45-d2191146da66</rd:ReportID>
+  <rd:ReportID>ffd45ddc-cd88-4f53-a569-cead4584cf52</rd:ReportID>
 </Report>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+<xs:schema id="BudgetDataSet" targetNamespace="http://tempuri.org/BudgetDataSet.xsd" xmlns:mstns="http://tempuri.org/BudgetDataSet.xsd" xmlns="http://tempuri.org/BudgetDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
@@ -12,7 +12,7 @@
               <DbSource ConnectionRef="desktop-vdltpim\sqlexpress.TPII_PROGRAMACION_II.dbo" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
-                    <CommandText>SELECT        DETALLES_FACTURAS.*, ARTICULOS.*, FACTURAS.*, FORMAS_PAGOS.*
+                    <CommandText>SELECT        ARTICULOS.*, DETALLES_FACTURAS.*, FACTURAS.*, FORMAS_PAGOS.*
 FROM            ARTICULOS INNER JOIN
                          DETALLES_FACTURAS ON ARTICULOS.id_articulo = DETALLES_FACTURAS.id_articulo INNER JOIN
                          FACTURAS ON DETALLES_FACTURAS.id_factura = FACTURAS.id_factura INNER JOIN
@@ -23,13 +23,13 @@ FROM            ARTICULOS INNER JOIN
               </DbSource>
             </MainSource>
             <Mappings>
-              <Mapping SourceColumn="id_detalle" DataSetColumn="id_detalle" />
               <Mapping SourceColumn="id_articulo" DataSetColumn="id_articulo" />
-              <Mapping SourceColumn="id_factura" DataSetColumn="id_factura" />
-              <Mapping SourceColumn="cantidad" DataSetColumn="cantidad" />
-              <Mapping SourceColumn="id_articulo1" DataSetColumn="id_articulo1" />
               <Mapping SourceColumn="nombre" DataSetColumn="nombre" />
               <Mapping SourceColumn="precioUnitario" DataSetColumn="precioUnitario" />
+              <Mapping SourceColumn="id_detalle" DataSetColumn="id_detalle" />
+              <Mapping SourceColumn="id_articulo1" DataSetColumn="id_articulo1" />
+              <Mapping SourceColumn="id_factura" DataSetColumn="id_factura" />
+              <Mapping SourceColumn="cantidad" DataSetColumn="cantidad" />
               <Mapping SourceColumn="id_factura1" DataSetColumn="id_factura1" />
               <Mapping SourceColumn="fecha" DataSetColumn="fecha" />
               <Mapping SourceColumn="idFormaPago" DataSetColumn="idFormaPago" />
@@ -44,17 +44,13 @@ FROM            ARTICULOS INNER JOIN
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+  <xs:element name="BudgetDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="BudgetDataSet" msprop:Generator_UserDSName="BudgetDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="id_detalle" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid_detalle" msprop:Generator_ColumnPropNameInRow="id_detalle" msprop:Generator_ColumnPropNameInTable="id_detalleColumn" msprop:Generator_UserColumnName="id_detalle" type="xs:int" />
-              <xs:element name="id_articulo" msprop:Generator_ColumnVarNameInTable="columnid_articulo" msprop:Generator_ColumnPropNameInRow="id_articulo" msprop:Generator_ColumnPropNameInTable="id_articuloColumn" msprop:Generator_UserColumnName="id_articulo" type="xs:int" minOccurs="0" />
-              <xs:element name="id_factura" msprop:Generator_ColumnVarNameInTable="columnid_factura" msprop:Generator_ColumnPropNameInRow="id_factura" msprop:Generator_ColumnPropNameInTable="id_facturaColumn" msprop:Generator_UserColumnName="id_factura" type="xs:int" minOccurs="0" />
-              <xs:element name="cantidad" msprop:Generator_ColumnVarNameInTable="columncantidad" msprop:Generator_ColumnPropNameInRow="cantidad" msprop:Generator_ColumnPropNameInTable="cantidadColumn" msprop:Generator_UserColumnName="cantidad" type="xs:int" minOccurs="0" />
-              <xs:element name="id_articulo1" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid_articulo1" msprop:Generator_ColumnPropNameInRow="id_articulo1" msprop:Generator_ColumnPropNameInTable="id_articulo1Column" msprop:Generator_UserColumnName="id_articulo1" type="xs:int" />
+              <xs:element name="id_articulo" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid_articulo" msprop:Generator_ColumnPropNameInRow="id_articulo" msprop:Generator_ColumnPropNameInTable="id_articuloColumn" msprop:Generator_UserColumnName="id_articulo" type="xs:int" />
               <xs:element name="nombre" msprop:Generator_ColumnVarNameInTable="columnnombre" msprop:Generator_ColumnPropNameInRow="nombre" msprop:Generator_ColumnPropNameInTable="nombreColumn" msprop:Generator_UserColumnName="nombre" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
@@ -63,6 +59,10 @@ FROM            ARTICULOS INNER JOIN
                 </xs:simpleType>
               </xs:element>
               <xs:element name="precioUnitario" msprop:Generator_ColumnVarNameInTable="columnprecioUnitario" msprop:Generator_ColumnPropNameInRow="precioUnitario" msprop:Generator_ColumnPropNameInTable="precioUnitarioColumn" msprop:Generator_UserColumnName="precioUnitario" type="xs:decimal" minOccurs="0" />
+              <xs:element name="id_detalle" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid_detalle" msprop:Generator_ColumnPropNameInRow="id_detalle" msprop:Generator_ColumnPropNameInTable="id_detalleColumn" msprop:Generator_UserColumnName="id_detalle" type="xs:int" />
+              <xs:element name="id_articulo1" msprop:Generator_ColumnVarNameInTable="columnid_articulo1" msprop:Generator_ColumnPropNameInRow="id_articulo1" msprop:Generator_ColumnPropNameInTable="id_articulo1Column" msprop:Generator_UserColumnName="id_articulo1" type="xs:int" minOccurs="0" />
+              <xs:element name="id_factura" msprop:Generator_ColumnVarNameInTable="columnid_factura" msprop:Generator_ColumnPropNameInRow="id_factura" msprop:Generator_ColumnPropNameInTable="id_facturaColumn" msprop:Generator_UserColumnName="id_factura" type="xs:int" minOccurs="0" />
+              <xs:element name="cantidad" msprop:Generator_ColumnVarNameInTable="columncantidad" msprop:Generator_ColumnPropNameInRow="cantidad" msprop:Generator_ColumnPropNameInTable="cantidadColumn" msprop:Generator_UserColumnName="cantidad" type="xs:int" minOccurs="0" />
               <xs:element name="id_factura1" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid_factura1" msprop:Generator_ColumnPropNameInRow="id_factura1" msprop:Generator_ColumnPropNameInTable="id_factura1Column" msprop:Generator_UserColumnName="id_factura1" type="xs:int" />
               <xs:element name="fecha" msprop:Generator_ColumnVarNameInTable="columnfecha" msprop:Generator_ColumnPropNameInRow="fecha" msprop:Generator_ColumnPropNameInTable="fechaColumn" msprop:Generator_UserColumnName="fecha" type="xs:dateTime" minOccurs="0" />
               <xs:element name="idFormaPago" msprop:Generator_ColumnVarNameInTable="columnidFormaPago" msprop:Generator_ColumnPropNameInRow="idFormaPago" msprop:Generator_ColumnPropNameInTable="idFormaPagoColumn" msprop:Generator_UserColumnName="idFormaPago" type="xs:int" minOccurs="0" />
@@ -88,8 +88,8 @@ FROM            ARTICULOS INNER JOIN
     </xs:complexType>
     <xs:unique name="Constraint1" msdata:PrimaryKey="true">
       <xs:selector xpath=".//mstns:DataTable1" />
+      <xs:field xpath="mstns:id_articulo" />
       <xs:field xpath="mstns:id_detalle" />
-      <xs:field xpath="mstns:id_articulo1" />
       <xs:field xpath="mstns:id_factura1" />
       <xs:field xpath="mstns:idFormaPago1" />
     </xs:unique>

@@ -54,6 +54,7 @@ namespace TP2_Programacion_II
             this.txtDelete = new System.Windows.Forms.TextBox();
             this.DeleteButton = new System.Windows.Forms.Button();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.detailsDgv)).BeginInit();
             this.SuspendLayout();
             // 
@@ -268,12 +269,17 @@ namespace TP2_Programacion_II
             // 
             // reportViewer1
             // 
+            this.reportViewer1.DocumentMapWidth = 38;
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "TP2_Programacion_II.Fronted.Reports.ReportBudget.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(283, 50);
+            this.reportViewer1.Location = new System.Drawing.Point(399, 24);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(396, 246);
+            this.reportViewer1.Size = new System.Drawing.Size(40, 88);
             this.reportViewer1.TabIndex = 24;
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // FormInvoice
             // 
@@ -337,6 +343,7 @@ namespace TP2_Programacion_II
         private System.Windows.Forms.TextBox txtDelete;
         private System.Windows.Forms.Button DeleteButton;
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
 
