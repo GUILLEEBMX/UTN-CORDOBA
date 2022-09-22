@@ -461,3 +461,145 @@ UNION
     WHERE f.nro_factura BETWEEN 5 AND 30
     GROUP BY c.ape_cliente + ' ' + c.nom_cliente
 ORDER BY Tipo DESC, COUNT(f.nro_factura) DESC
+
+--REVISAR 
+
+/*Problema 1.4: Consultas agrupadas: Cláusula HAVING*/
+
+
+/*3. Se quiere saber la fecha de la primera venta, la cantidad total vendida y
+el importe total vendido por vendedor para los casos en que el promedio
+de la cantidad vendida sea inferior o igual a 56.*/
+
+SELECT
+    V.cod_vendedor AS 'VENDEDOR',
+    MIN(F.fecha) AS 'FECHA 1º VENTA',
+    COUNT(DF.cantidad) AS 'CANTIDAD TOTAL VENDIDA',
+    SUM(DF.cantidad * DF.pre_unitario) AS 'IMPORTE TOTAL VENDIDO'
+FROM detalle_facturas DF
+    JOIN FACTURAS F ON F.nro_factura = DF.nro_factura
+    JOIN VENDEDORES V ON V.cod_vendedor = F.cod_vendedor
+GROUP BY V.cod_vendedor
+HAVING AVG(DF.cantidad) <= 56
+
+/*4. Se necesita un listado que informe sobre el monto máximo, mínimo y
+total que gastó en esta librería cada cliente el año pasado, pero solo
+donde el importe total gastado por esos clientes esté entre 300 y 800.*/
+
+
+SELECT
+    C.cod_cliente AS 'CLIENTE',
+    MAX(DF.cantidad * DF.pre_unitario) AS 'MONTO MAXIMO',
+    MIN(DF.cantidad * DF.pre_unitario) AS 'MONTO MINIMO',
+    SUM(DF.CANTIDAD * DF.pre_unitario) AS 'MONTO TOTAL'
+FROM detalle_facturas DF
+    JOIN FACTURAS F ON F.nro_factura = DF.nro_factura
+    JOIN CLIENTES C ON C.cod_cliente = F.cod_cliente
+WHERE YEAR(F.fecha) = YEAR(GETDATE()) -1
+GROUP BY C.cod_cliente
+HAVING 
+SUM(DF.cantidad * DF.pre_unitario) >= 300 AND SUM(DF.cantidad * DF.pre_unitario) <= 800
+
+--EL RESUELTO POR EL PROFE ESTA MAL
+
+/*5. Muestre la cantidad facturas diarias por vendedor; para los casos en que
+esa cantidad sea 2 o más.*/
+
+SELECT
+    V.cod_vendedor AS 'VENDEDORES',
+    COUNT(F.nro_factura) AS 'CANTIDAD FACTURAS'
+FROM FACTURAS F
+    JOIN VENDEDORES V ON V.cod_vendedor = F.cod_vendedor
+WHERE DAY(F.fecha) = DAY(GETDATE())
+/*AND MONTH(F.fecha) = MONTH(GETDATE()) AND YEAR(F.fecha) = YEAR(GETDATE())*/
+GROUP BY V.cod_vendedor
+HAVING COUNT(F.nro_factura) >= 2;
+
+--PARA MI ESTA BIEN RESUELTO EL PROFE LE AGREGA FILTROS QUE NO SE PIDEN EN LA CONSIGNA
+
+/*6. Desde la administración se solicita un reporte que muestre el precio
+promedio, el importe total y el promedio del importe vendido por artículo
+que no comiencen con “c”, que su cantidad total vendida sea 100 o más
+o que ese importe total vendido sea superior a 700.*/
+
+SELECT
+    A.descripcion AS 'ARTICULO',
+    AVG(DF.pre_unitario) AS 'PRECIO PROMEDIO',
+    SUM(DF.cantidad * DF.pre_unitario) AS 'IMPORTE TOTAL',
+    AVG(DF.pre_unitario * DF.cantidad) AS 'PROMEDIO VENDIDO POR ARTICULO'
+FROM detalle_facturas DF
+    JOIN articulos A ON DF.cod_articulo = A.cod_articulo
+WHERE A.descripcion NOT LIKE 'C%'
+GROUP BY A.descripcion
+HAVING SUM(DF.cantidad) >= 100 OR SUM(DF.cantidad * DF.pre_unitario) > 700
+
+
+/*7. Muestre en un listado la cantidad total de artículos vendidos, el importe
+total y la fecha de la primer y última venta por cada cliente, para lo
+números de factura que no sean los siguientes: 2, 12, 20, 17, 30 y que el
+promedio de la cantidad vendida oscile entre 2 y 6. */
+
+SELECT
+    C.cod_cliente AS 'CLIENTES',
+    SUM(DF.cantidad) AS 'CANTIDAD TOTAL DE ARTICULOS',
+    SUM(DF.cantidad * DF.pre_unitario) AS 'IMPORTE TOTAL VENDIDO',
+    MAX(F.fecha) AS 'ULTIMA FACTURA',
+    MIN(F.fecha) AS 'PRIMER FACTURA'
+FROM detalle_facturas DF
+    JOIN FACTURAS F ON F.nro_factura = DF.nro_factura
+    JOIN CLIENTES C ON C.cod_cliente = F.cod_cliente
+WHERE F.nro_factura NOT IN (2,12,20,17,30)
+GROUP BY C.cod_cliente
+HAVING AVG(DF.cantidad) BETWEEN 2 AND 6;
+
+--ESTA PERFECTO EL PROFE USA OTROS PARAMETROS QUE NO SE PIDEN EN LA CONSIGNA--
+
+/*8. Emitir un listado que muestre la cantidad total de artículos vendidos, el
+importe total vendido y el promedio del importe vendido por vendedor y
+por cliente; para los casos en que el importe total vendido esté entre 200
+y 600 y para códigos de cliente que oscilen entre 1 y 5.*/
+
+
+SELECT
+    F.cod_cliente AS 'CLIENTE',
+    F.cod_vendedor AS 'VENDEDOR',
+    SUM(DF.cantidad) AS 'TOTAL ARTICULOS',
+    SUM(DF.cantidad * DF.pre_unitario) AS 'TOTAL VENDIDO',
+    AVG(DF.cantidad * DF.pre_unitario) AS 'PROMEDIO VENDIDO'
+FROM detalle_facturas DF
+    JOIN FACTURAS F ON DF.nro_factura = F.nro_factura
+WHERE F.cod_cliente BETWEEN 1 AND 5
+GROUP BY F.cod_cliente, F.cod_vendedor
+HAVING SUM(DF.cantidad * DF.pre_unitario) BETWEEN 200 AND 600;
+
+--ESTA PERFECTO EL PROFE USA OTROS PARAMETROS QUE NO SE PIDEN EN LA CONSIGNA--
+
+/*9. ¿Cuáles son los vendedores cuyo promedio de facturación el mes
+pasado supera los $ 800?*/
+
+
+SELECT
+    F.cod_vendedor AS 'VENDEDORES',
+    F.fecha AS 'FECHA',
+    AVG(DF.cantidad * DF.pre_unitario) AS 'PROMEDIO FACTURACION'
+FROM detalle_facturas DF
+    JOIN FACTURAS F ON F.nro_factura = DF.nro_factura
+    JOIN VENDEDORES V ON V.cod_vendedor = F.cod_vendedor
+WHERE MONTH(F.fecha) = MONTH(GETDATE()) -1
+GROUP BY F.cod_vendedor,F.fecha
+HAVING AVG(DF.cantidad * DF.pre_unitario) > 800
+
+/*10.¿Cuánto le vendió cada vendedor a cada cliente el año pasado siempre
+que la cantidad de facturas emitidas (por cada vendedor a cada cliente)
+sea menor a 5?*/
+
+SELECT
+    F.cod_cliente AS 'CLIENTES',
+    F.cod_vendedor AS 'VENDEDORES',
+    COUNT( F.nro_factura) AS 'CANTIDAD FACTURAS',
+    SUM(DF.cantidad * DF.pre_unitario) AS 'IMPORTE TOTAL'
+FROM detalle_facturas DF
+    JOIN FACTURAS F ON F.nro_factura = DF.nro_factura
+WHERE YEAR (F.FECHA) = YEAR (GETDATE()) - 1
+GROUP BY f.cod_cliente, f.cod_vendedor
+HAVING COUNT( F.nro_factura) < 5
