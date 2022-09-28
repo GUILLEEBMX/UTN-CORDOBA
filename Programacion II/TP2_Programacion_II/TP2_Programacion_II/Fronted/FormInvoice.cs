@@ -35,12 +35,12 @@ namespace TP2_Programacion_II
 
             //this..Fill(this.DataSet1.Bugs);
 
-            DataTable table = new DataTable();
+            //DataTable table = new DataTable();
 
-            this.reportViewer1.LocalReport.DataSources.Add(new Microsoft.Reporting.WinForms.ReportDataSource("BudgetDataSet",table));
+            //this.reportViewer1.LocalReport.DataSources.Add(new Microsoft.Reporting.WinForms.ReportDataSource("BudgetDataSet",table));
 
 
-            this.reportViewer1.RefreshReport();
+            //this.reportViewer1.RefreshReport();
         }
 
 
@@ -82,6 +82,9 @@ namespace TP2_Programacion_II
             formInvoiceValidator.ValidatorOnlyNumbers(sender, e);
         }
 
-      
+        private void detailsDgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

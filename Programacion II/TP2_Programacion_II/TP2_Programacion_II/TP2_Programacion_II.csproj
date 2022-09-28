@@ -208,11 +208,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Fronted\Reports\BudgetDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BudgetDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Models\Article.cs" />
     <Compile Include="Context\Context.cs" />
     <Compile Include="Models\InvoiceModel.cs" />
@@ -234,7 +229,6 @@
     <EmbeddedResource Include="Fronted\FormInvoice.resx">
       <DependentUpon>FormInvoice.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Fronted\Reports\ReportBudget.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -245,17 +239,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="Fronted\Reports\BudgetDataSet.xsc">
-      <DependentUpon>BudgetDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="Fronted\Reports\BudgetDataSet.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BudgetDataSet.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="Fronted\Reports\BudgetDataSet.xss">
-      <DependentUpon>BudgetDataSet.xsd</DependentUpon>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
