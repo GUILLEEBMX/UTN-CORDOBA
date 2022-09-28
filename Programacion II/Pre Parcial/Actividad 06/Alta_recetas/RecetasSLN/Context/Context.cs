@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace RecetasSLN.Context
 {
@@ -97,8 +98,35 @@ namespace RecetasSLN.Context
             return rowAffecteds;
         }
 
+        public string NextPrescription(Label lblNextPrescription)
+        {
 
-     
+            try
+            {
+                context.Open();
+                SqlCommand cmd = new SqlCommand("sp_ObtenerProximo", context);
+                cmd.CommandType = CommandType.StoredProcedure;
+                SqlParameter param = new SqlParameter("@next", SqlDbType.Int);
+                param.Direction = ParameterDirection.Output;
+                cmd.Parameters.Add(param);
+                cmd.Connection = context;
+                cmd.ExecuteNonQuery();
+                int next = Convert.ToInt32(param.Value);
+                lblNextPrescription.Text = "Prescription Nº : " + next.ToString();
+                context.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            return lblNextPrescription.Text; ;
+
+        }
+
+
+
+
+
 
 
 

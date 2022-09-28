@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace RecetasSLN.Interfaces
 {
@@ -19,6 +20,13 @@ namespace RecetasSLN.Interfaces
 
         DataTable GetFromDataBasePrescriptions();
 
+        String NextPrescription(Label lblNextPrescription);
+
+        void LoadDataGridView(DataGridView dgvPrescription);
+
+        void LoadCBOPrescriptionTypes(ComboBox cboPrescriptionTypes);
+
+        void LoadCBOIngredients(ComboBox cboIngredients);
 
 
     }

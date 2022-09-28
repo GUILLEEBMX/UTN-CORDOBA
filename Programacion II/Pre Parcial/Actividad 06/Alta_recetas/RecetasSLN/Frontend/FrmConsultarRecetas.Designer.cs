@@ -30,6 +30,7 @@ namespace RecetasSLN.presentación
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.Cheff = new System.Windows.Forms.Label();
             this.txtCheff = new System.Windows.Forms.TextBox();
             this.btnConsultar = new System.Windows.Forms.Button();
@@ -48,7 +49,6 @@ namespace RecetasSLN.presentación
             this.btnNuevo = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.cboIngredients = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPrescription)).BeginInit();
@@ -71,6 +71,15 @@ namespace RecetasSLN.presentación
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filtros:";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(43, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(59, 13);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Ingredients";
+            // 
             // Cheff
             // 
             this.Cheff.AutoSize = true;
@@ -86,7 +95,7 @@ namespace RecetasSLN.presentación
             this.txtCheff.Name = "txtCheff";
             this.txtCheff.Size = new System.Drawing.Size(243, 20);
             this.txtCheff.TabIndex = 2;
-            this.txtCheff.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            //this.txtCheff.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // btnConsultar
             // 
@@ -130,7 +139,7 @@ namespace RecetasSLN.presentación
             this.cboPrescriptionTypes.Name = "cboPrescriptionTypes";
             this.cboPrescriptionTypes.Size = new System.Drawing.Size(176, 21);
             this.cboPrescriptionTypes.TabIndex = 0;
-            this.cboPrescriptionTypes.SelectedIndexChanged += new System.EventHandler(this.cboTipoReceta_SelectedIndexChanged);
+            //this.cboPrescriptionTypes.SelectedIndexChanged += new System.EventHandler(this.cboTipoReceta_SelectedIndexChanged);
             // 
             // groupBox2
             // 
@@ -151,6 +160,7 @@ namespace RecetasSLN.presentación
             this.lblTotal.Size = new System.Drawing.Size(87, 13);
             this.lblTotal.TabIndex = 1;
             this.lblTotal.Text = "Total de recetas:";
+            //this.lblTotal.Click += new System.EventHandler(this.lblTotal_Click);
             // 
             // dgvPrescription
             // 
@@ -167,7 +177,7 @@ namespace RecetasSLN.presentación
             this.dgvPrescription.ReadOnly = true;
             this.dgvPrescription.Size = new System.Drawing.Size(479, 165);
             this.dgvPrescription.TabIndex = 0;
-            this.dgvPrescription.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            //this.dgvPrescription.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // colNombre
             // 
@@ -212,7 +222,7 @@ namespace RecetasSLN.presentación
             this.btnNuevo.TabIndex = 6;
             this.btnNuevo.Text = "Nueva Receta";
             this.btnNuevo.UseVisualStyleBackColor = true;
-            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
+            //this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // btnSave
             // 
@@ -231,16 +241,7 @@ namespace RecetasSLN.presentación
             this.cboIngredients.Name = "cboIngredients";
             this.cboIngredients.Size = new System.Drawing.Size(176, 21);
             this.cboIngredients.TabIndex = 6;
-            this.cboIngredients.SelectedIndexChanged += new System.EventHandler(this.cboIngredientes_SelectedIndexChanged);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(43, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 13);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Ingredients";
+            //this.cboIngredients.SelectedIndexChanged += new System.EventHandler(this.cboIngredientes_SelectedIndexChanged);
             // 
             // FrmConsultarRecetas
             // 

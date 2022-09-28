@@ -29,36 +29,17 @@ namespace RecetasSLN.presentación
             detailPrescription = new DetailPrescription();
         }
 
-        private void cboTipoReceta_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void FrmConsultarRecetas_Load(object sender, EventArgs e)
         {
-            LoadCBOIngredients();
-            LoadCBOPrescriptionTypes();
+            servicePrescription.LoadCBOIngredients(cboIngredients);
+            servicePrescription.LoadCBOPrescriptionTypes(cboPrescriptionTypes);
+            servicePrescription.NextPrescription(lblTotal);
           
-
-          
-
         }
 
-
-
-        private void btnNuevo_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void Guardar_Click(object sender, EventArgs e)
         {
-
 
             prescription.PrescriptionType = (int)cboPrescriptionTypes.SelectedValue;
             prescription.Name = txtName.Text;
@@ -75,53 +56,10 @@ namespace RecetasSLN.presentación
             }
         }
 
-        private void cboIngredientes_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-
-        }
-
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-
-
-
-
-        }
-
-        private void LoadCBOIngredients()
-        {
-            cboIngredients.DataSource = servicePrescription.GetFromDataBaseIngredients();
-            cboIngredients.DisplayMember = servicePrescription.GetFromDataBaseIngredients().Columns[1].ColumnName;
-            cboIngredients.ValueMember = servicePrescription.GetFromDataBaseIngredients().Columns[0].ColumnName;
-        }
-
-        private void LoadCBOPrescriptionTypes()
-        {
-            cboPrescriptionTypes.DataSource = servicePrescription.GetFromDataBasePrescriptionTypes();
-            cboPrescriptionTypes.DisplayMember = servicePrescription.GetFromDataBasePrescriptionTypes().Columns[1].ColumnName;
-            cboPrescriptionTypes.ValueMember = servicePrescription.GetFromDataBasePrescriptionTypes().Columns[0].ColumnName;
-        }
-
-        private void LoadDataGridView()
-        {
-            for (int i = 0; i < servicePrescription.GetFromDataBasePrescriptions().Rows.Count; i++)
-            {
-
-                dgvPrescription.Rows.Add(new object[]
-                {
-                 servicePrescription.GetFromDataBasePrescriptions().Rows[i].ItemArray[1],
-                 servicePrescription.GetFromDataBasePrescriptions().Rows[i].ItemArray[3],
-                 servicePrescription.GetFromDataBasePrescriptions().Rows[i].ItemArray[2]
-                });
-            }
-        }
-
         private void btnConsultar_Click(object sender, EventArgs e)
         {
-            LoadDataGridView();
+           servicePrescription.LoadDataGridView(dgvPrescription);
         }
+
     }
 }
