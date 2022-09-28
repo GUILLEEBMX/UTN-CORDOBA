@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace RecetasSLN.dominio
 {
-    public class Ingrediente
+    public class Ingredient
     {
-        public int IngredienteId { get; set; }
+        public int IngredientId { get; set; }
 
-        public string Nombre { get; set; }
+        public string Name { get; set; }
 
-        public int Unidad { get; set; }
+        public int Unit { get; set; }
     }
 }

@@ -28,3 +28,13 @@ C:\Users\K56\Downloads\Actividad 06\Alta_recetas\RecetasSLN\obj\Debug\RecetasSLN
 C:\Users\K56\Downloads\Actividad 06\Alta_recetas\RecetasSLN\obj\Debug\RecetasSLN.csproj.CoreCompileInputs.cache
 C:\Users\K56\Downloads\Actividad 06\Alta_recetas\RecetasSLN\obj\Debug\RecetasSLN.exe
 C:\Users\K56\Downloads\Actividad 06\Alta_recetas\RecetasSLN\obj\Debug\RecetasSLN.pdb
+C:\UTN\UTN-CORDOBA\Programacion II\Pre Parcial\Actividad 06\Alta_recetas\RecetasSLN\bin\Debug\RecetasSLN.exe.config
+C:\UTN\UTN-CORDOBA\Programacion II\Pre Parcial\Actividad 06\Alta_recetas\RecetasSLN\bin\Debug\RecetasSLN.exe
+C:\UTN\UTN-CORDOBA\Programacion II\Pre Parcial\Actividad 06\Alta_recetas\RecetasSLN\bin\Debug\RecetasSLN.pdb
+C:\UTN\UTN-CORDOBA\Programacion II\Pre Parcial\Actividad 06\Alta_recetas\RecetasSLN\obj\Debug\RecetasSLN.csproj.AssemblyReference.cache
+C:\UTN\UTN-CORDOBA\Programacion II\Pre Parcial\Actividad 06\Alta_recetas\RecetasSLN\obj\Debug\RecetasSLN.presentación.FrmConsultarRecetas.resources
+C:\UTN\UTN-CORDOBA\Programacion II\Pre Parcial\Actividad 06\Alta_recetas\RecetasSLN\obj\Debug\RecetasSLN.Properties.Resources.resources
+C:\UTN\UTN-CORDOBA\Programacion II\Pre Parcial\Actividad 06\Alta_recetas\RecetasSLN\obj\Debug\RecetasSLN.csproj.GenerateResource.cache
+C:\UTN\UTN-CORDOBA\Programacion II\Pre Parcial\Actividad 06\Alta_recetas\RecetasSLN\obj\Debug\RecetasSLN.csproj.CoreCompileInputs.cache
+C:\UTN\UTN-CORDOBA\Programacion II\Pre Parcial\Actividad 06\Alta_recetas\RecetasSLN\obj\Debug\RecetasSLN.exe
+C:\UTN\UTN-CORDOBA\Programacion II\Pre Parcial\Actividad 06\Alta_recetas\RecetasSLN\obj\Debug\RecetasSLN.pdb

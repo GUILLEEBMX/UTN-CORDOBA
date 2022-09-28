@@ -30,45 +30,63 @@ namespace RecetasSLN.presentación
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Cheff = new System.Windows.Forms.Label();
+            this.txtCheff = new System.Windows.Forms.TextBox();
             this.btnConsultar = new System.Windows.Forms.Button();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cboTipoReceta = new System.Windows.Forms.ComboBox();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.lblNamePrescription = new System.Windows.Forms.Label();
+            this.lblPrescriptionType = new System.Windows.Forms.Label();
+            this.cboPrescriptionTypes = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lblTotal = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvPrescription = new System.Windows.Forms.DataGridView();
             this.colNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colTipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colCheff = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colBorrar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
-            this.txtCheff = new System.Windows.Forms.TextBox();
-            this.Cheff = new System.Windows.Forms.Label();
-            this.Guardar = new System.Windows.Forms.Button();
-            this.cboIngredientes = new System.Windows.Forms.ComboBox();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.cboIngredients = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPrescription)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.Cheff);
             this.groupBox1.Controls.Add(this.txtCheff);
             this.groupBox1.Controls.Add(this.btnConsultar);
-            this.groupBox1.Controls.Add(this.txtNombre);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.cboTipoReceta);
+            this.groupBox1.Controls.Add(this.txtName);
+            this.groupBox1.Controls.Add(this.lblNamePrescription);
+            this.groupBox1.Controls.Add(this.lblPrescriptionType);
+            this.groupBox1.Controls.Add(this.cboPrescriptionTypes);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(507, 93);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filtros:";
+            // 
+            // Cheff
+            // 
+            this.Cheff.AutoSize = true;
+            this.Cheff.Location = new System.Drawing.Point(56, 70);
+            this.Cheff.Name = "Cheff";
+            this.Cheff.Size = new System.Drawing.Size(35, 13);
+            this.Cheff.TabIndex = 5;
+            this.Cheff.Text = "Cheff:";
+            // 
+            // txtCheff
+            // 
+            this.txtCheff.Location = new System.Drawing.Point(104, 67);
+            this.txtCheff.Name = "txtCheff";
+            this.txtCheff.Size = new System.Drawing.Size(243, 20);
+            this.txtCheff.TabIndex = 2;
+            this.txtCheff.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // btnConsultar
             // 
@@ -78,45 +96,46 @@ namespace RecetasSLN.presentación
             this.btnConsultar.TabIndex = 4;
             this.btnConsultar.Text = "Consultar";
             this.btnConsultar.UseVisualStyleBackColor = true;
+            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
-            // txtNombre
+            // txtName
             // 
-            this.txtNombre.Location = new System.Drawing.Point(104, 43);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(279, 20);
-            this.txtNombre.TabIndex = 3;
+            this.txtName.Location = new System.Drawing.Point(104, 43);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(279, 20);
+            this.txtName.TabIndex = 3;
             // 
-            // label2
+            // lblNamePrescription
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(19, 41);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Nombre:";
+            this.lblNamePrescription.AutoSize = true;
+            this.lblNamePrescription.Location = new System.Drawing.Point(6, 46);
+            this.lblNamePrescription.Name = "lblNamePrescription";
+            this.lblNamePrescription.Size = new System.Drawing.Size(96, 13);
+            this.lblNamePrescription.TabIndex = 2;
+            this.lblNamePrescription.Text = "Prescription Name:";
             // 
-            // label1
+            // lblPrescriptionType
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(19, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Tipo de receta:";
+            this.lblPrescriptionType.AutoSize = true;
+            this.lblPrescriptionType.Location = new System.Drawing.Point(6, 24);
+            this.lblPrescriptionType.Name = "lblPrescriptionType";
+            this.lblPrescriptionType.Size = new System.Drawing.Size(92, 13);
+            this.lblPrescriptionType.TabIndex = 1;
+            this.lblPrescriptionType.Text = "Prescription Type:";
             // 
-            // cboTipoReceta
+            // cboPrescriptionTypes
             // 
-            this.cboTipoReceta.FormattingEnabled = true;
-            this.cboTipoReceta.Location = new System.Drawing.Point(104, 16);
-            this.cboTipoReceta.Name = "cboTipoReceta";
-            this.cboTipoReceta.Size = new System.Drawing.Size(176, 21);
-            this.cboTipoReceta.TabIndex = 0;
-            this.cboTipoReceta.SelectedIndexChanged += new System.EventHandler(this.cboTipoReceta_SelectedIndexChanged);
+            this.cboPrescriptionTypes.FormattingEnabled = true;
+            this.cboPrescriptionTypes.Location = new System.Drawing.Point(104, 16);
+            this.cboPrescriptionTypes.Name = "cboPrescriptionTypes";
+            this.cboPrescriptionTypes.Size = new System.Drawing.Size(176, 21);
+            this.cboPrescriptionTypes.TabIndex = 0;
+            this.cboPrescriptionTypes.SelectedIndexChanged += new System.EventHandler(this.cboTipoReceta_SelectedIndexChanged);
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.lblTotal);
-            this.groupBox2.Controls.Add(this.dataGridView1);
+            this.groupBox2.Controls.Add(this.dgvPrescription);
             this.groupBox2.Location = new System.Drawing.Point(13, 112);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(506, 232);
@@ -133,21 +152,22 @@ namespace RecetasSLN.presentación
             this.lblTotal.TabIndex = 1;
             this.lblTotal.Text = "Total de recetas:";
             // 
-            // dataGridView1
+            // dgvPrescription
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvPrescription.AllowUserToAddRows = false;
+            this.dgvPrescription.AllowUserToDeleteRows = false;
+            this.dgvPrescription.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPrescription.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colNombre,
             this.colTipo,
             this.colCheff,
             this.colBorrar});
-            this.dataGridView1.Location = new System.Drawing.Point(21, 29);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(479, 165);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvPrescription.Location = new System.Drawing.Point(21, 29);
+            this.dgvPrescription.Name = "dgvPrescription";
+            this.dgvPrescription.ReadOnly = true;
+            this.dgvPrescription.Size = new System.Drawing.Size(479, 165);
+            this.dgvPrescription.TabIndex = 0;
+            this.dgvPrescription.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // colNombre
             // 
@@ -194,59 +214,41 @@ namespace RecetasSLN.presentación
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
-            // txtCheff
+            // btnSave
             // 
-            this.txtCheff.Location = new System.Drawing.Point(104, 67);
-            this.txtCheff.Name = "txtCheff";
-            this.txtCheff.Size = new System.Drawing.Size(243, 20);
-            this.txtCheff.TabIndex = 2;
-            this.txtCheff.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.btnSave.Location = new System.Drawing.Point(201, 350);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(91, 23);
+            this.btnSave.TabIndex = 7;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.Guardar_Click);
             // 
-            // Cheff
+            // cboIngredients
             // 
-            this.Cheff.AutoSize = true;
-            this.Cheff.Location = new System.Drawing.Point(19, 74);
-            this.Cheff.Name = "Cheff";
-            this.Cheff.Size = new System.Drawing.Size(32, 13);
-            this.Cheff.TabIndex = 5;
-            this.Cheff.Text = "Cheff";
-            // 
-            // Guardar
-            // 
-            this.Guardar.Location = new System.Drawing.Point(201, 350);
-            this.Guardar.Name = "Guardar";
-            this.Guardar.Size = new System.Drawing.Size(91, 23);
-            this.Guardar.TabIndex = 7;
-            this.Guardar.Text = "Guardar";
-            this.Guardar.UseVisualStyleBackColor = true;
-            this.Guardar.Click += new System.EventHandler(this.Guardar_Click);
-            // 
-            // cboIngredientes
-            // 
-            this.cboIngredientes.FormattingEnabled = true;
-            this.cboIngredientes.Location = new System.Drawing.Point(116, 1);
-            this.cboIngredientes.Name = "cboIngredientes";
-            this.cboIngredientes.Size = new System.Drawing.Size(176, 21);
-            this.cboIngredientes.TabIndex = 6;
-            this.cboIngredientes.SelectedIndexChanged += new System.EventHandler(this.cboIngredientes_SelectedIndexChanged);
+            this.cboIngredients.FormattingEnabled = true;
+            this.cboIngredients.Location = new System.Drawing.Point(116, 1);
+            this.cboIngredients.Name = "cboIngredients";
+            this.cboIngredients.Size = new System.Drawing.Size(176, 21);
+            this.cboIngredients.TabIndex = 6;
+            this.cboIngredients.SelectedIndexChanged += new System.EventHandler(this.cboIngredientes_SelectedIndexChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(45, 4);
+            this.label3.Location = new System.Drawing.Point(43, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 13);
+            this.label3.Size = new System.Drawing.Size(59, 13);
             this.label3.TabIndex = 6;
-            this.label3.Text = "Ingredientes";
+            this.label3.Text = "Ingredients";
             // 
             // FrmConsultarRecetas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(529, 378);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.cboIngredientes);
-            this.Controls.Add(this.Guardar);
+            this.Controls.Add(this.cboIngredients);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.groupBox2);
@@ -258,9 +260,8 @@ namespace RecetasSLN.presentación
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPrescription)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -268,12 +269,12 @@ namespace RecetasSLN.presentación
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnConsultar;
-        private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cboTipoReceta;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.Label lblNamePrescription;
+        private System.Windows.Forms.Label lblPrescriptionType;
+        private System.Windows.Forms.ComboBox cboPrescriptionTypes;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvPrescription;
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.DataGridViewTextBoxColumn colNombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn colTipo;
@@ -283,8 +284,8 @@ namespace RecetasSLN.presentación
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.Label Cheff;
         private System.Windows.Forms.TextBox txtCheff;
-        private System.Windows.Forms.Button Guardar;
-        private System.Windows.Forms.ComboBox cboIngredientes;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.ComboBox cboIngredients;
         private System.Windows.Forms.Label label3;
     }
 }
