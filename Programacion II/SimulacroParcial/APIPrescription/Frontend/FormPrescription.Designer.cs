@@ -30,12 +30,15 @@ namespace APIPrescription
         private void InitializeComponent()
         {
             this.lblPrescriptionNumber = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtCheff = new System.Windows.Forms.TextBox();
             this.cboPrescriptionType = new System.Windows.Forms.ComboBox();
             this.cboIngredients = new System.Windows.Forms.ComboBox();
-            this.cboAmounts = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvPrescription = new System.Windows.Forms.DataGridView();
+            this.Ingredients = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Amount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Actions = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnAcept = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
@@ -43,7 +46,8 @@ namespace APIPrescription
             this.lblCheff = new System.Windows.Forms.Label();
             this.lblPrescriptionType = new System.Windows.Forms.Label();
             this.lblTotalIngredients = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.txtAmount = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPrescription)).BeginInit();
             this.SuspendLayout();
             // 
             // lblPrescriptionNumber
@@ -56,19 +60,19 @@ namespace APIPrescription
             this.lblPrescriptionNumber.TabIndex = 0;
             this.lblPrescriptionNumber.Text = "Prescription # :";
             // 
-            // textBox1
+            // txtName
             // 
-            this.textBox1.Location = new System.Drawing.Point(126, 47);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(319, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtName.Location = new System.Drawing.Point(126, 47);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(319, 20);
+            this.txtName.TabIndex = 1;
             // 
-            // textBox2
+            // txtCheff
             // 
-            this.textBox2.Location = new System.Drawing.Point(126, 73);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(319, 20);
-            this.textBox2.TabIndex = 2;
+            this.txtCheff.Location = new System.Drawing.Point(126, 73);
+            this.txtCheff.Name = "txtCheff";
+            this.txtCheff.Size = new System.Drawing.Size(319, 20);
+            this.txtCheff.TabIndex = 2;
             // 
             // cboPrescriptionType
             // 
@@ -86,30 +90,49 @@ namespace APIPrescription
             this.cboIngredients.Size = new System.Drawing.Size(283, 21);
             this.cboIngredients.TabIndex = 4;
             // 
-            // cboAmounts
+            // dgvPrescription
             // 
-            this.cboAmounts.FormattingEnabled = true;
-            this.cboAmounts.Location = new System.Drawing.Point(354, 153);
-            this.cboAmounts.Name = "cboAmounts";
-            this.cboAmounts.Size = new System.Drawing.Size(220, 21);
-            this.cboAmounts.TabIndex = 5;
+            this.dgvPrescription.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPrescription.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Ingredients,
+            this.Amount,
+            this.Actions,
+            this.ID});
+            this.dgvPrescription.Location = new System.Drawing.Point(65, 180);
+            this.dgvPrescription.Name = "dgvPrescription";
+            this.dgvPrescription.Size = new System.Drawing.Size(590, 150);
+            this.dgvPrescription.TabIndex = 7;
             // 
-            // dataGridView1
+            // Ingredients
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(65, 180);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(590, 150);
-            this.dataGridView1.TabIndex = 6;
+            this.Ingredients.HeaderText = "ID";
+            this.Ingredients.Name = "Ingredients";
+            this.Ingredients.Visible = false;
+            // 
+            // Amount
+            // 
+            this.Amount.HeaderText = "Ingredient";
+            this.Amount.Name = "Amount";
+            // 
+            // Actions
+            // 
+            this.Actions.HeaderText = "Amount";
+            this.Actions.Name = "Actions";
+            // 
+            // ID
+            // 
+            this.ID.HeaderText = "Actions";
+            this.ID.Name = "ID";
             // 
             // btnAdd
             // 
             this.btnAdd.Location = new System.Drawing.Point(580, 151);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
-            this.btnAdd.TabIndex = 7;
+            this.btnAdd.TabIndex = 6;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnAcept
             // 
@@ -119,6 +142,7 @@ namespace APIPrescription
             this.btnAcept.TabIndex = 8;
             this.btnAcept.Text = "Acept";
             this.btnAcept.UseVisualStyleBackColor = true;
+            this.btnAcept.Click += new System.EventHandler(this.btnAcept_Click);
             // 
             // btnCancel
             // 
@@ -162,14 +186,23 @@ namespace APIPrescription
             this.lblTotalIngredients.Location = new System.Drawing.Point(457, 341);
             this.lblTotalIngredients.Name = "lblTotalIngredients";
             this.lblTotalIngredients.Size = new System.Drawing.Size(86, 13);
-            this.lblTotalIngredients.TabIndex = 14;
+            this.lblTotalIngredients.TabIndex = 10;
             this.lblTotalIngredients.Text = "TotalIngredients:";
+            this.lblTotalIngredients.Click += new System.EventHandler(this.lblTotalIngredients_Click);
+            // 
+            // txtAmount
+            // 
+            this.txtAmount.Location = new System.Drawing.Point(354, 153);
+            this.txtAmount.Name = "txtAmount";
+            this.txtAmount.Size = new System.Drawing.Size(220, 20);
+            this.txtAmount.TabIndex = 5;
             // 
             // FormPrescription
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtAmount);
             this.Controls.Add(this.lblTotalIngredients);
             this.Controls.Add(this.lblPrescriptionType);
             this.Controls.Add(this.lblCheff);
@@ -177,16 +210,16 @@ namespace APIPrescription
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnAcept);
             this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.cboAmounts);
+            this.Controls.Add(this.dgvPrescription);
             this.Controls.Add(this.cboIngredients);
             this.Controls.Add(this.cboPrescriptionType);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtCheff);
+            this.Controls.Add(this.txtName);
             this.Controls.Add(this.lblPrescriptionNumber);
             this.Name = "FormPrescription";
             this.Text = "Prescription";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.FormPrescription_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPrescription)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -195,12 +228,11 @@ namespace APIPrescription
         #endregion
 
         private System.Windows.Forms.Label lblPrescriptionNumber;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtCheff;
         private System.Windows.Forms.ComboBox cboPrescriptionType;
         private System.Windows.Forms.ComboBox cboIngredients;
-        private System.Windows.Forms.ComboBox cboAmounts;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvPrescription;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnAcept;
         private System.Windows.Forms.Button btnCancel;
@@ -208,6 +240,11 @@ namespace APIPrescription
         private System.Windows.Forms.Label lblCheff;
         private System.Windows.Forms.Label lblPrescriptionType;
         private System.Windows.Forms.Label lblTotalIngredients;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ingredients;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Amount;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Actions;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.TextBox txtAmount;
     }
 }
 

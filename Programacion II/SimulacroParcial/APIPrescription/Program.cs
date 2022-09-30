@@ -1,4 +1,5 @@
-﻿using System;
+﻿using APIPrescription.FactoryConfig;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace APIPrescription
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormPrescription());
+            Application.Run(new FormPrescription(new FactoryImplementation()));
         }
     }
 }

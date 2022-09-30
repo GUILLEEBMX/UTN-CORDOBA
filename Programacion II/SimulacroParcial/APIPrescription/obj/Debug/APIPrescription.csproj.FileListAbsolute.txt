@@ -1,0 +1,10 @@
+C:\UTN\UTN-CORDOBA\Programacion II\SimulacroParcial\APIPrescription\bin\Debug\APIPrescription.exe.config
+C:\UTN\UTN-CORDOBA\Programacion II\SimulacroParcial\APIPrescription\bin\Debug\APIPrescription.exe
+C:\UTN\UTN-CORDOBA\Programacion II\SimulacroParcial\APIPrescription\bin\Debug\APIPrescription.pdb
+C:\UTN\UTN-CORDOBA\Programacion II\SimulacroParcial\APIPrescription\obj\Debug\APIPrescription.csproj.AssemblyReference.cache
+C:\UTN\UTN-CORDOBA\Programacion II\SimulacroParcial\APIPrescription\obj\Debug\APIPrescription.FormPrescription.resources
+C:\UTN\UTN-CORDOBA\Programacion II\SimulacroParcial\APIPrescription\obj\Debug\APIPrescription.Properties.Resources.resources
+C:\UTN\UTN-CORDOBA\Programacion II\SimulacroParcial\APIPrescription\obj\Debug\APIPrescription.csproj.GenerateResource.cache
+C:\UTN\UTN-CORDOBA\Programacion II\SimulacroParcial\APIPrescription\obj\Debug\APIPrescription.csproj.CoreCompileInputs.cache
+C:\UTN\UTN-CORDOBA\Programacion II\SimulacroParcial\APIPrescription\obj\Debug\APIPrescription.exe
+C:\UTN\UTN-CORDOBA\Programacion II\SimulacroParcial\APIPrescription\obj\Debug\APIPrescription.pdb
