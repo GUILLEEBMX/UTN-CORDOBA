@@ -117,6 +117,7 @@ namespace RecetasSLN.Context
             }
             catch (Exception ex)
             {
+                
                 MessageBox.Show(ex.Message);
             }
             return lblNextPrescription.Text; ;
