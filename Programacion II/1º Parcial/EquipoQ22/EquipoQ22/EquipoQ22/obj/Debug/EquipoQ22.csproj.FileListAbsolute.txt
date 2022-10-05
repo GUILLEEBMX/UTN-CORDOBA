@@ -1,0 +1,32 @@
+C:\Users\Martin\source\repos\EquipoQ22\EquipoQ22\obj\Debug\EquipoQ22.csproj.AssemblyReference.cache
+C:\Users\Martin\source\repos\EquipoQ22\EquipoQ22\obj\Debug\EquipoQ22.csproj.SuggestedBindingRedirects.cache
+C:\Users\Martin\source\repos\EquipoQ22\EquipoQ22\obj\Debug\EquipoQ22.Properties.Resources.resources
+C:\Users\Martin\source\repos\EquipoQ22\EquipoQ22\obj\Debug\EquipoQ22.csproj.GenerateResource.cache
+C:\Users\Martin\source\repos\EquipoQ22\EquipoQ22\obj\Debug\EquipoQ22.csproj.CoreCompileInputs.cache
+C:\Users\Martin\source\repos\EquipoQ22\EquipoQ22\obj\Debug\EquipoQ22.FrmAlta.resources
+C:\Users\Martin\source\repos\EquipoQ22\EquipoQ22\bin\Debug\EquipoQ22.exe.config
+C:\Users\Martin\source\repos\EquipoQ22\EquipoQ22\bin\Debug\EquipoQ22.exe
+C:\Users\Martin\source\repos\EquipoQ22\EquipoQ22\bin\Debug\EquipoQ22.pdb
+C:\Users\Martin\source\repos\EquipoQ22\EquipoQ22\obj\Debug\EquipoQ22.exe
+C:\Users\Martin\source\repos\EquipoQ22\EquipoQ22\obj\Debug\EquipoQ22.pdb
+D:\UTN\ProgramacionII\2022\2Cuatrimestre\Parcial\EquipoQ22\EquipoQ22\EquipoQ22\obj\Debug\EquipoQ22.csproj.AssemblyReference.cache
+D:\UTN\ProgramacionII\2022\2Cuatrimestre\Parcial\EquipoQ22\EquipoQ22\EquipoQ22\obj\Debug\EquipoQ22.csproj.SuggestedBindingRedirects.cache
+D:\UTN\ProgramacionII\2022\2Cuatrimestre\Parcial\EquipoQ22\EquipoQ22\EquipoQ22\obj\Debug\EquipoQ22.FrmAlta.resources
+D:\UTN\ProgramacionII\2022\2Cuatrimestre\Parcial\EquipoQ22\EquipoQ22\EquipoQ22\obj\Debug\EquipoQ22.Properties.Resources.resources
+D:\UTN\ProgramacionII\2022\2Cuatrimestre\Parcial\EquipoQ22\EquipoQ22\EquipoQ22\obj\Debug\EquipoQ22.csproj.GenerateResource.cache
+D:\UTN\ProgramacionII\2022\2Cuatrimestre\Parcial\EquipoQ22\EquipoQ22\EquipoQ22\obj\Debug\EquipoQ22.csproj.CoreCompileInputs.cache
+D:\UTN\ProgramacionII\2022\2Cuatrimestre\Parcial\EquipoQ22\EquipoQ22\EquipoQ22\obj\Debug\EquipoQ22.exe
+D:\UTN\ProgramacionII\2022\2Cuatrimestre\Parcial\EquipoQ22\EquipoQ22\EquipoQ22\obj\Debug\EquipoQ22.pdb
+D:\UTN\ProgramacionII\2022\2Cuatrimestre\Parcial\EquipoQ22\EquipoQ22\EquipoQ22\bin\Debug\EquipoQ22.exe.config
+D:\UTN\ProgramacionII\2022\2Cuatrimestre\Parcial\EquipoQ22\EquipoQ22\EquipoQ22\bin\Debug\EquipoQ22.exe
+D:\UTN\ProgramacionII\2022\2Cuatrimestre\Parcial\EquipoQ22\EquipoQ22\EquipoQ22\bin\Debug\EquipoQ22.pdb
+C:\Users\K56\Desktop\112971 Britos Guillermo Leonardo\EquipoQ22\EquipoQ22\EquipoQ22\obj\Debug\EquipoQ22.csproj.AssemblyReference.cache
+C:\Users\K56\Desktop\112971 Britos Guillermo Leonardo\EquipoQ22\EquipoQ22\EquipoQ22\obj\Debug\EquipoQ22.FrmAlta.resources
+C:\Users\K56\Desktop\112971 Britos Guillermo Leonardo\EquipoQ22\EquipoQ22\EquipoQ22\obj\Debug\EquipoQ22.Properties.Resources.resources
+C:\Users\K56\Desktop\112971 Britos Guillermo Leonardo\EquipoQ22\EquipoQ22\EquipoQ22\obj\Debug\EquipoQ22.csproj.GenerateResource.cache
+C:\Users\K56\Desktop\112971 Britos Guillermo Leonardo\EquipoQ22\EquipoQ22\EquipoQ22\obj\Debug\EquipoQ22.csproj.CoreCompileInputs.cache
+C:\Users\K56\Desktop\112971 Britos Guillermo Leonardo\EquipoQ22\EquipoQ22\EquipoQ22\obj\Debug\EquipoQ22.exe
+C:\Users\K56\Desktop\112971 Britos Guillermo Leonardo\EquipoQ22\EquipoQ22\EquipoQ22\obj\Debug\EquipoQ22.pdb
+C:\Users\K56\Desktop\112971 Britos Guillermo Leonardo\EquipoQ22\EquipoQ22\EquipoQ22\bin\Debug\EquipoQ22.exe.config
+C:\Users\K56\Desktop\112971 Britos Guillermo Leonardo\EquipoQ22\EquipoQ22\EquipoQ22\bin\Debug\EquipoQ22.exe
+C:\Users\K56\Desktop\112971 Britos Guillermo Leonardo\EquipoQ22\EquipoQ22\EquipoQ22\bin\Debug\EquipoQ22.pdb
