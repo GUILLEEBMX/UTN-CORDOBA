@@ -114,4 +114,24 @@ HACER ESTE EJERCICIO Y ENVIARLO POR FORO
 
 
 
+/*Mostrar el nombre del cliente al que se le realizó la primer venta en un
+parámetro de salida*/
+
+
+-- USE LIBRERIA_LCI_II;
+
+-- CREATE PROCEDURE FIRST_CLIENT
+-- @name VARCHAR (50) OUTPUT
+-- AS
+-- SELECT  top 1 @name = C.nom_cliente
+-- FROM FACTURAS F 
+-- JOIN CLIENTES C ON C.cod_cliente = F.cod_cliente
+-- ORDER BY F.FECHA ASC;
+
+
+-- DECLARE @SALIENDO VARCHAR (50)  ;
+
+-- EXEC FIRST_CLIENT2 @SALIENDO OUTPUT;
+
+-- SELECT @SALIENDO AS 'CLIENTE';
 
