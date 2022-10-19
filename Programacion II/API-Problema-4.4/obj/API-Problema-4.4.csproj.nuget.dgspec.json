@@ -1,0 +1,91 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\UTN\\UTN-CORDOBA\\Programacion II\\API-Problema-4.4\\API-Problema-4.4.csproj": {}
+  },
+  "projects": {
+    "C:\\UTN\\UTN-CORDOBA\\Programacion II\\API-Problema-4.4\\API-Problema-4.4.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\UTN\\UTN-CORDOBA\\Programacion II\\API-Problema-4.4\\API-Problema-4.4.csproj",
+        "projectName": "API-Problema-4.4",
+        "projectPath": "C:\\UTN\\UTN-CORDOBA\\Programacion II\\API-Problema-4.4\\API-Problema-4.4.csproj",
+        "packagesPath": "C:\\Users\\K56\\.nuget\\packages\\",
+        "outputPath": "C:\\UTN\\UTN-CORDOBA\\Programacion II\\API-Problema-4.4\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\K56\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.ApplicationInsights.AspNetCore": {
+              "target": "Package",
+              "version": "[2.21.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[5.0.13, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            },
+            "Umbrella.Extensions.Logging.ApplicationInsights": {
+              "target": "Package",
+              "version": "[5.0.0-preview-0006, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.411\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
