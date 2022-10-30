@@ -220,3 +220,166 @@ USE LIBRERIA_LCI_II;
 -- RETURN @SALIDA
 -- END;
 
+-- 4.3: Programación aplicada a Procedimientos Almacenados y Funciones
+-- definidas por el usuario
+
+-- a. Mostrar los artículos cuyo precio sea mayor o igual que un valor que se
+-- envía por parámetro.
+
+
+-- CREATE FUNCTION ARTICULOS_MAYORES_MENORES (@PRECIO DECIMAL (10,2) )
+-- RETURNS TABLE 
+-- RETURN 
+-- (SELECT * FROM ARTICULOS WHERE pre_unitario >= @PRECIO )
+
+-- b. Ingresar un artículo nuevo, verificando que la cantidad de stock que se
+-- pasa por parámetro sea un valor mayor a 30 unidades y menor que 100.
+-- Informar un error caso contrario.
+
+
+--CREATE PROCEDURE INSERCION_ARTICULOS 
+--@DESCRIPCION VARCHAR (100),
+--@STOCK_MINIMO INT,
+--@STOCK INT,
+--@PRECIO DECIMAL (10,2),
+--@OBSERVACIONES VARCHAR (100),
+--@MESSAGE VARCHAR (300) OUTPUT
+--AS
+--BEGIN 
+--IF(@STOCK < 30 OR @STOCK > 100) 
+--RAISERROR (15600, -1, -1, 'EL STOCK INGRESADO NO PUEDE SER MENOR A 30 O MAYOR A 100...');
+--ELSE 
+--INSERT INTO articulos  (descripcion,stock_minimo,stock,pre_unitario,observaciones) VALUES (@DESCRIPCION,@STOCK_MINIMO,@STOCK,@PRECIO,@OBSERVACIONES)
+--SET @MESSAGE = 'LA INSERCION SE REALIZO CORRECTAMENTE...'
+--END 
+
+-- DECLARE @DESCRIPCION VARCHAR (100) = 'ESTO ES UNA PRUEBA';
+-- DECLARE @STOCK_MINIMO INT = 25; 
+-- DECLARE @STOCK INT = 32;
+-- DECLARE @PRECIO DECIMAL (10,2) = 50;
+-- DECLARE @OBSERVACIONES VARCHAR (100) = 'ESTO TAMBIEN ES UNA PRUEBA';
+
+
+--DECLARE @MESSAGE AS VARCHAR(100);
+--EXEC INSERCION_ARTICULOS @DESCRIPCION,@STOCK_MINIMO,@STOCK,@PRECIO,@OBSERVACIONES,@MESSAGE OUTPUT
+--SELECT @MESSAGE AS RETORNO_FROM_SP
+
+
+--SINTAXIS CORRECTA DE FUNCIONES QUE DEVUELVEN UN UNICO VALOR.
+
+-- CREATE FUNCTION INSERCION_ARTICULOS
+-- (@DESCRIPCION VARCHAR (100), @STOCK_MINIMO INT,@STOCK INT,@PRECIO DECIMAL (10,2),@OBSERVACIONES VARCHAR (100))
+-- RETURNS VARCHAR (100)
+-- BEGIN 
+-- DECLARE @MESSAGE VARCHAR (100);
+-- IF(@STOCK < 30 OR @STOCK > 100)
+-- SET @MESSAGE = 'EL STOCK NO PUEDE SER MENOR QUE 30 O MAYOR A 100'
+-- RETURN @MESSAGE;
+-- INSERT INTO articulos  (descripcion,stock_minimo,stock,pre_unitario,observaciones) VALUES (@DESCRIPCION,@STOCK_MINIMO,@STOCK,@PRECIO,@OBSERVACIONES)
+-- SET @MESSAGE = 'LA INSERCION SE REALIZO CORRECTAMENTE';
+-- RETURN @MESSAGE;
+-- END 
+
+--c. Mostrar un mensaje informativo acerca de si hay que reponer o no
+--stock de un artículo cuyo código sea enviado por parámetro
+
+
+--CREATE PROCEDURE INFORMAR_STOCK
+--@CODIGO INT,
+--@MESSAGE VARCHAR (100) OUTPUT
+--AS 
+--BEGIN
+--IF((SELECT stock_minimo FROM articulos WHERE cod_articulo = @CODIGO) = 0) 
+--SET @MESSAGE = 'HAY QUE REPONER EL STOCK'
+--ELSE
+--SET @MESSAGE = 'NO HAY QUE REPONER EL STOCK...'
+--END ;
+
+--DECLARE @CODIGO INT = 5;
+--DECLARE @MESSAGE VARCHAR (100);
+
+--EXEC INFORMAR_STOCK @CODIGO,@MESSAGE OUTPUT;
+--SELECT @MESSAGE AS MESSAGE_FROM_SP
+
+--UPDATE articulos SET stock_minimo = 0 WHERE cod_articulo = 5;
+
+
+--REVISAR 
+
+--d. Actualizar el precio de los productos que tengan un precio menor a uno
+--ingresado por parámetro en un porcentaje que también se envíe por
+--parámetro. Si no se modifica ningún elemento informar dicha situación--ALTER PROCEDURE AUMENTAR_PRECIOS_MENORES_A_UNO--@PRECIO DECIMAL (10,2),--@PORCENTAJE INT,--@MESSAGE VARCHAR (100) OUTPUT--AS--BEGIN--IF(@PRECIO IS NULL OR @PORCENTAJE IS NULL)--SET @MESSAGE = 'DEBE ENVIAR LOS PARAMETROS!!!' --ELSE--SELECT pre_unitario FROM articulos WHERE pre_unitario > @PRECIO--SET @MESSAGE = 'NO HACE FALTA ACTUALIZAR EL PRECIO'--END--DECLARE @PRECIO DECIMAL (10,2) = NULL;--DECLARE @PORCENTAJE INT = 10;--DECLARE @MESSAGE VARCHAR (100);--EXEC AUMENTAR_PRECIOS_MENORES_A_UNO @PRECIO,@PORCENTAJE,@MESSAGE OUTPUT--SELECT @MESSAGE AS MESSAGE_FROM_SP;--e. Mostrar el nombre del cliente al que se le realizó la primer venta en un
+--parámetro de salida.
+
+--ALTER PROCEDURE PRIMER_CLIENTE
+--@NOMBRE VARCHAR (100) OUTPUT
+--AS 
+--BEGIN
+--SELECT TOP 1 @NOMBRE =  C.nom_cliente FROM clientes C 
+--JOIN facturas F ON F.cod_cliente = C.cod_cliente
+--END 
+
+
+--DECLARE @NOMBRE VARCHAR (100);
+--EXEC PRIMER_CLIENTE @NOMBRE OUTPUT
+--SELECT @NOMBRE AS 'CLIENTE'
+
+--f. Realizar un select que busque el artículo cuyo nombre empiece con un
+--valor enviado por parámetro y almacenar su nombre en un parámetro
+--de salida. En caso que haya varios artículos ocurrirá una excepción
+--que deberá ser manejada con try catch.--CREATE PROCEDURE BUSCAR_ARTICULO--@PALABRA VARCHAR(10),--@NOMBRE VARCHAR (100) OUTPUT--AS--BEGIN--BEGIN TRY--SELECT @NOMBRE =  A.descripcion  FROM articulos A WHERE A.descripcion LIKE '%' + @PALABRA + '%' --END TRY--BEGIN CATCH--RAISERROR (15600, -1, -1, 'LA BUSQUEDA HA DEVUELTO MAS DE 1 VALOR...');--END CATCH--END
+
+--DECLARE @PALABRA VARCHAR (10) = 'Goma';
+--DECLARE @NOMBRE VARCHAR (100);
+
+--EXEC BUSCAR_ARTICULO @PALABRA,@NOMBRE OUTPUT 
+--SELECT @NOMBRE AS 'NOMBRE FROM SP'
+
+--2. Programar funciones que permitan realizar las siguientes tareas:
+
+--a. Devolver una cadena de caracteres compuesto por los siguientes
+--datos: Apellido, Nombre, Telefono, Calle, Altura y Nombre del Barrio,
+--de un determinado cliente, que se puede informar por codigo de cliente
+--o email.
+
+--CREATE FUNCTION ARMAR_CADENA (@CODIGO INT,@EMAIL VARCHAR (100))
+--RETURNS VARCHAR (200)
+--AS 
+--BEGIN
+--DECLARE @SALIDA VARCHAR (200)
+--if(@codigo IS NULL)
+--SELECT @SALIDA = C.nom_cliente + ' ' +  C.ape_cliente + ' ' + CONVERT(VARCHAR(100),C.nro_tel) + ' ' + C.calle + ' ' + CONVERT(VARCHAR(100),C.altura) + ' ' + B.barrio   FROM CLIENTES C 
+--JOIN barrios B ON B.cod_barrio = C.cod_barrio
+--WHERE C.cod_cliente = @EMAIL
+--ELSE IF(@EMAIL IS  NULL)
+--SELECT  @SALIDA = C.nom_cliente + ' ' +  C.ape_cliente + ' ' + CONVERT(VARCHAR(100),C.nro_tel) + ' ' + C.calle + ' ' + CONVERT(VARCHAR(100),C.altura) + ' ' + B.barrio   FROM CLIENTES C 
+--JOIN barrios B ON B.cod_barrio = C.cod_barrio
+--WHERE C.cod_cliente = @CODIGO
+--RETURN @SALIDA
+--END;
+
+--DECLARE @CODIGO INT = 4;
+--DECLARE @EMAIL VARCHAR (100) = NULL;
+--SELECT  dbo.ARMAR_CADENA(@CODIGO, @EMAIL) AS 'SALIDA FROM FUNCTION';
+
+--b. Devolver todos los artículos, se envía un parámetro que permite
+--ordenar el resultado por el campo precio de manera ascendente (‘A’), o
+--descendente (‘D’).--CREATE PROCEDURE ORDERNAR_ARTICULOS--@ORDEN VARCHAR (1)--AS --BEGIN --IF(@ORDEN = 'A')--SELECT * FROM ARTICULOS ORDER BY cod_articulo ASC--ELSE --SELECT * FROM ARTICULOS ORDER BY cod_articulo DESC--END
+
+--c. Crear una función que devuelva el precio al que quedaría un artículo en
+--caso de aplicar un porcentaje de aumento pasado por parámetro.
+
+
+--CREATE FUNCTION AUMENTAR_PRECIO (@PORCENTAJE INT,@CODIGO INT)
+--RETURNS DECIMAL (10,2)
+--AS 
+--BEGIN
+--DECLARE @PRECIO INT
+--SELECT @PRECIO = (PRE_UNITARIO * @PORCENTAJE) + PRE_UNITARIO FROM ARTICULOS WHERE COD_ARTICULO = @CODIGO
+--RETURN @PRECIO
+--END;
+
+
+--DECLARE @PORCENTAJE INT = 10;
+--DECLARE @CODIGO INT = 5;
+

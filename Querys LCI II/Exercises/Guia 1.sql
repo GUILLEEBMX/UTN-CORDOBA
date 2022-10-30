@@ -18,7 +18,7 @@ UNION
     FROM VENDEDORES V
     WHERE V.nro_tel IS NOT NULL
         AND V.[e-mail] IS NOT  NULL
-ORDER BY 3,2;
+ORDER BY 3,2; 
 
 
 /*3. Emitir un listado donde se muestren qué artículos, clientes y vendedores hay en
