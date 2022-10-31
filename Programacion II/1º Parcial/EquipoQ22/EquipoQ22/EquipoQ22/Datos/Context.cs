@@ -48,7 +48,10 @@ namespace EquipoQ22.Datos
                 table = new DataTable();
                 table.Load(cmd.ExecuteReader());
                 context.Close();
+                 var x = table.Rows[1].ItemArray[0];
+                Console.WriteLine(x);
                 return table;
+                
 
 
             }

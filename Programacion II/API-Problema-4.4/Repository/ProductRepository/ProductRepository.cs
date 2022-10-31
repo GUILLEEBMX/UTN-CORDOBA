@@ -10,10 +10,10 @@ namespace API_Problema_4._4.Repository.ProductRepository
 {
     public class ProductRepository : IProductService
     {
-        //private readonly ProductModel product;
+        
         public ProductRepository()
         {
-            //this.product = _product;
+           
         }
 
 
@@ -22,7 +22,6 @@ namespace API_Problema_4._4.Repository.ProductRepository
 
             return ProductModel.Products;
 
-            //return <List<products>>;
         }
 
         public ActionResult GetxID(int id)
@@ -30,6 +29,10 @@ namespace API_Problema_4._4.Repository.ProductRepository
             var existe = false;
             int index = 0;
 
+            if( ProductModel.Products == null)
+            {
+                return new NotFoundObjectResult("ESE ARTICULO NO EXISTE EN NUESTRA BASE DE DATOS...");
+            }
 
             for (int i = 0; i < ProductModel.Products.Count; i++)
             {
@@ -44,7 +47,7 @@ namespace API_Problema_4._4.Repository.ProductRepository
 
             
 
-            if (!existe)
+            if (!existe )
             {
                 return new NotFoundObjectResult("ESE ARTICULO NO EXISTE EN NUESTRA BASE DE DATOS...");
             }
@@ -68,9 +71,13 @@ namespace API_Problema_4._4.Repository.ProductRepository
                 return new BadRequestObjectResult("LOS IDs INGRESADOS DE LAS PERSONAS NO COINCIDEN");
             }
 
+            if (ProductModel.Products == null)
+            {
+                return new NotFoundObjectResult("ESE ARTICULO NO EXISTE EN NUESTRA BASE DE DATOS...");
+            }
 
             var existe = false;
-            int index = 0;
+         
 
 
             for (int i = 0; i < ProductModel.Products.Count; i++)
@@ -78,7 +85,7 @@ namespace API_Problema_4._4.Repository.ProductRepository
                 if (ProductModel.Products[i].Codigo == id)
                 {
                     existe = true;
-                    index = i;
+                    
 
                 }
 
@@ -102,7 +109,7 @@ namespace API_Problema_4._4.Repository.ProductRepository
         public ActionResult Delete(int id)
         {
             var existe = false;
-            int index = 0;
+            
 
 
             for (int i = 0; i < ProductModel.Products.Count; i++)
@@ -110,8 +117,7 @@ namespace API_Problema_4._4.Repository.ProductRepository
                 if (ProductModel.Products[i].Codigo == id)
                 {
                     existe = true;
-                    index = i;
-
+                    
                 }
 
             }

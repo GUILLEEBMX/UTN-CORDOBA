@@ -30,3 +30,13 @@ C:\Users\K56\Desktop\112971 Britos Guillermo Leonardo\EquipoQ22\EquipoQ22\Equipo
 C:\Users\K56\Desktop\112971 Britos Guillermo Leonardo\EquipoQ22\EquipoQ22\EquipoQ22\bin\Debug\EquipoQ22.exe.config
 C:\Users\K56\Desktop\112971 Britos Guillermo Leonardo\EquipoQ22\EquipoQ22\EquipoQ22\bin\Debug\EquipoQ22.exe
 C:\Users\K56\Desktop\112971 Britos Guillermo Leonardo\EquipoQ22\EquipoQ22\EquipoQ22\bin\Debug\EquipoQ22.pdb
+C:\UTN\UTN-CORDOBA\Programacion II\1º Parcial\EquipoQ22\EquipoQ22\EquipoQ22\bin\Debug\EquipoQ22.exe.config
+C:\UTN\UTN-CORDOBA\Programacion II\1º Parcial\EquipoQ22\EquipoQ22\EquipoQ22\bin\Debug\EquipoQ22.exe
+C:\UTN\UTN-CORDOBA\Programacion II\1º Parcial\EquipoQ22\EquipoQ22\EquipoQ22\bin\Debug\EquipoQ22.pdb
+C:\UTN\UTN-CORDOBA\Programacion II\1º Parcial\EquipoQ22\EquipoQ22\EquipoQ22\obj\Debug\EquipoQ22.csproj.AssemblyReference.cache
+C:\UTN\UTN-CORDOBA\Programacion II\1º Parcial\EquipoQ22\EquipoQ22\EquipoQ22\obj\Debug\EquipoQ22.FrmAlta.resources
+C:\UTN\UTN-CORDOBA\Programacion II\1º Parcial\EquipoQ22\EquipoQ22\EquipoQ22\obj\Debug\EquipoQ22.Properties.Resources.resources
+C:\UTN\UTN-CORDOBA\Programacion II\1º Parcial\EquipoQ22\EquipoQ22\EquipoQ22\obj\Debug\EquipoQ22.csproj.GenerateResource.cache
+C:\UTN\UTN-CORDOBA\Programacion II\1º Parcial\EquipoQ22\EquipoQ22\EquipoQ22\obj\Debug\EquipoQ22.csproj.CoreCompileInputs.cache
+C:\UTN\UTN-CORDOBA\Programacion II\1º Parcial\EquipoQ22\EquipoQ22\EquipoQ22\obj\Debug\EquipoQ22.exe
+C:\UTN\UTN-CORDOBA\Programacion II\1º Parcial\EquipoQ22\EquipoQ22\EquipoQ22\obj\Debug\EquipoQ22.pdb
