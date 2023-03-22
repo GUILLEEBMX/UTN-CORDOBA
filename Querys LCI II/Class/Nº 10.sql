@@ -35,6 +35,8 @@ JOIN detalle_facturas DF ON DF.nro_factura = F.nro_factura
 JOIN ARTICULOS A ON A.cod_articulo = DF.cod_articulo 
 JOIN vendedores V ON V.cod_vendedor = F.cod_vendedor
 
+ESTO ES UN TEST
+
 
 SELECT 
 C.nom_cliente ,

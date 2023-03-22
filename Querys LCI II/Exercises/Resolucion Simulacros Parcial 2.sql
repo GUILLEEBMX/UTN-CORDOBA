@@ -1,6 +1,21 @@
 
 --1. Crear una función que devuelva el nombre completo del dueño con el apellido todo en mayúsculas,
---coma, espacio y el nombre con la 1er. letra en mayúsculas y el resto en minúsculas--ALTER FUNCTION DEVOLVER_NOMBRE_MAYUSCULAS(@NOMBRE VARCHAR (50), @APELLIDO VARCHAR(50) )--RETURNS VARCHAR (100)--AS--BEGIN--DECLARE @NOMBRECOMPLETO VARCHAR(100)--SELECT @NOMBRECOMPLETO = UPPER(SUBSTRING(@NOMBRE,1,1))+LOWER(SUBSTRING(@NOMBRE,2,LEN(@NOMBRE))) + ',' + UPPER(@APELLIDO)--RETURN @NOMBRECOMPLETO--END--DECLARE @NOMBRE VARCHAR(50) = 'GUILLERMO'--DECLARE @APELLIDO VARCHAR (50) = 'BRITOS'--SELECT  dbo.DEVOLVER_NOMBRE_MAYUSCULAS(@NOMBRE,@APELLIDO) --2. Crear una vista que muestre el listado de mascotas (nombre, tipo, raza, edad) con sus dueños
+--coma, espacio y el nombre con la 1er. letra en mayúsculas y el resto en minúsculas
+
+--ALTER FUNCTION DEVOLVER_NOMBRE_MAYUSCULAS(@NOMBRE VARCHAR (50), @APELLIDO VARCHAR(50) )
+--RETURNS VARCHAR (100)
+--AS
+--BEGIN
+--DECLARE @NOMBRECOMPLETO VARCHAR(100)
+--SELECT @NOMBRECOMPLETO = UPPER(SUBSTRING(@NOMBRE,1,1))+LOWER(SUBSTRING(@NOMBRE,2,LEN(@NOMBRE))) + ',' + UPPER(@APELLIDO)
+--RETURN @NOMBRECOMPLETO
+--END
+
+--DECLARE @NOMBRE VARCHAR(50) = 'GUILLERMO'
+--DECLARE @APELLIDO VARCHAR (50) = 'BRITOS'
+--SELECT  dbo.DEVOLVER_NOMBRE_MAYUSCULAS(@NOMBRE,@APELLIDO) 
+
+--2. Crear una vista que muestre el listado de mascotas (nombre, tipo, raza, edad) con sus dueños
 --(nombre completo utilizando la función del punto 1, dirección completa, teléfono)
 
 --ALTER VIEW VISTA_EJERCICIO2_SIMULACRO
@@ -74,6 +89,138 @@
 
 
 
+--Práctico de repaso para 2° parcial
+--Tema 2
+--Escribir la sentencia SQL que permita realizar las consultas que se piden a continuación:
 
+--1. Crear un procedimiento almacenado para insertar un nuevo médico. (antes de completar este
+--punto, agregue lo que se solicita en el punto 2 y 3)--SELECT * FROM CLIENTES;
+
+--ALTER PROCEDURE INSERTAR_CLIENTES
+--@NOMBRE VARCHAR (100),
+--@APELLIDO VARCHAR (100),
+--@CALLE VARCHAR (100),
+--@ALTURA INT,
+--@COD_BARRIO INT,
+--@NRO_TEL VARCHAR (100),
+--@EMAIL VARCHAR (100)
+--AS
+--BEGIN
+--INSERT INTO CLIENTES (nom_cliente,ape_cliente,calle,altura,cod_barrio,nro_tel,[e-mail]) VALUES (@NOMBRE,@APELLIDO,@CALLE,@ALTURA,@COD_BARRIO,@NRO_TEL,@EMAIL)
+--END
+
+--DECLARE @NOMBRE VARCHAR (100) = 'Guillermo';
+--DECLARE @APELLIDO VARCHAR (100) = 'Britos';
+--DECLARE @CALLE VARCHAR (100) = 'Avenida Falsa';
+--DECLARE  @ALTURA INT = 1236;
+--DECLARE  @COD_BARRIO INT = 1;
+--DECLARE  @NRO_TEL VARCHAR (50) = '3517550161' ;
+--DECLARE @EMAIL VARCHAR (100) = 'gbritos13@gmail.com' ;
+
+--EXEC INSERTAR_CLIENTES @NOMBRE,@APELLIDO,@CALLE,@ALTURA,@COD_BARRIO,@NRO_TEL,@EMAIL;
+
+
+
+
+--2. Modificar el procedimiento anterior para que en caso de que la matricula o el apellido sean
+--nulos no permita hacer el insert y de un error por excepción
+
+--SELECT * FROM CLIENTES;
+
+--ALTER PROCEDURE INSERTAR_CLIENTES
+--@NOMBRE VARCHAR (100),
+--@APELLIDO VARCHAR (100),
+--@CALLE VARCHAR (100),
+--@ALTURA INT,
+--@COD_BARRIO INT,
+--@NRO_TEL VARCHAR (100),
+--@EMAIL VARCHAR (100)
+--AS
+--BEGIN
+--IF(@APELLIDO IS NULL OR @NOMBRE IS NULL)
+--RAISERROR('EL NOMBRE O EL APELLIDO NO PUEDEN SER NULOS',1,1)
+--ELSE
+--INSERT INTO CLIENTES (nom_cliente,ape_cliente,calle,altura,cod_barrio,nro_tel,[e-mail]) VALUES (@NOMBRE,@APELLIDO,@CALLE,@ALTURA,@COD_BARRIO,@NRO_TEL,@EMAIL)
+--END
+
+--DECLARE @NOMBRE VARCHAR (100) = NULL;
+--DECLARE @APELLIDO VARCHAR (100) = 'Britos';
+--DECLARE @CALLE VARCHAR (100) = 'Avenida Falsa';
+--DECLARE  @ALTURA INT = 1236;
+--DECLARE  @COD_BARRIO INT = 1;
+--DECLARE  @NRO_TEL VARCHAR (50) = '3517550161' ;
+--DECLARE @EMAIL VARCHAR (100) = 'gbritos13@gmail.com' ;
+
+--EXEC INSERTAR_CLIENTES @NOMBRE,@APELLIDO,@CALLE,@ALTURA,@COD_BARRIO,@NRO_TEL,@EMAIL;
+
+
+--3. Cree una tabla temporal para guardar los errores del punto 2
+
+--CREATE TABLE #TEMPORAL_ERRORES
+--(
+--ID_ERROR INT IDENTITY(1,1),
+--MENSAJE VARCHAR (200)
+--)
+
+--SELECT * FROM #TEMPORAL_ERRORES;
+
+--ALTER PROCEDURE INSERTAR_CLIENTES
+--@NOMBRE VARCHAR (100),
+--@APELLIDO VARCHAR (100),
+--@CALLE VARCHAR (100),
+--@ALTURA INT,
+--@COD_BARRIO INT,
+--@NRO_TEL VARCHAR (100),
+--@EMAIL VARCHAR (100)
+--AS
+--BEGIN
+--DECLARE @MENSAJE VARCHAR(200)
+--IF(@APELLIDO IS NULL OR @NOMBRE IS NULL)
+--SET @MENSAJE = 'EL NOMBRE O EL APELLIDO NO PUEDEN SER NULOS'
+--INSERT INTO #TEMPORAL_ERRORES (MENSAJE) VALUES (@MENSAJE)
+--RAISERROR('EL NOMBRE O EL APELLIDO NO PUEDEN SER NULOS',1,1)
+--RETURN
+--INSERT INTO CLIENTES (nom_cliente,ape_cliente,calle,altura,cod_barrio,nro_tel,[e-mail]) VALUES (@NOMBRE,@APELLIDO,@CALLE,@ALTURA,@COD_BARRIO,@NRO_TEL,@EMAIL)
+--END
+
+
+
+--DECLARE @NOMBRE VARCHAR (100) = NULL;
+--DECLARE @APELLIDO VARCHAR (100) = 'Britos';
+--DECLARE @CALLE VARCHAR (100) = 'Avenida Falsa';
+--DECLARE  @ALTURA INT = 1236;
+--DECLARE  @COD_BARRIO INT = 1;
+--DECLARE  @NRO_TEL VARCHAR (50) = '3517550161' ;
+--DECLARE @EMAIL VARCHAR (100) = 'gbritos13@gmail.com' ;
+
+--EXEC INSERTAR_CLIENTES @NOMBRE,@APELLIDO,@CALLE,@ALTURA,@COD_BARRIO,@NRO_TEL,@EMAIL;
+
+--SELECT * FROM #TEMPORAL_ERRORES;
+
+
+--4. Crear una vista que liste la cantidad de consultas, importe total y promedio de importe, mayor
+--y menor importe por dueño por año
+
+--ALTER VIEW PUNTO4_SIMULACRO_PARCIAL_II
+--AS
+--SELECT 
+--C.NOM_CLIENTE AS 'CLIENTE',
+--YEAR(F.FECHA) AS 'AÑO',
+--COUNT(F.nro_factura) AS 'CANTIDAD_FACTURAS',
+--SUM(DF.PRE_UNITARIO) AS 'IMPORTE_TOTAL',
+--AVG(DF.PRE_UNITARIO) AS 'PROMEDIO_IMPORTE',
+--MAX(DF.PRE_UNITARIO) AS 'MAYOR_IMPORTE',
+--MIN(DF.PRE_UNITARIO) AS 'MENOR_IMPORTE'
+--FROM facturas F 
+--JOIN detalle_facturas DF ON DF.nro_factura = F.nro_factura
+--JOIN clientes C ON C.cod_cliente = F.cod_cliente
+--GROUP BY C.nom_cliente, F.FECHA
+
+--SELECT * FROM PUNTO4_SIMULACRO_PARCIAL_II;
+
+
+--5. Consultar la vista anterior mostrando el dueño, importe total y cantidad de consultas
+--realizadas el año pasado cuyo importe promedio sea mayor al importe promedio de todas las
+--consultas de este año--SELECT --CLIENTE,--IMPORTE_TOTAL,--CANTIDAD_FACTURAS,--AÑO ,--PROMEDIO_IMPORTE--FROM PUNTO4_SIMULACRO_PARCIAL_II--WHERE AÑO = YEAR(GETDATE()) - 1--GROUP BY CLIENTE,IMPORTE_TOTAL,CANTIDAD_FACTURAS,AÑO,PROMEDIO_IMPORTE--HAVING PROMEDIO_IMPORTE > (SELECT AVG(DF2.PRE_UNITARIO) --FROM detalle_facturas DF2 JOIN facturas F ON F.nro_factura = DF2.nro_factura WHERE YEAR(F.FECHA) = YEAR(GETDATE()))
 
 
