@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>API Automotriz</name>
+    </assembly>
+    <members>
+        <member name="M:API_Automotriz.Controllers.ClientsController.GetAllClients">
+            <summary>
+            Obtiene un listado de usuarios
+            </summary>
+            Las propiedades de los usuarios estan acotadas a las requeridas por el modelo
+            <returns></returns>
+        </member>
+        <member name="M:API_Automotriz.Controllers.DeliveriesController.GetAllDeliveries">
+            <summary>
+            Obtiene un listado de usuarios
+            </summary>
+            Las propiedades de los usuarios estan acotadas a las requeridas por el modelo
+            <returns></returns>
+        </member>
+        <member name="M:API_Automotriz.Controllers.EmployeesController.GetProducts">
+            <summary>
+            Obtiene un listado de usuarios
+            </summary>
+            Las propiedades de los usuarios estan acotadas a las requeridas por el modelo
+            <returns></returns>
+        </member>
+        <member name="M:API_Automotriz.Controllers.OrderController.GetAllOrders">
+            <summary>
+            Obtiene un listado de pedidos
+            </summary>
+            Las propiedades de los pedidos estan acotadas a las requeridas por el modelo
+            <returns></returns>
+        </member>
+        <member name="M:API_Automotriz.Controllers.OrderController.GetAllOrders(System.Int32)">
+            <summary>
+            Obtiene un Pedido
+            </summary>
+            Las propiedades de los productos estan acotadas a las requeridas por el modelo
+            <returns></returns>
+        </member>
+        <member name="M:API_Automotriz.Controllers.OrderController.PostOrder(AutomotrizLibrary.DTOs.OrderPostDTO)">
+            <summary>
+            Graba un pedido nuevo en la BD 
+            </summary>
+            Las propiedades de los pedidos estan acotadas a las requeridas por el modelo
+            <returns></returns>
+        </member>
+        <member name="M:API_Automotriz.Controllers.ProductsController.GetAllProducts">
+            <summary>
+            Obtiene un listado de productos
+            </summary>
+            Las propiedades de los productos estan acotadas a las requeridas por el modelo
+            <returns></returns>
+        </member>
+        <member name="M:API_Automotriz.Controllers.ProductsController.GetAllProducts(System.Int32)">
+            <summary>
+            Obtiene un listado de productos
+            </summary>
+            Las propiedades de los productos estan acotadas a las requeridas por el modelo
+            <returns></returns>
+        </member>
+        <member name="M:API_Automotriz.Controllers.ProductsController.PostProduct(AutomotrizLibrary.DTOs.ProductPostDTO)">
+            <summary>
+            Graba un producto nuevo en la BD 
+            </summary>
+            Las propiedades de los productos estan acotadas a las requeridas por el modelo
+            <returns></returns>
+        </member>
+        <member name="M:API_Automotriz.Controllers.ProductsController.DeleteProduct(System.Int32)">
+            <summary>
+            Elimina un producto de la Base de Datos
+            </summary>
+            Las propiedades del producto estan acotadas a las requeridas por el modelo
+            <returns></returns>
+        </member>
+        <member name="M:API_Automotriz.Controllers.ProvidersController.GetAllProviders">
+            <summary>
+            Obtiene un listado de productos
+            </summary>
+            Las propiedades de los productos estan acotadas a las requeridas por el modelo
+            <returns></returns>
+        </member>
+        <member name="M:API_Automotriz.Controllers.RequestTypesController.GetAllReqyestTypes">
+            <summary>
+            Obtiene un listado de usuarios
+            </summary>
+            Las propiedades de los usuarios estan acotadas a las requeridas por el modelo
+            <returns></returns>
+        </member>
+        <member name="M:API_Automotriz.Controllers.SubsidiariesController.GetAllSubsidiaries">
+            <summary>
+            Obtiene un listado de productos
+            </summary>
+            Las propiedades de los productos estan acotadas a las requeridas por el modelo
+            <returns></returns>
+        </member>
+        <member name="M:API_Automotriz.Controllers.UsersController.GetProducts">
+            <summary>
+            Obtiene un listado de usuarios
+            </summary>
+            Las propiedades de los usuarios estan acotadas a las requeridas por el modelo
+            <returns></returns>
+        </member>
+        <member name="M:API_Automotriz.Controllers.UsersController.LogginUser(AutomotrizLibrary.DTOs.UserLogginDTO)">
+            <summary>
+            Loggea al usuario en la Aplicacion
+            </summary>
+            Las propiedades del usuario estan acotadas a las requeridas por el modelo
+            <returns></returns>
+        </member>
+        <member name="M:API_Automotriz.Controllers.UsersController.RegisterUser(AutomotrizLibrary.DTOs.UserRegisterDTO)">
+            <summary>
+            Registra un nuevo usuario en la Aplicacion
+            </summary>
+            Las propiedades del usuario estan acotadas a las requeridas por el modelo
+            <returns></returns>
+        </member>
+        <member name="M:API_Automotriz.Controllers.UsersController.CreateAdmin(AutomotrizLibrary.DTOs.UserAdminDTO)">
+            <summary>
+            Registra un nuevo administrador en la Aplicacion
+            </summary>
+            Las propiedades del usuario estan acotadas a las requeridas por el modelo
+            <returns></returns>
+        </member>
+        <member name="M:API_Automotriz.Controllers.UsersController.DeleteAdmin(System.String)">
+            <summary>
+            Elimina un usuario del rol de Administrador
+            </summary>
+            Las propiedades del usuario estan acotadas a las requeridas por el modelo
+            <returns></returns>
+        </member>
+        <member name="M:API_Automotriz.Controllers.UsersController.DeleteUser(System.String)">
+            <summary>
+            Elimina al usuario de la Base de Datos
+            </summary>
+            Las propiedades del usuario estan acotadas a las requeridas por el modelo
+            <returns></returns>
+        </member>
+    </members>
+</doc>

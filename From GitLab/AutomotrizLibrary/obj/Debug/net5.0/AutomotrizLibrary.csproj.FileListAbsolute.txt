@@ -1,0 +1,14 @@
+C:\TP-ProgramacionII-2022\AutomotrizLibrary\obj\Debug\net5.0\AutomotrizLibrary.csproj.AssemblyReference.cache
+C:\TP-ProgramacionII-2022\AutomotrizLibrary\obj\Debug\net5.0\AutomotrizLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\TP-ProgramacionII-2022\AutomotrizLibrary\obj\Debug\net5.0\AutomotrizLibrary.AssemblyInfoInputs.cache
+C:\TP-ProgramacionII-2022\AutomotrizLibrary\obj\Debug\net5.0\AutomotrizLibrary.AssemblyInfo.cs
+C:\TP-ProgramacionII-2022\AutomotrizLibrary\obj\Debug\net5.0\AutomotrizLibrary.csproj.CoreCompileInputs.cache
+C:\TP-ProgramacionII-2022\AutomotrizLibrary\bin\Debug\net5.0\AutomotrizLibrary.deps.json
+C:\TP-ProgramacionII-2022\AutomotrizLibrary\bin\Debug\net5.0\AutomotrizLibrary.dll
+C:\TP-ProgramacionII-2022\AutomotrizLibrary\bin\Debug\net5.0\AutomotrizLibrary.pdb
+C:\TP-ProgramacionII-2022\AutomotrizLibrary\obj\Debug\net5.0\AutomotrizLibrary.Properties.Resources.resources
+C:\TP-ProgramacionII-2022\AutomotrizLibrary\obj\Debug\net5.0\AutomotrizLibrary.csproj.GenerateResource.cache
+C:\TP-ProgramacionII-2022\AutomotrizLibrary\obj\Debug\net5.0\AutomotrizLibrary.dll
+C:\TP-ProgramacionII-2022\AutomotrizLibrary\obj\Debug\net5.0\ref\AutomotrizLibrary.dll
+C:\TP-ProgramacionII-2022\AutomotrizLibrary\obj\Debug\net5.0\AutomotrizLibrary.pdb
+C:\TP-ProgramacionII-2022\AutomotrizLibrary\obj\Debug\net5.0\refint\AutomotrizLibrary.dll

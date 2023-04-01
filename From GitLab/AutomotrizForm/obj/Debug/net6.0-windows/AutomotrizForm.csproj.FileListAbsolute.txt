@@ -1,0 +1,86 @@
+C:\TP-ProgramacionII-2022\AutomotrizForm\obj\Debug\net6.0-windows\AutomotrizForm.csproj.AssemblyReference.cache
+C:\TP-ProgramacionII-2022\AutomotrizForm\obj\Debug\net6.0-windows\AutomotrizForm.LogginForm.resources
+C:\TP-ProgramacionII-2022\AutomotrizForm\obj\Debug\net6.0-windows\AutomotrizForm.csproj.GenerateResource.cache
+C:\TP-ProgramacionII-2022\AutomotrizForm\obj\Debug\net6.0-windows\AutomotrizForm.GeneratedMSBuildEditorConfig.editorconfig
+C:\TP-ProgramacionII-2022\AutomotrizForm\obj\Debug\net6.0-windows\AutomotrizForm.AssemblyInfoInputs.cache
+C:\TP-ProgramacionII-2022\AutomotrizForm\obj\Debug\net6.0-windows\AutomotrizForm.AssemblyInfo.cs
+C:\TP-ProgramacionII-2022\AutomotrizForm\obj\Debug\net6.0-windows\AutomotrizForm.csproj.CoreCompileInputs.cache
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\API Automotriz.deps.json
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\API Automotriz.runtimeconfig.json
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\API Automotriz.runtimeconfig.dev.json
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\appsettings.Development.json
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\appsettings.json
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\API Automotriz.exe
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\AutomotrizForm.exe
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\AutomotrizForm.deps.json
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\AutomotrizForm.runtimeconfig.json
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\AutomotrizForm.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\AutomotrizForm.pdb
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\Xceed.Wpf.AvalonDock.NET5.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\Xceed.Wpf.AvalonDock.Themes.Aero.NET5.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\Xceed.Wpf.AvalonDock.Themes.Metro.NET5.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\Xceed.Wpf.AvalonDock.Themes.VS2010.NET5.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\Xceed.Wpf.Toolkit.NET5.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\Microsoft.ApplicationInsights.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\Microsoft.ApplicationInsights.AspNetCore.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\Microsoft.AI.DependencyCollector.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\Microsoft.AI.EventCounterCollector.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\Microsoft.AI.PerfCounterCollector.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\Microsoft.AI.WindowsServer.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\Microsoft.AI.ServerTelemetryChannel.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\Microsoft.AspNetCore.JsonPatch.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.ApplicationInsights.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\Microsoft.OpenApi.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\Newtonsoft.Json.Bson.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\Swashbuckle.AspNetCore.Swagger.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\cs-CZ\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\de\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\es\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\fr\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\hu\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\it\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\ja-JP\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\pt-BR\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\ro\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\ru\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\sv\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\zh-Hans\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\API Automotriz.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\AutomotrizLibrary.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\API Automotriz.pdb
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\AutomotrizLibrary.pdb
+C:\TP-ProgramacionII-2022\AutomotrizForm\obj\Debug\net6.0-windows\AutomotrizForm.csproj.CopyComplete
+C:\TP-ProgramacionII-2022\AutomotrizForm\obj\Debug\net6.0-windows\AutomotrizForm.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\obj\Debug\net6.0-windows\refint\AutomotrizForm.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\obj\Debug\net6.0-windows\AutomotrizForm.pdb
+C:\TP-ProgramacionII-2022\AutomotrizForm\obj\Debug\net6.0-windows\AutomotrizForm.genruntimeconfig.cache
+C:\TP-ProgramacionII-2022\AutomotrizForm\obj\Debug\net6.0-windows\ref\AutomotrizForm.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\AutoMapper.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\TP-ProgramacionII-2022\AutomotrizForm\bin\Debug\net6.0-windows\API Automotriz.xml
+C:\TP-ProgramacionII-2022\AutomotrizForm\obj\Debug\net6.0-windows\AutomotrizForm.Fronted.PrincipalMenuForm.resources
+C:\TP-ProgramacionII-2022\AutomotrizForm\obj\Debug\net6.0-windows\AutomotrizForm.Fronted.UsersForms.resources
+C:\TP-ProgramacionII-2022\AutomotrizForm\obj\Debug\net6.0-windows\AutomotrizForm.Fronted.OrderForm.resources
+C:\TP-ProgramacionII-2022\AutomotrizForm\obj\Debug\net6.0-windows\AutomotrizForm.Fronted.ProductForm.resources
+C:\TP-ProgramacionII-2022\AutomotrizForm\obj\Debug\net6.0-windows\AutomotrizForm.Properties.Resources.resources
+C:\TP-ProgramacionII-2022\AutomotrizForm\obj\Debug\net6.0-windows\AutomotrizForm.Fronted.ListOrdersForm.resources
+C:\TP-ProgramacionII-2022\AutomotrizForm\obj\Debug\net6.0-windows\AutomotrizForm.Fronted.QueriesListForm.resources
+C:\TP-ProgramacionII-2022\AutomotrizForm\obj\Debug\net6.0-windows\AutomotrizForm.Fronted.ContactForm.resources
+C:\TP-ProgramacionII-2022\AutomotrizForm\obj\Debug\net6.0-windows\AutomotrizForm.Fronted.TeamForm.resources
