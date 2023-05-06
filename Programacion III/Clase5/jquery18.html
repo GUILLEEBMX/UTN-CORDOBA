@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+</head>
+
+<body>
+
+    <p id="p1">
+
+        Este es un <b>parrafo</b> muy importante, por que si
+
+
+    </p>
+
+
+    <p id="p2">
+
+        Este es otro <b>parrafo</b> muy importante, por que si
+
+
+    </p>
+
+
+    <p><input type="text" id="inputTest" value="Guillee Britos">
+
+        Este es otro <b>parrafo</b> muy importante, por que si
+
+
+    </p>
+
+    <button id="btn1">SETEAR TEXTO</button>
+
+    <button id="btn2">SETEAR HTML</button>
+
+    <button id="btn3">SETEAR VALUE</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+
+    <script>
+
+        $(document).ready(function () {
+
+
+            $("#btn1").click(function () {
+
+
+
+                $("#p1").text("HOLA CHICOS!!!!")
+
+            })
+
+
+            $("#btn2").click(function () {
+
+
+                $("#p2").html("<b>QUIERO TERMINAR YA!!!!!!! </b>")
+
+            })
+
+            $("#btn3").click(function () {
+
+                $("#inputTest").val("GUILLEEEEEEEEE")
+
+            })
+
+
+
+        })
+
+
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

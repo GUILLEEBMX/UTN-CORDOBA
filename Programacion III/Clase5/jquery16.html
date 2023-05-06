@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        #panel,
+        #flip {
+
+            padding: 5px;
+            text-align: center;
+            background-color: rebeccapurple;
+            border: solid 1px aliceblue;
+
+        }
+
+        #panel{
+            padding: 50px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div id="div">Es para hacer slideup slidedown</div>
+    <div id="panel">Hola Programacion III</div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+
+    <script>
+
+        $(document).ready(function () {
+
+
+            $("#flip").click(function () {
+                $("#panel").slideToggle('slow')
+
+            })
+
+
+        })
+
+
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

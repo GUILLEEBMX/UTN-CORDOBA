@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+</head>
+
+<body>
+
+
+    <div class="container">
+
+
+        <h3>Formulario</h3>
+        <form id="Formulario">
+
+
+            <div class="form-group">
+
+
+                <label for="">Nombre</label>
+                <input type="text" id="nombre" name="nombre" class="form-control">
+
+
+            </div>
+
+
+
+
+            <div class="form-group">
+
+
+                <label for="">Email</label>
+                <input type="email" id="email" name="email" class="form-control">
+
+
+            </div>
+
+
+            <div class="form-group">
+
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" class="form-control">
+
+
+            </div>
+
+
+
+            <div class="form-group">
+
+
+                <label for="confirmarPassword">Confirmar Password</label>
+                <input type="confirmarPassword" id="confirmarPassword" name="confirmarPassword" class="form-control">
+
+
+            </div>
+
+
+
+            <div class="form-group">
+
+
+                <label for="comentarios">Comentarios</label>
+                <textarea class="form-control" name="comentarios" id="comentarios">
+
+                cols="40" rows="10"
+
+             </textarea>
+
+
+            </div>
+
+
+            <div class="form-group">
+
+
+                <label for="chkAceptar">
+                    <input type="checkbox" class="form-control" name="chkAceptar" id="chkAceptar" value="acepto">
+                    Acepto los terminos y condiciones.
+                </label>
+
+            </div>
+
+
+
+            <input type="submit" class="btn btn-primary" value="cargar">
+
+
+        </form>
+
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/additional-methods.js"></script>
+
+    <script>
+
+        $.validator.setDefaults({
+
+            submitHandler: function () {
+
+                alert('Paso correctamente')
+
+            }
+
+
+        })
+
+
+        $.validator.addMethod('noEmpezarConGuion', function (value, element, param) {
+
+
+
+            value.startWith(param) ? false : true;
+
+
+
+        })
+
+        $(document).ready(function () {
+
+
+            $("#Formulario").validate({
+
+
+
+                rules: {
+
+                    nombre: {
+                        required: true,
+                        minLength: 4,
+                        noEmpezarConGuion: '_'
+
+                    },
+                    email: {
+                        required: true,
+                        email: true,
+                    },
+                    password: {
+
+                        required: true,
+                        minLength: 8,
+
+
+                    },
+                    confirmarPassword: {
+
+                        required: true,
+                        minLength: 8,
+                        equalTo: '#password'
+
+                    },
+                    comentarios: {
+                        required: true,
+
+                    },
+                    chkAceptar: {
+                        required: true
+                    }
+
+
+                },
+                messages: {
+
+                    nombre: {
+                        required: 'POR FAVOR INGRESE UN NOMBRE...',
+                        minLength: 'EL NOMBRE DEBE TENER AL MENOS 4 CARACTERES',
+                        noEmpezarConGuion : 'NO PUEDE EMPEZAR CON GUION BAJO'
+
+                    },
+                    email: {
+                        required: 'EMAIL ES REQUERIDO',
+                        email: 'POR FAVOR INTRODUZCO UN EMAIL VALIDO'
+
+                    },
+                    password: {
+
+                        required: 'LA CONTRASEÑA ES REQUERIDA',
+                        minLength: 'LA CONTRASEÑA DEBE TENER UN LARGO DE 8 CARACTERES COMO MINIMO....',
+
+
+                    },
+                    confirmarPassword: {
+
+                        required: 'LA CONFIRMACION ES REQUERIDA',
+                        minLength: 'EL PASSWORD DEBE TENER UN  MINIMO DE 8 CARACTERES',
+                        equalTo: 'LOS PASSWORDS NO COINCIDE'
+
+                    },
+                    comentarios: {
+                        required: 'LOS COMENTARIOS SON REQUERIDOS',
+
+                    },
+                    chkAceptar: {
+                        required: 'POR FAVOR ACEPTE LOS TERMINOS Y CONDICIONES.'
+                    }
+
+
+
+                },
+                errorClass: 'text-primary',
+                errorElement: 'label'
+
+            })
+
+
+
+
+
+
+        })
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <p>ESTE ES UN EJEMPLO JQUERY 13</p>
+
+    <div id="div1" style="background-color: blueviolet; height: 100px; width: 100px; position: absolute;">
+
+
+    </div>
+
+
+
+    <button id="animar">Animar</button>
+    <br>
+
+    <p>este es un ejemplo de animacion</p>
+
+
+    <div id="div1" style="width: 80px;height: 80px;display: none;background-color: red;">
+        <p>Este es un ejemplo de fadeIn</p>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+
+    <script>
+
+        $(document).ready(function () {
+
+
+            $("#animar").click(function () {
+                $("#div1").animate({
+
+
+                    left: '250px',
+                    opacity: '0.5',
+                    height: '150px',
+                    width:'150px'
+                })
+
+            })
+
+
+        })
+
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>
