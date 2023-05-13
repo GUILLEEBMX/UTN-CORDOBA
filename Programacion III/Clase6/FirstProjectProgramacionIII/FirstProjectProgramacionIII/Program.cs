@@ -12,10 +12,9 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<Context>(options =>
 {
-    object value = options.UseNpgsql(builder.Configuration.GetConnectionString("ConnectionStrings"));
-}
+    options.UseNpgsql(builder.Configuration.GetConnectionString("ConnectionDatabase"));
+});
 
-);
 
 var app = builder.Build();
 
