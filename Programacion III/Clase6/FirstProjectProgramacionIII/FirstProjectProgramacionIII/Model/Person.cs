@@ -18,8 +18,6 @@ namespace FirstProjectProgramacionIII.Model
 
         public int IdCategory { get; set; }
 
-        //[ForeignKey("IdCategory")]
-
 
     }
 

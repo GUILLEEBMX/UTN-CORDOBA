@@ -22,17 +22,5 @@ namespace FirstProjectProgramacionIII.Data
         public virtual DbSet<Category> Category { get; set; }
 
 
-        //5432 PORT DEFAULT.
-
-
-
-
-        //SCAFFOLDING - 
-
-        //dotnet tool install --global dotnet-ef
-
-        // dotnet ef migrations add PrimeraMigracion
-        // dotnet ef database update
-
     }
 }
