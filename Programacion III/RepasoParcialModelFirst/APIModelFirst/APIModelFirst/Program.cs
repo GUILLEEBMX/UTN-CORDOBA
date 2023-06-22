@@ -13,6 +13,22 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddMediatR(typeof(PeopleBusinessGetAll.HandlerPeopleGetAll).Assembly);
+builder.Services.AddMediatR(typeof(PeopleBusinessGetId.HandlerPeopleGetId).Assembly);
+builder.Services.AddMediatR(typeof(PeopleBusinessPost.PeoplePostHandler).Assembly);
+builder.Services.AddMediatR(typeof(PeopleBusinessPut.HandlerPeoplePut).Assembly);
+
+
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(
+        policy =>
+        {
+            policy.AllowAnyHeader()
+            .AllowAnyOrigin()
+            .AllowAnyOrigin();
+
+        });
+});
 
 builder.Services.AddDbContext<Clase6Context>(options =>
 {
@@ -32,6 +48,8 @@ if (app.Environment.IsDevelopment())
 
 AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 
+app.UseCors();
+
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
@@ -39,4 +57,6 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+
 
