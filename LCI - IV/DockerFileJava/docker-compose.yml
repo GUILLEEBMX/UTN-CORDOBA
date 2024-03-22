@@ -1,0 +1,32 @@
+version: "3.8"
+
+services:
+  clients:
+    container_name: java_db
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: java_db
+    volumes:
+        - mysql_data:/var/lib/mysql
+    networks:
+      service-net-app:
+
+
+  test-local:
+
+    container_name: app_java
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    networks:
+      service-net-app:
+    restart: on-failure
+volumes:
+    mysql_data:
+
+
+networks:
+  service-net-app:
