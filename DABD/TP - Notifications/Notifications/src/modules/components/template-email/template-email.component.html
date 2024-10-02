@@ -1,0 +1,24 @@
+<div class="container mt-5 custom-form">
+    <h2 class="text-orange">Create New Template</h2>
+    
+    <form>
+      <!-- Campo para el Asunto -->
+      <div class="form-group mb-3">
+        <label for="templateName" class="text-orange">Template Name</label>
+        <input type="text" class="form-control custom-input" id="templateName" name="templateName"  [(ngModel)]="templateName" placeholder="Enter template name.">
+      </div>
+  
+      <!-- Campo para el Cuerpo del Correo -->
+      <div class="form-group mb-3">
+        <label for="templateBody" class="text-orange">Template Body</label>
+        <textarea class="form-control custom-textarea" id="templateBody" name="templateBody" [(ngModel)]="templateBody" rows="10" placeholder="Write o paste the HTML template."></textarea>
+      </div>
+  
+      <!-- Botones de Acción -->
+      <div class="d-flex justify-content-between">
+        <button type="button" class="btn btn-dark">Go Back</button>
+        <button type="submit" class="btn btn-orange" (click)="sendEmail(this.templateName,this.templateBody)">Save Template</button>
+      </div>
+    </form>
+  </div>
+  

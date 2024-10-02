@@ -1,0 +1,43 @@
+/* Colores personalizados */
+.custom-form {
+    background-color: #FFEFD5;
+    /* Color de fondo similar a la imagen */
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #FFA500;
+    /* Borde naranja */
+}
+
+.custom-input,
+.custom-textarea {
+    border: 2px solid #FFA500;
+    /* Borde naranja */
+    border-radius: 5px;
+    background-color: #FFF8DC;
+    /* Color de fondo del input */
+}
+
+.custom-textarea {
+    min-height: 150px;
+    /* Altura del campo de texto */
+}
+
+.btn-orange {
+    background-color: #FFA500;
+    /* Botón naranja */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.btn-orange:hover {
+    background-color: #FF8C00;
+    /* Cambia el color al pasar el mouse */
+}
+
+/* Estilos adicionales para que el diseño sea más responsivo y agradable */
+body {
+    background-color: #000000; /* Fondo negro */
+    color: rgb(8, 8, 8); /* Color del texto fuera del formulario en blanco para legibilidad */
+  }
